@@ -72,15 +72,42 @@
 {
     JLPLCell *cell = [tableView dequeueReusableCellWithIdentifier:@"JLCell" forIndexPath:indexPath];
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    
+    //cell上的Button点击事件
+    [self loadAction:cell];
+    
+    
     ClickJxInfo * info = self.allDataArray[indexPath.row];
     cell.clickJxInfo = info;
     return cell;
 }
 
+#pragma mark cell点击事件
 
+- (void)loadAction:(JLPLCell *)sender
+{
+    //电话
+    [sender.phoneNumber addTarget:self action:@selector(phoneNumberAction) forControlEvents:UIControlEventTouchUpInside];
+    //跟多简介
+    [sender.jianJie addTarget:self action:@selector(jianJieButtonAction) forControlEvents:UIControlEventTouchUpInside];
+    //学员点评
+    [sender.dianPing addTarget:self action:@selector(dianPingButtonAction) forControlEvents:UIControlEventTouchUpInside];
+    
+}
 
-
-
+//电话
+- (void)phoneNumberAction
+{
+    NSLog(@"电话");
+}
+- (void)jianJieButtonAction
+{
+    NSLog(@"简介");
+}
+- (void)dianPingButtonAction
+{
+    NSLog(@"点评");
+}
 
 
 - (void)didReceiveMemoryWarning {

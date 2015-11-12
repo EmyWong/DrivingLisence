@@ -73,7 +73,7 @@
     [bbsgrouparea setValuesForKeysWithDictionary:clickJxInfo.bbsgrouparea];
     self.name.text = bbsgrouparea.title;
     NSString * youStr = @"有";
-    self.pingLunRenShu.text = [youStr stringByAppendingString:[NSString stringWithFormat:@"%ld名学员报名该驾校",bbsgrouparea.articletip]];
+    self.pingLunRenShu.text = [youStr stringByAppendingString:[NSString stringWithFormat:@"%ld名驾友参与讨论",bbsgrouparea.articletip]];
     //学员点评：commentarea 字典
     Commentarea * commentarea = [Commentarea new];
     [commentarea setValuesForKeysWithDictionary:clickJxInfo.commentarea];

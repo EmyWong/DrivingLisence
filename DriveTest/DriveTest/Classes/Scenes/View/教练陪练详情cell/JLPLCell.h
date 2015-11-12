@@ -10,4 +10,10 @@
 
 @interface JLPLCell : UITableViewCell
 @property (nonatomic,strong)ClickJxInfo * clickJxInfo;
+
+@property (weak, nonatomic) IBOutlet UIButton *phoneNumber;
+@property (weak, nonatomic) IBOutlet UIButton *jianJie;
+@property (weak, nonatomic) IBOutlet UIButton *dianPing;
+
+
 @end

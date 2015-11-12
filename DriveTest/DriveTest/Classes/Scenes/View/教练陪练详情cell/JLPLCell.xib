@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
@@ -83,6 +83,9 @@
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YXn-67-RCY">
+                                        <rect key="frame" x="0.0" y="0.0" width="360" height="50"/>
+                                    </button>
                                 </subviews>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -91,9 +94,13 @@
                                     <constraint firstAttribute="trailing" secondItem="DCy-cp-3mT" secondAttribute="trailing" constant="20" id="4yJ-3w-84U"/>
                                     <constraint firstAttribute="bottom" secondItem="ClK-P4-TC9" secondAttribute="bottom" id="Y6K-WA-f8s"/>
                                     <constraint firstItem="ClK-P4-TC9" firstAttribute="leading" secondItem="uoP-ad-Cid" secondAttribute="leading" constant="20" id="Yzu-Pb-w1o"/>
+                                    <constraint firstAttribute="bottom" secondItem="YXn-67-RCY" secondAttribute="bottom" id="cYh-ib-f8U"/>
                                     <constraint firstItem="ClK-P4-TC9" firstAttribute="top" secondItem="uoP-ad-Cid" secondAttribute="top" id="gJ8-H1-OCc"/>
+                                    <constraint firstAttribute="trailing" secondItem="YXn-67-RCY" secondAttribute="trailing" id="iet-pk-By8"/>
                                     <constraint firstItem="DCy-cp-3mT" firstAttribute="leading" secondItem="ClK-P4-TC9" secondAttribute="trailing" constant="10" id="ifR-Kp-lTb"/>
+                                    <constraint firstItem="YXn-67-RCY" firstAttribute="top" secondItem="uoP-ad-Cid" secondAttribute="top" id="nVj-n4-PZC"/>
                                     <constraint firstAttribute="height" constant="50" id="qhI-5S-dkd"/>
+                                    <constraint firstItem="YXn-67-RCY" firstAttribute="leading" secondItem="uoP-ad-Cid" secondAttribute="leading" id="tJ7-Ui-6At"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NcG-AO-utb">
@@ -113,16 +120,23 @@
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.73999999999999999" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xek-5d-rve">
+                                        <rect key="frame" x="0.0" y="0.0" width="360" height="69"/>
+                                    </button>
                                 </subviews>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="3yR-vC-v7T" firstAttribute="top" secondItem="eg6-bE-yLX" secondAttribute="bottom" constant="10" id="4ae-WS-mcv"/>
+                                    <constraint firstAttribute="trailing" secondItem="Xek-5d-rve" secondAttribute="trailing" id="Eo1-4b-QRu"/>
                                     <constraint firstAttribute="trailing" secondItem="3yR-vC-v7T" secondAttribute="trailing" constant="20" id="asI-PE-dbF"/>
                                     <constraint firstItem="3yR-vC-v7T" firstAttribute="leading" secondItem="NcG-AO-utb" secondAttribute="leading" constant="20" id="bPk-bg-FdB"/>
                                     <constraint firstItem="eg6-bE-yLX" firstAttribute="top" secondItem="NcG-AO-utb" secondAttribute="top" constant="10" id="dJe-dZ-gsH"/>
+                                    <constraint firstAttribute="bottom" secondItem="Xek-5d-rve" secondAttribute="bottom" id="hBt-QT-a1R"/>
                                     <constraint firstItem="eg6-bE-yLX" firstAttribute="leading" secondItem="NcG-AO-utb" secondAttribute="leading" constant="20" id="kHP-s9-BRg"/>
                                     <constraint firstAttribute="bottom" secondItem="3yR-vC-v7T" secondAttribute="bottom" constant="10" id="mYq-gJ-WeO"/>
+                                    <constraint firstItem="Xek-5d-rve" firstAttribute="leading" secondItem="NcG-AO-utb" secondAttribute="leading" id="qXM-lr-iQW"/>
+                                    <constraint firstItem="Xek-5d-rve" firstAttribute="top" secondItem="NcG-AO-utb" secondAttribute="top" id="tKO-iW-sYB"/>
                                     <constraint firstAttribute="height" constant="60" id="tWL-bE-19T"/>
                                 </constraints>
                                 <variation key="default">
@@ -155,17 +169,24 @@
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5QJ-1S-s1K">
+                                        <rect key="frame" x="0.0" y="0.0" width="360" height="40"/>
+                                    </button>
                                 </subviews>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="5QJ-1S-s1K" secondAttribute="bottom" id="1fH-oP-wbP"/>
                                     <constraint firstItem="8Zi-po-2p7" firstAttribute="centerY" secondItem="geM-wt-rZv" secondAttribute="centerY" constant="-2" id="6Rk-JY-x95"/>
                                     <constraint firstItem="8Zi-po-2p7" firstAttribute="leading" secondItem="76f-y2-VjR" secondAttribute="trailing" constant="8" id="95n-ye-C6l"/>
+                                    <constraint firstItem="5QJ-1S-s1K" firstAttribute="top" secondItem="geM-wt-rZv" secondAttribute="top" id="C2X-TN-gT5"/>
                                     <constraint firstAttribute="trailing" secondItem="8Zi-po-2p7" secondAttribute="trailing" constant="20" id="FW0-Ut-KyL"/>
                                     <constraint firstAttribute="height" constant="40" id="Nqa-PN-25a"/>
+                                    <constraint firstItem="5QJ-1S-s1K" firstAttribute="leading" secondItem="geM-wt-rZv" secondAttribute="leading" id="SCm-Te-jz5"/>
                                     <constraint firstItem="76f-y2-VjR" firstAttribute="centerY" secondItem="geM-wt-rZv" secondAttribute="centerY" id="WDB-oK-cNm"/>
                                     <constraint firstItem="eKR-VI-sab" firstAttribute="leading" secondItem="geM-wt-rZv" secondAttribute="leading" constant="20" id="clc-d4-BVu"/>
                                     <constraint firstItem="8Zi-po-2p7" firstAttribute="centerY" secondItem="eKR-VI-sab" secondAttribute="centerY" id="n8A-f6-9pB"/>
+                                    <constraint firstAttribute="trailing" secondItem="5QJ-1S-s1K" secondAttribute="trailing" id="p0J-De-gaC"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -209,12 +230,15 @@
             <animations/>
             <connections>
                 <outlet property="biaoyu" destination="qWC-n7-IUs" id="EXS-pC-oFu"/>
+                <outlet property="dianPing" destination="5QJ-1S-s1K" id="E3x-W3-1CS"/>
                 <outlet property="dianhua" destination="DCy-cp-3mT" id="ggl-M8-I9Y"/>
                 <outlet property="feiyong" destination="O4n-2F-PQN" id="cJ6-pb-AhT"/>
                 <outlet property="imgView" destination="w1a-Y5-f3M" id="DkM-20-b3C"/>
+                <outlet property="jianJie" destination="Xek-5d-rve" id="WMg-Ru-27C"/>
                 <outlet property="jianjie" destination="3yR-vC-v7T" id="iL9-mE-5Q8"/>
                 <outlet property="name" destination="xGd-Kk-TRD" id="NoA-63-3ws"/>
                 <outlet property="number" destination="76f-y2-VjR" id="gca-ld-OlE"/>
+                <outlet property="phoneNumber" destination="YXn-67-RCY" id="X3V-mv-TdY"/>
             </connections>
             <point key="canvasLocation" x="356" y="262"/>
         </tableViewCell>
