@@ -833,6 +833,13 @@
 			name = "拿本Cell";
 			sourceTree = "<group>";
 		};
+		C26623421BF48538005DF5C6 /* 驾友讨论Cell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "驾友讨论Cell";
+			sourceTree = "<group>";
+		};
 		C2AC446D1BF08357006AB483 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -888,6 +895,7 @@
 		C2AC44741BF08357006AB483 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C26623421BF48538005DF5C6 /* 驾友讨论Cell */,
 				C2272E0B1BF1F4D2004D5EFA /* 拿本Cell */,
 				C2272DE81BF1D429004D5EFA /* 科目三Cell */,
 				C2272DE71BF1D41D004D5EFA /* 科目二Cell */,
