@@ -201,9 +201,10 @@
         {
             NSLog(@"index>>%ld",index);
             LoginViewController *loginVC = [LoginViewController new];
+            [loginVC setHidesBottomBarWhenPushed:YES];
             [self.navigationController pushViewController:loginVC animated:YES];
             [self.callout dismiss];
-//            self.tabBarController.tabBar.hidden = YES;
+
         }
             break;
         case 1:

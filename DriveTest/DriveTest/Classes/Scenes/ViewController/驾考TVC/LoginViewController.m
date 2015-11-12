@@ -31,7 +31,7 @@
                 alertController = [UIAlertController alertControllerWithTitle:@"温馨提示" message:@"账号或者密码不能为空，请重新输入" preferredStyle:UIAlertControllerStyleAlert];
                 
                 
-                UIAlertAction *action1 = [UIAlertAction actionWithTitle:@"知道了" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+                UIAlertAction *action1 = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
                     
                 }];
                 
@@ -45,7 +45,7 @@
                 alertController = [UIAlertController alertControllerWithTitle:@"温馨提示" message:@"账号或者密码错误，请重新输入" preferredStyle:UIAlertControllerStyleAlert];
                 
                 
-                UIAlertAction *action1 = [UIAlertAction actionWithTitle:@"知道了" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+                UIAlertAction *action1 = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
                     
                 }];
                 
@@ -70,7 +70,7 @@
         self.loginPwdTextField.text = pwd;
     };
     [self.navigationController pushViewController:registerVC animated:YES];
-    
+//    [self setHidesBottomBarWhenPushed:YES];
 }
 
 - (void)didReceiveMemoryWarning {

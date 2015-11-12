@@ -122,7 +122,7 @@
             
             alertController = [UIAlertController alertControllerWithTitle:@"温馨提示" message:@"账号或密码不能小于6位，请重新输入" preferredStyle:UIAlertControllerStyleAlert];
             
-            UIAlertAction *action1 = [UIAlertAction actionWithTitle:@"知道了" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            UIAlertAction *action1 = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
                 
             }];
             
@@ -140,7 +140,7 @@
                     
                     alertController = [UIAlertController alertControllerWithTitle:@"温馨提示" message:@"注册成功" preferredStyle:UIAlertControllerStyleAlert];
                     
-                    UIAlertAction *action1 = [UIAlertAction actionWithTitle:@"知道了" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+                    UIAlertAction *action1 = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
                         
                         self.valueBlock(self.registerNameTextField.text,self.registerPwdTextField.text);
                         [self.navigationController popViewControllerAnimated:YES];
@@ -172,7 +172,7 @@
                     
                     alertController = [UIAlertController alertControllerWithTitle:@"温馨提示" message:@"账号或密码不能小于6位，请重新输入" preferredStyle:UIAlertControllerStyleAlert];
                     
-                    UIAlertAction *action1 = [UIAlertAction actionWithTitle:@"知道了" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+                    UIAlertAction *action1 = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
                         
                     }];
                     
@@ -190,7 +190,7 @@
                             
                             alertController = [UIAlertController alertControllerWithTitle:@"温馨提示" message:@"注册成功" preferredStyle:UIAlertControllerStyleAlert];
                             
-                            UIAlertAction *action1 = [UIAlertAction actionWithTitle:@"知道了" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+                            UIAlertAction *action1 = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
                                 
                                 self.valueBlock(self.registerPhoneTextField.text,self.registerPhonePwdTextField.text);
                                 [self.navigationController popViewControllerAnimated:YES];
@@ -207,6 +207,34 @@
                         }
                     }];
                     
+                }
+                
+            }else
+            {
+
+                if (self.registerPhonePwdTextField.text.length <= 6) {
+                    UIAlertController *alertController = nil;
+                    
+                    alertController = [UIAlertController alertControllerWithTitle:@"温馨提示" message:@"密码不能小于6位，请重新输入" preferredStyle:UIAlertControllerStyleAlert];
+                    
+                    UIAlertAction *action1 = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+                        
+                    }];
+                    
+                    [alertController addAction:action1];
+                    [self presentViewController:alertController animated:YES completion:nil];
+                }else
+                {
+                    UIAlertController *alertController = nil;
+                    
+                    alertController = [UIAlertController alertControllerWithTitle:@"温馨提示" message:@"验证码错误" preferredStyle:UIAlertControllerStyleAlert];
+                    
+                    UIAlertAction *action1 = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+                        
+                    }];
+                    
+                    [alertController addAction:action1];
+                    [self presentViewController:alertController animated:YES completion:nil];
                 }
                 
             }
