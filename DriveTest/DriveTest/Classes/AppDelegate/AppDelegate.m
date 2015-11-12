@@ -9,7 +9,7 @@
 #import "AppDelegate.h"
 
 @interface AppDelegate ()
-
+@property (nonatomic,strong) UIView *lunchView;
 @end
 
 @implementation AppDelegate
@@ -22,9 +22,32 @@
 
     [SMSSDK registerApp:@"b83c288ab97a" withSecret:@"89beb433fc39e42d7df4dd55c8614411"];
     
+    
+    //[NSThread sleepForTimeInterval:3.0];//设置启动页面时间
+    
+    [self.window makeKeyAndVisible];
+    self.lunchView = [[UIView alloc]init];
+    _lunchView.frame = CGRectMake(0, 0, self.window.screen.bounds.size.width, self.window.screen.bounds.size.height);
+    _lunchView.backgroundColor = [UIColor whiteColor];
+    [self.window addSubview:_lunchView];
+    
+    UIImageView *imageV = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 200, 200)];
+    imageV.center = self.lunchView.center;
+    NSString *str = @"http://www.ittribalwo.com/upfiles/image/20140506181328.gif";
+    [imageV sd_setImageWithURL:[NSURL URLWithString:str] placeholderImage:[UIImage imageNamed:@""]];
+    [_lunchView addSubview:imageV];
+    
+    [self.window bringSubviewToFront:_lunchView];
+    
+    [NSTimer scheduledTimerWithTimeInterval:2 target:self selector:@selector(removeLun) userInfo:nil repeats:NO];
+    
     return YES;
 }
 
+-(void)removeLun
+{
+    [_lunchView removeFromSuperview];
+}
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
     // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
