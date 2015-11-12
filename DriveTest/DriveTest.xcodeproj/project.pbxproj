@@ -160,6 +160,8 @@
 		C2272E151BF21047004D5EFA /* naBenCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C2272E131BF21047004D5EFA /* naBenCell.xib */; settings = {ASSET_TAGS = (); }; };
 		C2272E171BF219F2004D5EFA /* 1 2.png in Resources */ = {isa = PBXBuildFile; fileRef = C2272E161BF219F2004D5EFA /* 1 2.png */; settings = {ASSET_TAGS = (); }; };
 		C2272E191BF21D61004D5EFA /* 11.png in Resources */ = {isa = PBXBuildFile; fileRef = C2272E181BF21D61004D5EFA /* 11.png */; settings = {ASSET_TAGS = (); }; };
+		C26623461BF4881F005DF5C6 /* JiaYouTaoLunCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C26623441BF4881F005DF5C6 /* JiaYouTaoLunCell.m */; settings = {ASSET_TAGS = (); }; };
+		C26623471BF4881F005DF5C6 /* JiaYouTaoLunCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C26623451BF4881F005DF5C6 /* JiaYouTaoLunCell.xib */; settings = {ASSET_TAGS = (); }; };
 		C29C11261BF0BAB1001030F2 /* School.m in Sources */ = {isa = PBXBuildFile; fileRef = C29C11211BF0BAB1001030F2 /* School.m */; settings = {ASSET_TAGS = (); }; };
 		C29C11271BF0BAB1001030F2 /* Infolist.m in Sources */ = {isa = PBXBuildFile; fileRef = C29C11231BF0BAB1001030F2 /* Infolist.m */; settings = {ASSET_TAGS = (); }; };
 		C29C11281BF0BAB1001030F2 /* ClickJxInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = C29C11251BF0BAB1001030F2 /* ClickJxInfo.m */; settings = {ASSET_TAGS = (); }; };
@@ -391,6 +393,9 @@
 		C2272E131BF21047004D5EFA /* naBenCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = naBenCell.xib; sourceTree = "<group>"; };
 		C2272E161BF219F2004D5EFA /* 1 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1 2.png"; sourceTree = "<group>"; };
 		C2272E181BF21D61004D5EFA /* 11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 11.png; sourceTree = "<group>"; };
+		C26623431BF4881F005DF5C6 /* JiaYouTaoLunCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JiaYouTaoLunCell.h; sourceTree = "<group>"; };
+		C26623441BF4881F005DF5C6 /* JiaYouTaoLunCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JiaYouTaoLunCell.m; sourceTree = "<group>"; };
+		C26623451BF4881F005DF5C6 /* JiaYouTaoLunCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JiaYouTaoLunCell.xib; sourceTree = "<group>"; };
 		C29C11201BF0BAB1001030F2 /* School.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = School.h; sourceTree = "<group>"; };
 		C29C11211BF0BAB1001030F2 /* School.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = School.m; sourceTree = "<group>"; };
 		C29C11221BF0BAB1001030F2 /* Infolist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Infolist.h; sourceTree = "<group>"; };
@@ -836,6 +841,9 @@
 		C26623421BF48538005DF5C6 /* 驾友讨论Cell */ = {
 			isa = PBXGroup;
 			children = (
+				C26623431BF4881F005DF5C6 /* JiaYouTaoLunCell.h */,
+				C26623441BF4881F005DF5C6 /* JiaYouTaoLunCell.m */,
+				C26623451BF4881F005DF5C6 /* JiaYouTaoLunCell.xib */,
 			);
 			path = "驾友讨论Cell";
 			sourceTree = "<group>";
@@ -1231,6 +1239,7 @@
 				C2AC44E21BF09899006AB483 /* image.jpg in Resources */,
 				C2272DFC1BF1D9E9004D5EFA /* miji.png in Resources */,
 				C2AC44E81BF0E91C006AB483 /* xihuanSelected@2x.png in Resources */,
+				C26623471BF4881F005DF5C6 /* JiaYouTaoLunCell.xib in Resources */,
 				79245D151BF438CA00F9BE32 /* LoginViewController.xib in Resources */,
 				C2AC44AB1BF083DF006AB483 /* naben.png in Resources */,
 				959EE6BF1BF457200073B92B /* b27_icon_star_yellow@2x.png in Resources */,
@@ -1440,6 +1449,7 @@
 				C2AC44B61BF08410006AB483 /* CommunityTVC.m in Sources */,
 				C210234C1BF4348C000B605D /* Descarea.m in Sources */,
 				959EE6871BF41E9C0073B92B /* DrivingLisenceVC.m in Sources */,
+				C26623461BF4881F005DF5C6 /* JiaYouTaoLunCell.m in Sources */,
 				C2272DE61BF1CFA8004D5EFA /* ClassTwoThreeVC.m in Sources */,
 				C20C89C11BF21F96003B691D /* DriveSchoolCell.m in Sources */,
 				C210234A1BF4348C000B605D /* Bbsgrouparea.m in Sources */,
