@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface SchoolVC : UIViewController
-
+@property (nonatomic,copy)NSString* type;
+@property (nonatomic,strong)NSString* string;
 @end
