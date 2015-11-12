@@ -65,6 +65,7 @@
 		C210234D1BF4348C000B605D /* Questionarea.m in Sources */ = {isa = PBXBuildFile; fileRef = C21023441BF4348C000B605D /* Questionarea.m */; settings = {ASSET_TAGS = (); }; };
 		C210234E1BF4348C000B605D /* Signuparea.m in Sources */ = {isa = PBXBuildFile; fileRef = C21023461BF4348C000B605D /* Signuparea.m */; settings = {ASSET_TAGS = (); }; };
 		C210234F1BF4348C000B605D /* Titlearea.m in Sources */ = {isa = PBXBuildFile; fileRef = C21023481BF4348C000B605D /* Titlearea.m */; settings = {ASSET_TAGS = (); }; };
+		C21023511BF44F88000B605D /* SchoolInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C21023501BF44F88000B605D /* SchoolInfoCell.xib */; settings = {ASSET_TAGS = (); }; };
 		C21B1FB61BF2DC640020018A /* NetWorkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C21B1FB41BF2DC640020018A /* NetWorkManager.m */; settings = {ASSET_TAGS = (); }; };
 		C2272DCB1BF17FFB004D5EFA /* ClassFourTestTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C2272DCA1BF17FFB004D5EFA /* ClassFourTestTVC.m */; settings = {ASSET_TAGS = (); }; };
 		C2272DCE1BF182CB004D5EFA /* ClassOneFourVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C2272DCD1BF182CB004D5EFA /* ClassOneFourVC.m */; settings = {ASSET_TAGS = (); }; };
@@ -131,7 +132,6 @@
 		C2E3402B1BF34C75006B2AF0 /* SchoolVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C2E340291BF34C75006B2AF0 /* SchoolVC.m */; settings = {ASSET_TAGS = (); }; };
 		C2E3402C1BF34C75006B2AF0 /* SchoolVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C2E3402A1BF34C75006B2AF0 /* SchoolVC.xib */; settings = {ASSET_TAGS = (); }; };
 		C2E340311BF34CE5006B2AF0 /* SchoolInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C2E3402F1BF34CE5006B2AF0 /* SchoolInfoCell.m */; settings = {ASSET_TAGS = (); }; };
-		C2E340321BF34CE5006B2AF0 /* SchoolInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C2E340301BF34CE5006B2AF0 /* SchoolInfoCell.xib */; settings = {ASSET_TAGS = (); }; };
 		C2E340371BF361C0006B2AF0 /* JiaoLianPeiLianVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C2E340351BF361C0006B2AF0 /* JiaoLianPeiLianVC.m */; settings = {ASSET_TAGS = (); }; };
 		C2E340381BF361C0006B2AF0 /* JiaoLianPeiLianVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C2E340361BF361C0006B2AF0 /* JiaoLianPeiLianVC.xib */; settings = {ASSET_TAGS = (); }; };
 		C2E3403D1BF37076006B2AF0 /* JLPLCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C2E3403B1BF37076006B2AF0 /* JLPLCell.m */; settings = {ASSET_TAGS = (); }; };
@@ -225,6 +225,7 @@
 		C21023461BF4348C000B605D /* Signuparea.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Signuparea.m; sourceTree = "<group>"; };
 		C21023471BF4348C000B605D /* Titlearea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Titlearea.h; sourceTree = "<group>"; };
 		C21023481BF4348C000B605D /* Titlearea.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Titlearea.m; sourceTree = "<group>"; };
+		C21023501BF44F88000B605D /* SchoolInfoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SchoolInfoCell.xib; sourceTree = "<group>"; };
 		C21B1FB41BF2DC640020018A /* NetWorkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetWorkManager.m; sourceTree = "<group>"; };
 		C21B1FB51BF2DC640020018A /* NetWorkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetWorkManager.h; sourceTree = "<group>"; };
 		C2272DC91BF17FFB004D5EFA /* ClassFourTestTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassFourTestTVC.h; sourceTree = "<group>"; };
@@ -317,7 +318,6 @@
 		C2E3402A1BF34C75006B2AF0 /* SchoolVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SchoolVC.xib; sourceTree = "<group>"; };
 		C2E3402E1BF34CE5006B2AF0 /* SchoolInfoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SchoolInfoCell.h; sourceTree = "<group>"; };
 		C2E3402F1BF34CE5006B2AF0 /* SchoolInfoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SchoolInfoCell.m; sourceTree = "<group>"; };
-		C2E340301BF34CE5006B2AF0 /* SchoolInfoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SchoolInfoCell.xib; sourceTree = "<group>"; };
 		C2E340341BF361C0006B2AF0 /* JiaoLianPeiLianVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JiaoLianPeiLianVC.h; sourceTree = "<group>"; };
 		C2E340351BF361C0006B2AF0 /* JiaoLianPeiLianVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JiaoLianPeiLianVC.m; sourceTree = "<group>"; };
 		C2E340361BF361C0006B2AF0 /* JiaoLianPeiLianVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JiaoLianPeiLianVC.xib; sourceTree = "<group>"; };
@@ -921,7 +921,7 @@
 			children = (
 				C2E3402E1BF34CE5006B2AF0 /* SchoolInfoCell.h */,
 				C2E3402F1BF34CE5006B2AF0 /* SchoolInfoCell.m */,
-				C2E340301BF34CE5006B2AF0 /* SchoolInfoCell.xib */,
+				C21023501BF44F88000B605D /* SchoolInfoCell.xib */,
 			);
 			path = "驾校详情cell";
 			sourceTree = "<group>";
@@ -1014,6 +1014,7 @@
 				C2AC44E01BF0988E006AB483 /* nvshen@2x.jpg in Resources */,
 				79245D171BF438CA00F9BE32 /* RegisterViewController.xib in Resources */,
 				C2272E171BF219F2004D5EFA /* 1 2.png in Resources */,
+				C21023511BF44F88000B605D /* SchoolInfoCell.xib in Resources */,
 				79EC030E1BF18014002C568F /* lianxi_set_b@2x.png in Resources */,
 				C2AC44E21BF09899006AB483 /* image.jpg in Resources */,
 				C2272DFC1BF1D9E9004D5EFA /* miji.png in Resources */,
@@ -1080,7 +1081,6 @@
 				79EC030D1BF18014002C568F /* lianxi_numlist@2x.png in Resources */,
 				C2AC44AC1BF083DF006AB483 /* sheqv.png in Resources */,
 				C2AC44F11BF0EADE006AB483 /* jiakaofagui.png in Resources */,
-				C2E340321BF34CE5006B2AF0 /* SchoolInfoCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
