@@ -37,14 +37,14 @@
 //    [imageV sd_setImageWithURL:[NSURL URLWithString:str] placeholderImage:[UIImage imageNamed:@""]];
     
     NSMutableArray *arr = [NSMutableArray arrayWithCapacity:20];
-    for (int i = 1; i< 20; i++) {
+    for (int i = 1; i< 61; i++) {
         NSString *str = [NSString stringWithFormat:@"loading%d.tiff",i];
         UIImage *image = [UIImage imageNamed:str];
         [arr addObject:image];
     }
     imageV.animationRepeatCount = 0;
     imageV.animationImages = arr;
-    imageV.animationDuration = 2;
+    imageV.animationDuration = 3;
     [imageV startAnimating];
     [_lunchView addSubview:imageV];
     
