@@ -71,11 +71,83 @@
 {
     SchoolInfoCell *cell = [tableView dequeueReusableCellWithIdentifier:@"schoolCell" forIndexPath:indexPath];
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    
+    //加载cell上buuton的点击事件
+    [self loadAction:cell];
+    
+    
     ClickJxInfo * info = self.allDataArray[indexPath.row];
     cell.clickJxInfo = info;
     return cell;
 }
 
+#pragma mark 加载cell上Button的点击事件
+- (void)loadAction:(SchoolInfoCell *)sender
+{
+    //电话
+    [sender.phoneNumber addTarget:self action:@selector(phoneNumberAction) forControlEvents:UIControlEventTouchUpInside];
+    //路线
+    [sender.luXianButton addTarget:self action:@selector(luXianButtonAction) forControlEvents:UIControlEventTouchUpInside];
+    //简介
+    [sender.genduou addTarget:self action:@selector(jianJieButtonAction) forControlEvents:UIControlEventTouchUpInside];
+    
+    //跟多简介
+    [sender.jianJieButton addTarget:self action:@selector(jianJieButtonAction) forControlEvents:UIControlEventTouchUpInside];
+    
+    //驾校特色
+    [sender.teSeButton addTarget:self action:@selector(teSeButtonAction) forControlEvents:UIControlEventTouchUpInside];
+    
+    //驾校新闻
+    [sender.xinWenButton addTarget:self action:@selector(xinWenButtonAction) forControlEvents:UIControlEventTouchUpInside];
+    
+    //驾友讨论
+    [sender.taoLunButton addTarget:self action:@selector(taoLunButtonAction) forControlEvents:UIControlEventTouchUpInside];
+    
+    //学员点评
+    [sender.dianPingButton addTarget:self action:@selector(dianPingButtonAction) forControlEvents:UIControlEventTouchUpInside];
+}
+
+//电话
+- (void)phoneNumberAction
+{
+    NSLog(@"电话");
+}
+
+//路线
+- (void)luXianButtonAction
+{
+    NSLog(@"路线");
+}
+
+//简介
+- (void)jianJieButtonAction
+{
+    NSLog(@"简介");
+}
+
+//驾校特色
+- (void)teSeButtonAction
+{
+    NSLog(@"//驾校特色");
+}
+
+//驾校新闻
+- (void)xinWenButtonAction
+{
+    NSLog(@"新闻");
+}
+
+//驾友讨论
+- (void)taoLunButtonAction
+{
+    NSLog(@"讨论");
+}
+
+//驾友点评
+- (void)dianPingButtonAction
+{
+    NSLog(@"点评");
+}
 
 
 
