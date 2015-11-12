@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface JLPLCell : UITableViewCell
-
+@property (nonatomic,strong)ClickJxInfo * clickJxInfo;
 @end

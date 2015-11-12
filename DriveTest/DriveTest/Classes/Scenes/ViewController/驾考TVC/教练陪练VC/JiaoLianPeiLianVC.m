@@ -11,6 +11,10 @@
 @interface JiaoLianPeiLianVC ()<UITableViewDataSource, UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *myTableVIew;
 
+//声明一个数组，用来接收数据
+@property (nonatomic,strong)NSMutableArray * allDataArray;
+
+
 @end
 
 @implementation JiaoLianPeiLianVC
@@ -32,8 +36,19 @@
     self.myTableVIew.rowHeight = UITableViewAutomaticDimension;
     self.myTableVIew.estimatedRowHeight = 100;
     
+    //加载数据
+    [self loadData];
     
     // Do any additional setup after loading the view from its nib.
+}
+
+- (void)loadData {
+    self.allDataArray = [NSMutableArray array];
+    [[AnalyticalData sharedIntance]clickLoadDataWithInfoid:self.string type:self.type option:^(NSArray *array) {
+        [self.allDataArray addObjectsFromArray:array];
+        [self.myTableVIew reloadData];
+    }];
+    
 }
 
 
@@ -50,14 +65,15 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 1;
+    return self.allDataArray.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"JLCell" forIndexPath:indexPath];
+    JLPLCell *cell = [tableView dequeueReusableCellWithIdentifier:@"JLCell" forIndexPath:indexPath];
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
-    
+    ClickJxInfo * info = self.allDataArray[indexPath.row];
+    cell.clickJxInfo = info;
     return cell;
 }
 

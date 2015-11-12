@@ -119,7 +119,9 @@
     }else{
         JiaoLianPeiLianVC *VC = [JiaoLianPeiLianVC new];
         UINavigationController *NC = [[UINavigationController alloc] initWithRootViewController:VC];
-        
+        Infolist * info = _allDataArray[indexPath.row];
+        VC.type = self.type;
+        VC.string = [NSString stringWithFormat:@"%@",info.infoid];
         [self presentViewController:NC animated:YES completion:nil];
     }
     

@@ -75,7 +75,7 @@
 #pragma mark Sences 控制器和视图文件
 //            ****View****
 #import "SchoolInfoCell.h"      //驾校详情cell
-
+#import "JLPLCell.h"      //教练陪练详情cell
 
 
 
