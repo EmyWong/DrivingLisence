@@ -43,6 +43,10 @@
 
 
 #import "DriveSchoolCell.h"  //驾校cell
+
+
+#import "JiaYouTaoLunCell.h"    //讨论cell
+
 //*******************************************
 
 
@@ -97,6 +101,9 @@
 #import "SchoolVC.h"    //驾校详情控制器
 //教练陪练
 #import "JiaoLianPeiLianVC.h"   //教练陪练详情控制器
+
+//驾友讨论控制器
+#import "TaoLunTVC.h"   //驾友讨论控制器
 
 //***********************************
 #pragma mark Venders 第三方头文件

@@ -9,5 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface JiaYouTaoLunCell : UITableViewCell
+@property (weak, nonatomic) IBOutlet UIButton *pinglunBut;
+@property (weak, nonatomic) IBOutlet UIButton *dianzanBnt;
+
+
+
 
 @end

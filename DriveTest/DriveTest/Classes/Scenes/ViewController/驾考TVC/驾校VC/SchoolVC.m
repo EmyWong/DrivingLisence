@@ -216,6 +216,11 @@
         drive = array[0];
         NSLog(@"%@",drive.group);
     }];
+    
+    
+    UINavigationController *NC = [[UINavigationController alloc] initWithRootViewController:[TaoLunTVC new]];
+    
+    [self presentViewController:NC animated:YES completion:nil];
 
 }
 

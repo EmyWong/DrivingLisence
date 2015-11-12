@@ -8,6 +8,21 @@
 
 #import "JiaYouTaoLunCell.h"
 
+@interface JiaYouTaoLunCell ()
+
+@property (weak, nonatomic) IBOutlet UILabel *name;
+@property (weak, nonatomic) IBOutlet UILabel *time;
+@property (weak, nonatomic) IBOutlet UILabel *connent;
+@property (weak, nonatomic) IBOutlet UILabel *address;
+@property (weak, nonatomic) IBOutlet UILabel *dianZan;
+@property (weak, nonatomic) IBOutlet UILabel *pinglunNumber;
+
+
+
+
+@end
+
+
 @implementation JiaYouTaoLunCell
 
 - (void)awakeFromNib {
