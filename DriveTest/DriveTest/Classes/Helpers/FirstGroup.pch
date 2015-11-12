@@ -46,6 +46,7 @@
 
 
 #import "JiaYouTaoLunCell.h"    //讨论cell
+#import "TaoLunCell.h"  //讨论图片cell
 
 //*******************************************
 

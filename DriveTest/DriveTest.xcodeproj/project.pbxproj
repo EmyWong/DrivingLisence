@@ -164,6 +164,8 @@
 		C26623471BF4881F005DF5C6 /* JiaYouTaoLunCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C26623451BF4881F005DF5C6 /* JiaYouTaoLunCell.xib */; settings = {ASSET_TAGS = (); }; };
 		C26623521BF49752005DF5C6 /* TaoLunTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C26623501BF49752005DF5C6 /* TaoLunTVC.m */; settings = {ASSET_TAGS = (); }; };
 		C26623531BF49752005DF5C6 /* TaoLunTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C26623511BF49752005DF5C6 /* TaoLunTVC.xib */; settings = {ASSET_TAGS = (); }; };
+		C26623571BF4A3F9005DF5C6 /* TaoLunCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C26623551BF4A3F9005DF5C6 /* TaoLunCell.m */; settings = {ASSET_TAGS = (); }; };
+		C26623581BF4A3F9005DF5C6 /* TaoLunCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C26623561BF4A3F9005DF5C6 /* TaoLunCell.xib */; settings = {ASSET_TAGS = (); }; };
 		C2918C3D1BF490C7005E21AE /* DriveDiscussion.m in Sources */ = {isa = PBXBuildFile; fileRef = C2918C3C1BF490C7005E21AE /* DriveDiscussion.m */; settings = {ASSET_TAGS = (); }; };
 		C29C11261BF0BAB1001030F2 /* School.m in Sources */ = {isa = PBXBuildFile; fileRef = C29C11211BF0BAB1001030F2 /* School.m */; settings = {ASSET_TAGS = (); }; };
 		C29C11271BF0BAB1001030F2 /* Infolist.m in Sources */ = {isa = PBXBuildFile; fileRef = C29C11231BF0BAB1001030F2 /* Infolist.m */; settings = {ASSET_TAGS = (); }; };
@@ -402,6 +404,9 @@
 		C266234F1BF49752005DF5C6 /* TaoLunTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaoLunTVC.h; sourceTree = "<group>"; };
 		C26623501BF49752005DF5C6 /* TaoLunTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaoLunTVC.m; sourceTree = "<group>"; };
 		C26623511BF49752005DF5C6 /* TaoLunTVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TaoLunTVC.xib; sourceTree = "<group>"; };
+		C26623541BF4A3F9005DF5C6 /* TaoLunCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaoLunCell.h; sourceTree = "<group>"; };
+		C26623551BF4A3F9005DF5C6 /* TaoLunCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaoLunCell.m; sourceTree = "<group>"; };
+		C26623561BF4A3F9005DF5C6 /* TaoLunCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TaoLunCell.xib; sourceTree = "<group>"; };
 		C2918C3B1BF490C7005E21AE /* DriveDiscussion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DriveDiscussion.h; sourceTree = "<group>"; };
 		C2918C3C1BF490C7005E21AE /* DriveDiscussion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DriveDiscussion.m; sourceTree = "<group>"; };
 		C29C11201BF0BAB1001030F2 /* School.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = School.h; sourceTree = "<group>"; };
@@ -852,6 +857,9 @@
 				C26623431BF4881F005DF5C6 /* JiaYouTaoLunCell.h */,
 				C26623441BF4881F005DF5C6 /* JiaYouTaoLunCell.m */,
 				C26623451BF4881F005DF5C6 /* JiaYouTaoLunCell.xib */,
+				C26623541BF4A3F9005DF5C6 /* TaoLunCell.h */,
+				C26623551BF4A3F9005DF5C6 /* TaoLunCell.m */,
+				C26623561BF4A3F9005DF5C6 /* TaoLunCell.xib */,
 			);
 			path = "驾友讨论Cell";
 			sourceTree = "<group>";
@@ -1311,6 +1319,7 @@
 				959EE7631BF47D2A0073B92B /* loading29.tiff in Resources */,
 				959EE7581BF47D2A0073B92B /* loading19.tiff in Resources */,
 				95493ACB1BF045D2006C2323 /* Assets.xcassets in Resources */,
+				C26623581BF4A3F9005DF5C6 /* TaoLunCell.xib in Resources */,
 				C2272DD61BF19022004D5EFA /* ClassFourCell.xib in Resources */,
 				959EE6831BF38D770073B92B /* 3.png in Resources */,
 				959EE7511BF47D2A0073B92B /* loading12.tiff in Resources */,
@@ -1488,6 +1497,7 @@
 				C2272DD51BF19022004D5EFA /* ClassFourCell.m in Sources */,
 				95493BD01BF1CF65006C2323 /* TimerDisappearAlertView.m in Sources */,
 				C20C89C61BF22035003B691D /* DriveSchoolVC.m in Sources */,
+				C26623571BF4A3F9005DF5C6 /* TaoLunCell.m in Sources */,
 				79245D161BF438CA00F9BE32 /* RegisterViewController.m in Sources */,
 				C2272DCE1BF182CB004D5EFA /* ClassOneFourVC.m in Sources */,
 				C2272DEC1BF1D452004D5EFA /* RoadTwoTestCell.m in Sources */,

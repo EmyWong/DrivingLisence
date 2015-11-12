@@ -17,13 +17,27 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    
+    
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"返回" style:UIBarButtonItemStylePlain target:self action:@selector(returnAction)];
+    
+    
     [self.tableView registerNib:[UINib nibWithNibName:@"JiaYouTaoLunCell" bundle:nil] forCellReuseIdentifier:@"jiayoucell"];
     
+    [self.tableView registerNib:[UINib nibWithNibName:@"TaoLunCell" bundle:nil] forCellReuseIdentifier:@"tupiancell"];
     
     self.tableView.rowHeight = UITableViewAutomaticDimension;
     self.tableView.estimatedRowHeight = 100;
     
 }
+
+- (void)returnAction
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -41,12 +55,26 @@
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    JiaYouTaoLunCell *cell = [tableView dequeueReusableCellWithIdentifier:@"jiayoucell" forIndexPath:indexPath];
-    
-    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     
     
-    return cell;
+    if (indexPath.row == 1) {
+        JiaYouTaoLunCell *cell = [tableView dequeueReusableCellWithIdentifier:@"jiayoucell" forIndexPath:indexPath];
+         cell.selectionStyle = UITableViewCellSelectionStyleNone;
+        
+        
+        return cell;
+        
+    }else{
+        
+        TaoLunCell *cell = [tableView dequeueReusableCellWithIdentifier:@"tupiancell" forIndexPath:indexPath];
+        
+        
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
+        
+        
+        return cell;
+    }
+    
 }
 
 
