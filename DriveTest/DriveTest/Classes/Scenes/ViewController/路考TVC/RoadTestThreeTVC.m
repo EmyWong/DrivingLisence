@@ -96,19 +96,31 @@
 //评判标准按钮
 - (void)pingPanAction
 {
-    NSLog(@"评判标准按钮");
+    TestMethodVC *testMethod = [TestMethodVC new];
+    testMethod.title =  @"评判标准";
+    testMethod.url = k3standardUrl;
+    [testMethod setHidesBottomBarWhenPushed:YES];
+    [self.navigationController pushViewController:testMethod animated:YES];
 }
 
 //路考秘诀按钮
 - (void)roadTestAction
 {
-    NSLog(@"路考秘诀按钮");
+    TestMethodVC *testMethod = [TestMethodVC new];
+    testMethod.title =  @"路考秘诀";
+    testMethod.url = k3secretUrl;
+    [testMethod setHidesBottomBarWhenPushed:YES];
+    [self.navigationController pushViewController:testMethod animated:YES];
 }
 
 //考场经验按钮
 - (void)kaoChangAction
 {
-    NSLog(@"考场经验按钮");
+    TestMethodVC *testMethod = [TestMethodVC new];
+    testMethod.title =  @"考场经验";
+    testMethod.url = k3ExpericeUrl;
+    [testMethod setHidesBottomBarWhenPushed:YES];
+    [self.navigationController pushViewController:testMethod animated:YES];
 }
 
 //秘籍指导按钮

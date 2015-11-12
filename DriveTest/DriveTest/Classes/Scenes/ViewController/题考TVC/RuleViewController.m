@@ -58,14 +58,6 @@
 {
     return 60;
 }
-
-//- (UIView *) tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section
-//{
-//    
-//     UIView *view = [UIView new];
-//     return view;
-//    
-//}
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
     if (!cell) {
@@ -93,7 +85,7 @@
     }
     else
     {
-        cell.textLabel.text = @"醉驾出发-2015版酒驾醉驾处罚";
+        cell.textLabel.text = @"醉驾处罚-2015版酒驾醉驾处罚";
         cell.detailTextLabel.text = @"醉驾处罚";
         cell.imageView.image = [UIImage imageNamed:@"4"];
         
