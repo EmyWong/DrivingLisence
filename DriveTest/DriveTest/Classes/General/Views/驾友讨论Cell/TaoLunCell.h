@@ -26,6 +26,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *dianzanBTN;
 @property (weak, nonatomic) IBOutlet UIButton *pinglunBTN;
 
+@property (nonatomic,strong) DriveDiscussion * drive;
 
 
 

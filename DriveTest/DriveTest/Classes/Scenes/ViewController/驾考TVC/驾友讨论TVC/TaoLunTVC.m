@@ -9,7 +9,10 @@
 #import "TaoLunTVC.h"
 
 @interface TaoLunTVC ()
-
+//声明一个pageindex，用于刷新数据
+@property (nonatomic,assign)NSInteger pageindex;
+//声明一个数组，用来接收数据
+@property (nonatomic,strong)NSMutableArray * allDataArray;
 @end
 
 @implementation TaoLunTVC
@@ -28,8 +31,44 @@
     
     self.tableView.rowHeight = UITableViewAutomaticDimension;
     self.tableView.estimatedRowHeight = 100;
+    //加载数据
+    [self loadData];
+    
+    //下拉刷新
+    self.tableView.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingBlock:^{
+        //刷新数据
+        _pageindex ++;
+        if (_pageindex <= _articletip % 10 +1) {
+            [[AnalyticalData sharedIntance]driveDiscussionLoadDataWithInfoid:self.infoid pageindex:[NSString stringWithFormat:@"%ld",_pageindex] option:^(NSArray *array){
+                //接收数据
+                [self.allDataArray addObjectsFromArray:array];
+                //刷新表视图
+                [self.tableView reloadData];
+                
+            }];
+             [self.tableView.mj_footer endRefreshing];
+        }else {
+        [self.tableView.mj_footer noticeNoMoreData];
+        }
+    }];
+
     
 }
+
+- (void)loadData {
+    //给予pageindex初始值为1
+    self.pageindex = 1;
+    //初始化数组
+    self.allDataArray = [NSMutableArray array];
+    [[AnalyticalData sharedIntance]driveDiscussionLoadDataWithInfoid:self.infoid pageindex:[NSString stringWithFormat:@"%ld",_pageindex] option:^(NSArray *array) {
+        //接收数据
+        [self.allDataArray addObjectsFromArray:array];
+        //刷新表视图
+        [self.tableView reloadData];
+    }];
+    
+}
+
 
 - (void)returnAction
 {
@@ -50,28 +89,28 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 5;
+    return _allDataArray.count;
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+     DriveDiscussion * drive = self.allDataArray[indexPath.row];
     
-    
-    if (indexPath.row == 1) {
+    if (nil == drive.imageurl) {
         JiaYouTaoLunCell *cell = [tableView dequeueReusableCellWithIdentifier:@"jiayoucell" forIndexPath:indexPath];
          cell.selectionStyle = UITableViewCellSelectionStyleNone;
         
-        
+        cell.drive = drive;
         return cell;
         
     }else{
         
         TaoLunCell *cell = [tableView dequeueReusableCellWithIdentifier:@"tupiancell" forIndexPath:indexPath];
         
-        
+        cell.drive = nil;
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
         
-        
+        cell.drive = drive;
         return cell;
     }
     

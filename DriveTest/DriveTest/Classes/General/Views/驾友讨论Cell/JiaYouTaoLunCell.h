@@ -7,10 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-
+@class DriveDiscussion;
 @interface JiaYouTaoLunCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UIButton *pinglunBut;
 @property (weak, nonatomic) IBOutlet UIButton *dianzanBnt;
+@property (nonatomic,strong) DriveDiscussion * drive;
 
 
 

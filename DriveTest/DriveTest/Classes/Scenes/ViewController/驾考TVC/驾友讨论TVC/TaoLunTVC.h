@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface TaoLunTVC : UITableViewController
-
+@property (nonatomic,copy)NSString* infoid;
+@property (nonatomic,assign)NSInteger articletip;
 @end

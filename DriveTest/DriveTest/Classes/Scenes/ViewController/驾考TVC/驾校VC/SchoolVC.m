@@ -210,18 +210,17 @@
 //驾友讨论
 - (void)taoLunButtonAction
 {
-    NSLog(@"讨论");
-    [[AnalyticalData sharedIntance]driveDiscussionLoadDataWithInfoid:@"4755" pageindex:@"1" option:^(NSArray *array) {
-        DriveDiscussion * drive = [DriveDiscussion new];
-        drive = array[0];
-        NSLog(@"%@",drive.group);
-    }];
+    ClickJxInfo * info = self.allDataArray[0];
+    Bbsgrouparea * bbsgrouparea = [Bbsgrouparea new];
+    [bbsgrouparea setValuesForKeysWithDictionary:info.bbsgrouparea];
+    NSString * infoid = [NSString stringWithFormat:@"%@",bbsgrouparea.groupaction[@"extparam"][@"infoid"]];
     
     
-    UINavigationController *NC = [[UINavigationController alloc] initWithRootViewController:[TaoLunTVC new]];
-    
+    TaoLunTVC * VC = [TaoLunTVC new];
+    UINavigationController *NC = [[UINavigationController alloc] initWithRootViewController:VC];
+    VC.infoid = infoid;
+    VC.articletip = bbsgrouparea.articletip;
     [self presentViewController:NC animated:YES completion:nil];
-
 }
 
 //驾友点评
