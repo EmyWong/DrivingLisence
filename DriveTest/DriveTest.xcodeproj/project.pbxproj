@@ -58,6 +58,13 @@
 		C20C89C11BF21F96003B691D /* DriveSchoolCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C20C89BF1BF21F96003B691D /* DriveSchoolCell.m */; settings = {ASSET_TAGS = (); }; };
 		C20C89C21BF21F96003B691D /* DriveSchoolCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C20C89C01BF21F96003B691D /* DriveSchoolCell.xib */; settings = {ASSET_TAGS = (); }; };
 		C20C89C61BF22035003B691D /* DriveSchoolVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C20C89C51BF22035003B691D /* DriveSchoolVC.m */; settings = {ASSET_TAGS = (); }; };
+		C21023491BF4348C000B605D /* Baseinfoarea.m in Sources */ = {isa = PBXBuildFile; fileRef = C210233C1BF4348C000B605D /* Baseinfoarea.m */; settings = {ASSET_TAGS = (); }; };
+		C210234A1BF4348C000B605D /* Bbsgrouparea.m in Sources */ = {isa = PBXBuildFile; fileRef = C210233E1BF4348C000B605D /* Bbsgrouparea.m */; settings = {ASSET_TAGS = (); }; };
+		C210234B1BF4348C000B605D /* Commentarea.m in Sources */ = {isa = PBXBuildFile; fileRef = C21023401BF4348C000B605D /* Commentarea.m */; settings = {ASSET_TAGS = (); }; };
+		C210234C1BF4348C000B605D /* Descarea.m in Sources */ = {isa = PBXBuildFile; fileRef = C21023421BF4348C000B605D /* Descarea.m */; settings = {ASSET_TAGS = (); }; };
+		C210234D1BF4348C000B605D /* Questionarea.m in Sources */ = {isa = PBXBuildFile; fileRef = C21023441BF4348C000B605D /* Questionarea.m */; settings = {ASSET_TAGS = (); }; };
+		C210234E1BF4348C000B605D /* Signuparea.m in Sources */ = {isa = PBXBuildFile; fileRef = C21023461BF4348C000B605D /* Signuparea.m */; settings = {ASSET_TAGS = (); }; };
+		C210234F1BF4348C000B605D /* Titlearea.m in Sources */ = {isa = PBXBuildFile; fileRef = C21023481BF4348C000B605D /* Titlearea.m */; settings = {ASSET_TAGS = (); }; };
 		C21B1FB61BF2DC640020018A /* NetWorkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C21B1FB41BF2DC640020018A /* NetWorkManager.m */; settings = {ASSET_TAGS = (); }; };
 		C2272DCB1BF17FFB004D5EFA /* ClassFourTestTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C2272DCA1BF17FFB004D5EFA /* ClassFourTestTVC.m */; settings = {ASSET_TAGS = (); }; };
 		C2272DCE1BF182CB004D5EFA /* ClassOneFourVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C2272DCD1BF182CB004D5EFA /* ClassOneFourVC.m */; settings = {ASSET_TAGS = (); }; };
@@ -204,6 +211,20 @@
 		C20C89C01BF21F96003B691D /* DriveSchoolCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DriveSchoolCell.xib; path = ../DriveSchoolCell.xib; sourceTree = "<group>"; };
 		C20C89C41BF22035003B691D /* DriveSchoolVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DriveSchoolVC.h; sourceTree = "<group>"; };
 		C20C89C51BF22035003B691D /* DriveSchoolVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DriveSchoolVC.m; sourceTree = "<group>"; };
+		C210233B1BF4348C000B605D /* Baseinfoarea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Baseinfoarea.h; sourceTree = "<group>"; };
+		C210233C1BF4348C000B605D /* Baseinfoarea.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Baseinfoarea.m; sourceTree = "<group>"; };
+		C210233D1BF4348C000B605D /* Bbsgrouparea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bbsgrouparea.h; sourceTree = "<group>"; };
+		C210233E1BF4348C000B605D /* Bbsgrouparea.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bbsgrouparea.m; sourceTree = "<group>"; };
+		C210233F1BF4348C000B605D /* Commentarea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Commentarea.h; sourceTree = "<group>"; };
+		C21023401BF4348C000B605D /* Commentarea.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Commentarea.m; sourceTree = "<group>"; };
+		C21023411BF4348C000B605D /* Descarea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Descarea.h; sourceTree = "<group>"; };
+		C21023421BF4348C000B605D /* Descarea.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Descarea.m; sourceTree = "<group>"; };
+		C21023431BF4348C000B605D /* Questionarea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Questionarea.h; sourceTree = "<group>"; };
+		C21023441BF4348C000B605D /* Questionarea.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Questionarea.m; sourceTree = "<group>"; };
+		C21023451BF4348C000B605D /* Signuparea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Signuparea.h; sourceTree = "<group>"; };
+		C21023461BF4348C000B605D /* Signuparea.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Signuparea.m; sourceTree = "<group>"; };
+		C21023471BF4348C000B605D /* Titlearea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Titlearea.h; sourceTree = "<group>"; };
+		C21023481BF4348C000B605D /* Titlearea.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Titlearea.m; sourceTree = "<group>"; };
 		C21B1FB41BF2DC640020018A /* NetWorkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetWorkManager.m; sourceTree = "<group>"; };
 		C21B1FB51BF2DC640020018A /* NetWorkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetWorkManager.h; sourceTree = "<group>"; };
 		C2272DC91BF17FFB004D5EFA /* ClassFourTestTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassFourTestTVC.h; sourceTree = "<group>"; };
@@ -546,6 +567,40 @@
 			name = "驾校cell";
 			sourceTree = "<group>";
 		};
+		C21023391BF43409000B605D /* 驾校基本信息模型 */ = {
+			isa = PBXGroup;
+			children = (
+				C29C11201BF0BAB1001030F2 /* School.h */,
+				C29C11211BF0BAB1001030F2 /* School.m */,
+				C29C11221BF0BAB1001030F2 /* Infolist.h */,
+				C29C11231BF0BAB1001030F2 /* Infolist.m */,
+				C29C11241BF0BAB1001030F2 /* ClickJxInfo.h */,
+				C29C11251BF0BAB1001030F2 /* ClickJxInfo.m */,
+			);
+			name = "驾校基本信息模型";
+			sourceTree = "<group>";
+		};
+		C210233A1BF43459000B605D /* 驾校详情页面数据模型 */ = {
+			isa = PBXGroup;
+			children = (
+				C210233B1BF4348C000B605D /* Baseinfoarea.h */,
+				C210233C1BF4348C000B605D /* Baseinfoarea.m */,
+				C210233D1BF4348C000B605D /* Bbsgrouparea.h */,
+				C210233E1BF4348C000B605D /* Bbsgrouparea.m */,
+				C210233F1BF4348C000B605D /* Commentarea.h */,
+				C21023401BF4348C000B605D /* Commentarea.m */,
+				C21023411BF4348C000B605D /* Descarea.h */,
+				C21023421BF4348C000B605D /* Descarea.m */,
+				C21023431BF4348C000B605D /* Questionarea.h */,
+				C21023441BF4348C000B605D /* Questionarea.m */,
+				C21023451BF4348C000B605D /* Signuparea.h */,
+				C21023461BF4348C000B605D /* Signuparea.m */,
+				C21023471BF4348C000B605D /* Titlearea.h */,
+				C21023481BF4348C000B605D /* Titlearea.m */,
+			);
+			name = "驾校详情页面数据模型";
+			sourceTree = "<group>";
+		};
 		C2272DD01BF18FE2004D5EFA /* 科目四Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -687,12 +742,8 @@
 			isa = PBXGroup;
 			children = (
 				95493BC91BF1CF18006C2323 /* 练习模型 */,
-				C29C11201BF0BAB1001030F2 /* School.h */,
-				C29C11211BF0BAB1001030F2 /* School.m */,
-				C29C11221BF0BAB1001030F2 /* Infolist.h */,
-				C29C11231BF0BAB1001030F2 /* Infolist.m */,
-				C29C11241BF0BAB1001030F2 /* ClickJxInfo.h */,
-				C29C11251BF0BAB1001030F2 /* ClickJxInfo.m */,
+				C21023391BF43409000B605D /* 驾校基本信息模型 */,
+				C210233A1BF43459000B605D /* 驾校详情页面数据模型 */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -1090,10 +1141,12 @@
 			files = (
 				95493BF41BF2EC4C006C2323 /* TestMethodVC.m in Sources */,
 				959EE6701BF324A20073B92B /* WYHStarRateView.m in Sources */,
+				C210234B1BF4348C000B605D /* Commentarea.m in Sources */,
 				C2AC44CB1BF0853A006AB483 /* test2.m in Sources */,
 				C2AC44A31BF083C0006AB483 /* AppDelegate.m in Sources */,
 				C2AC44D51BF085E8006AB483 /* (null) in Sources */,
 				C2272DF11BF1D474004D5EFA /* RoadThreeTestCell.m in Sources */,
+				C210234F1BF4348C000B605D /* Titlearea.m in Sources */,
 				C2E3403D1BF37076006B2AF0 /* JLPLCell.m in Sources */,
 				95493BCC1BF1CF25006C2323 /* TestResult.m in Sources */,
 				C2272DCB1BF17FFB004D5EFA /* ClassFourTestTVC.m in Sources */,
@@ -1101,11 +1154,13 @@
 				959EE67A1BF38D370073B92B /* RuleViewController.m in Sources */,
 				C2E340311BF34CE5006B2AF0 /* SchoolInfoCell.m in Sources */,
 				C2AC44B91BF0841F006AB483 /* RoadTestTVC.m in Sources */,
+				C210234D1BF4348C000B605D /* Questionarea.m in Sources */,
 				95493AC91BF045D2006C2323 /* DriveTest.xcdatamodeld in Sources */,
 				C2272DE31BF1CF70004D5EFA /* RoadTestThreeTVC.m in Sources */,
 				C2AC44C41BF0851C006AB483 /* ClassOneCell.m in Sources */,
 				C29C11281BF0BAB1001030F2 /* ClickJxInfo.m in Sources */,
 				C29C11271BF0BAB1001030F2 /* Infolist.m in Sources */,
+				C210234E1BF4348C000B605D /* Signuparea.m in Sources */,
 				C2E340371BF361C0006B2AF0 /* JiaoLianPeiLianVC.m in Sources */,
 				C2E3402B1BF34C75006B2AF0 /* SchoolVC.m in Sources */,
 				95493BE21BF1D279006C2323 /* CuoTiViewController.m in Sources */,
@@ -1113,15 +1168,18 @@
 				95493BC81BF1CF08006C2323 /* TestHelper.m in Sources */,
 				C21B1FB61BF2DC640020018A /* NetWorkManager.m in Sources */,
 				C29C11261BF0BAB1001030F2 /* School.m in Sources */,
+				C21023491BF4348C000B605D /* Baseinfoarea.m in Sources */,
 				C2AC44B31BF08402006AB483 /* DrivingLicenseTVC.m in Sources */,
 				C2272E141BF21047004D5EFA /* naBenCell.m in Sources */,
 				95493BE51BF1DDD3006C2323 /* ViewController.m in Sources */,
 				C2AC44B61BF08410006AB483 /* CommunityTVC.m in Sources */,
+				C210234C1BF4348C000B605D /* Descarea.m in Sources */,
 				959EE6871BF41E9C0073B92B /* DrivingLisenceVC.m in Sources */,
 				7944A13A1BF32D0E00CA7D3D /* RegisterViewController.m in Sources */,
 				C2272DE61BF1CFA8004D5EFA /* ClassTwoThreeVC.m in Sources */,
 				7944A1321BF32CE800CA7D3D /* LoginViewController.m in Sources */,
 				C20C89C11BF21F96003B691D /* DriveSchoolCell.m in Sources */,
+				C210234A1BF4348C000B605D /* Bbsgrouparea.m in Sources */,
 				C2272DD51BF19022004D5EFA /* ClassFourCell.m in Sources */,
 				95493BD01BF1CF65006C2323 /* TimerDisappearAlertView.m in Sources */,
 				C20C89C61BF22035003B691D /* DriveSchoolVC.m in Sources */,

@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface SchoolInfoCell : UITableViewCell
-
+@property (nonatomic,strong)ClickJxInfo * clickJxInfo;
 @end

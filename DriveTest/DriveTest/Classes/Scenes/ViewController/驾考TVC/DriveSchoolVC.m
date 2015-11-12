@@ -93,6 +93,7 @@
 //每个cell上显示的内容
 - (UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     DriveSchoolCell * cell = [tableView dequeueReusableCellWithIdentifier:@"driveSchoolCellID" forIndexPath:indexPath];
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     Infolist * info = _allDataArray[indexPath.row];
     cell.info = info;
     return cell;
@@ -104,15 +105,16 @@
 
 //点击cell的方法
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-#warning
-    NSLog(@"%ld",indexPath.row);
     
     //如果是驾校cell，跳转进入驾校详情
     if ([self.type isEqualToString:@"jx"]) {
         //张飞****跳转进驾校详情页面
         SchoolVC *VC = [SchoolVC new];
         UINavigationController *NC = [[UINavigationController alloc] initWithRootViewController:VC];
-        
+        Infolist * info = _allDataArray[indexPath.row];
+        VC.type = self.type;
+        VC.string = [NSString stringWithFormat:@"%@",info.infoid];
+
         [self presentViewController:NC animated:YES completion:nil];
     }else{
         JiaoLianPeiLianVC *VC = [JiaoLianPeiLianVC new];
