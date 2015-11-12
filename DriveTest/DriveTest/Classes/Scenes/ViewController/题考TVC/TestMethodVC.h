@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface TestMethodVC : UIViewController
+
 @property (nonatomic,strong) NSString *url;
+
 @end

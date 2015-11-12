@@ -88,19 +88,31 @@
 //考前准备按钮
 - (void)kaoQianAction
 {
-    NSLog(@"考前准备按钮");
+    TestMethodVC *testMethod = [TestMethodVC new];
+    testMethod.title =  @"考前准备";
+    testMethod.url = k2PrapareUrl;
+    [testMethod setHidesBottomBarWhenPushed:YES];
+    [self.navigationController pushViewController:testMethod animated:YES];
 }
 
 //合格标准按钮
 - (void)heGeAction
 {
-    NSLog(@"合格标准按钮");
+    TestMethodVC *testMethod = [TestMethodVC new];
+    testMethod.title =  @"合格标准";
+    testMethod.url = k2standardUrl;
+    [testMethod setHidesBottomBarWhenPushed:YES];
+    [self.navigationController pushViewController:testMethod animated:YES];
 }
 
 //开始经验按钮
 - (void)jinYanAction
 {
-    NSLog(@"开始经验按钮");
+    TestMethodVC *testMethod = [TestMethodVC new];
+    testMethod.title =  @"考试经验";
+    testMethod.url = k2ShareUrl;
+    [testMethod setHidesBottomBarWhenPushed:YES];
+    [self.navigationController pushViewController:testMethod animated:YES];
 }
 
 //秘籍指导按钮

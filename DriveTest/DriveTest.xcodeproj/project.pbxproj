@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7944A1321BF32CE800CA7D3D /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7944A1301BF32CE800CA7D3D /* LoginViewController.m */; settings = {ASSET_TAGS = (); }; };
-		7944A1331BF32CE800CA7D3D /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7944A1311BF32CE800CA7D3D /* LoginViewController.xib */; settings = {ASSET_TAGS = (); }; };
-		7944A13A1BF32D0E00CA7D3D /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7944A1381BF32D0E00CA7D3D /* RegisterViewController.m */; settings = {ASSET_TAGS = (); }; };
-		7944A13B1BF32D0E00CA7D3D /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7944A1391BF32D0E00CA7D3D /* RegisterViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		79245D141BF438CA00F9BE32 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79245D0F1BF438C900F9BE32 /* LoginViewController.m */; settings = {ASSET_TAGS = (); }; };
+		79245D151BF438CA00F9BE32 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79245D101BF438C900F9BE32 /* LoginViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		79245D161BF438CA00F9BE32 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79245D121BF438C900F9BE32 /* RegisterViewController.m */; settings = {ASSET_TAGS = (); }; };
+		79245D171BF438CA00F9BE32 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79245D131BF438C900F9BE32 /* RegisterViewController.xib */; settings = {ASSET_TAGS = (); }; };
 		79EC030A1BF18014002C568F /* lianxi_collect@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 79EC03051BF18014002C568F /* lianxi_collect@2x.png */; settings = {ASSET_TAGS = (); }; };
 		79EC030B1BF18014002C568F /* lianxi_del@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 79EC03061BF18014002C568F /* lianxi_del@2x.png */; settings = {ASSET_TAGS = (); }; };
 		79EC030C1BF18014002C568F /* lianxi_exption@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 79EC03071BF18014002C568F /* lianxi_exption@2x.png */; settings = {ASSET_TAGS = (); }; };
@@ -140,12 +140,12 @@
 
 /* Begin PBXFileReference section */
 		77E8A038CE30F753CA9DE4A8 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		7944A12F1BF32CE800CA7D3D /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
-		7944A1301BF32CE800CA7D3D /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
-		7944A1311BF32CE800CA7D3D /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
-		7944A1371BF32D0E00CA7D3D /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
-		7944A1381BF32D0E00CA7D3D /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
-		7944A1391BF32D0E00CA7D3D /* RegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
+		79245D0E1BF438C900F9BE32 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		79245D0F1BF438C900F9BE32 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		79245D101BF438C900F9BE32 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		79245D111BF438C900F9BE32 /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
+		79245D121BF438C900F9BE32 /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
+		79245D131BF438C900F9BE32 /* RegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
 		79EC03051BF18014002C568F /* lianxi_collect@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lianxi_collect@2x.png"; sourceTree = "<group>"; };
 		79EC03061BF18014002C568F /* lianxi_del@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lianxi_del@2x.png"; sourceTree = "<group>"; };
 		79EC03071BF18014002C568F /* lianxi_exption@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lianxi_exption@2x.png"; sourceTree = "<group>"; };
@@ -350,12 +350,12 @@
 		7944A12E1BF32C2300CA7D3D /* Login/Register */ = {
 			isa = PBXGroup;
 			children = (
-				7944A12F1BF32CE800CA7D3D /* LoginViewController.h */,
-				7944A1301BF32CE800CA7D3D /* LoginViewController.m */,
-				7944A1311BF32CE800CA7D3D /* LoginViewController.xib */,
-				7944A1371BF32D0E00CA7D3D /* RegisterViewController.h */,
-				7944A1381BF32D0E00CA7D3D /* RegisterViewController.m */,
-				7944A1391BF32D0E00CA7D3D /* RegisterViewController.xib */,
+				79245D0E1BF438C900F9BE32 /* LoginViewController.h */,
+				79245D0F1BF438C900F9BE32 /* LoginViewController.m */,
+				79245D101BF438C900F9BE32 /* LoginViewController.xib */,
+				79245D111BF438C900F9BE32 /* RegisterViewController.h */,
+				79245D121BF438C900F9BE32 /* RegisterViewController.m */,
+				79245D131BF438C900F9BE32 /* RegisterViewController.xib */,
 			);
 			name = Login/Register;
 			sourceTree = "<group>";
@@ -1012,13 +1012,14 @@
 				C2272DED1BF1D452004D5EFA /* RoadTwoTestCell.xib in Resources */,
 				959EE6731BF327360073B92B /* b27_icon_star_gray@2x.png in Resources */,
 				C2AC44E01BF0988E006AB483 /* nvshen@2x.jpg in Resources */,
+				79245D171BF438CA00F9BE32 /* RegisterViewController.xib in Resources */,
 				C2272E171BF219F2004D5EFA /* 1 2.png in Resources */,
 				79EC030E1BF18014002C568F /* lianxi_set_b@2x.png in Resources */,
 				C2AC44E21BF09899006AB483 /* image.jpg in Resources */,
 				C2272DFC1BF1D9E9004D5EFA /* miji.png in Resources */,
 				C2AC44E81BF0E91C006AB483 /* xihuanSelected@2x.png in Resources */,
+				79245D151BF438CA00F9BE32 /* LoginViewController.xib in Resources */,
 				C2AC44AB1BF083DF006AB483 /* naben.png in Resources */,
-				7944A1331BF32CE800CA7D3D /* LoginViewController.xib in Resources */,
 				C2272DDF1BF1B4C0004D5EFA /* f9.jpg in Resources */,
 				C2272DF41BF1D6F0004D5EFA /* mijizhidao@2x.png in Resources */,
 				C20C89C21BF21F96003B691D /* DriveSchoolCell.xib in Resources */,
@@ -1033,7 +1034,6 @@
 				959EE6811BF38D770073B92B /* 1.png in Resources */,
 				C2272DFE1BF1EEE8004D5EFA /* pingpanbiaozhun.png in Resources */,
 				C2AC44C51BF0851C006AB483 /* ClassOneCell.xib in Resources */,
-				7944A13B1BF32D0E00CA7D3D /* RegisterViewController.xib in Resources */,
 				C2AC44EC1BF0E9BD006AB483 /* sunxulianxiOn@2x.png in Resources */,
 				C2272DDD1BF1B4C0004D5EFA /* f2.jpg in Resources */,
 				95493BBF1BF1CE6B006C2323 /* PanduanCell.xib in Resources */,
@@ -1167,6 +1167,7 @@
 				95493BE91BF1E9A1006C2323 /* ImageQuestionCell.m in Sources */,
 				95493BC81BF1CF08006C2323 /* TestHelper.m in Sources */,
 				C21B1FB61BF2DC640020018A /* NetWorkManager.m in Sources */,
+				79245D141BF438CA00F9BE32 /* LoginViewController.m in Sources */,
 				C29C11261BF0BAB1001030F2 /* School.m in Sources */,
 				C21023491BF4348C000B605D /* Baseinfoarea.m in Sources */,
 				C2AC44B31BF08402006AB483 /* DrivingLicenseTVC.m in Sources */,
@@ -1175,14 +1176,13 @@
 				C2AC44B61BF08410006AB483 /* CommunityTVC.m in Sources */,
 				C210234C1BF4348C000B605D /* Descarea.m in Sources */,
 				959EE6871BF41E9C0073B92B /* DrivingLisenceVC.m in Sources */,
-				7944A13A1BF32D0E00CA7D3D /* RegisterViewController.m in Sources */,
 				C2272DE61BF1CFA8004D5EFA /* ClassTwoThreeVC.m in Sources */,
-				7944A1321BF32CE800CA7D3D /* LoginViewController.m in Sources */,
 				C20C89C11BF21F96003B691D /* DriveSchoolCell.m in Sources */,
 				C210234A1BF4348C000B605D /* Bbsgrouparea.m in Sources */,
 				C2272DD51BF19022004D5EFA /* ClassFourCell.m in Sources */,
 				95493BD01BF1CF65006C2323 /* TimerDisappearAlertView.m in Sources */,
 				C20C89C61BF22035003B691D /* DriveSchoolVC.m in Sources */,
+				79245D161BF438CA00F9BE32 /* RegisterViewController.m in Sources */,
 				C2272DCE1BF182CB004D5EFA /* ClassOneFourVC.m in Sources */,
 				C2272DEC1BF1D452004D5EFA /* RoadTwoTestCell.m in Sources */,
 				95493BC31BF1CE77006C2323 /* QuestionCell.m in Sources */,

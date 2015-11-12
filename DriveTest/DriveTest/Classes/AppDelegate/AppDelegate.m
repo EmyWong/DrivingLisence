@@ -20,6 +20,7 @@
     [AVOSCloud setApplicationId:@"TwuMIAGJXBD3mxUED8Xi2g4C"
                       clientKey:@"Pau2j9r5qOCUMv4DckmCX3mP"];
 
+    [SMSSDK registerApp:@"b83c288ab97a" withSecret:@"89beb433fc39e42d7df4dd55c8614411"];
     
     return YES;
 }

@@ -43,6 +43,19 @@
 //科目二/三 秘籍指导
 #define k2testmethod @"http://bbs.api.jxedt.com/news/h5/205/index"
 #define k3testmethod @"http://bbs.api.jxedt.com/news/h5/206/index"
+//科二 考前准备
+#define k2PrapareUrl @"http://bbs.api.jxedt.com/news/h5/detail/205/315527068684288"
+//科二 合格标准
+#define k2standardUrl @"http://bbs.api.jxedt.com/news/h5/detail/205/316107132551168"
+//科二 经验分享
+#define k2ShareUrl @"http://bbs.api.jxedt.com/news/h5/detail/205/317089908297728"
+
+//科三 评判标准
+#define k3standardUrl @"http://bbs.api.jxedt.com/news/h5/detail/206/318309003759616"
+//科三 路考秘诀
+#define k3secretUrl @"http://bbs.api.jxedt.com/news/h5/detail/206/318857153122304"
+//科三 考场经验
+#define k3ExpericeUrl @"http://bbs.api.jxedt.com/news/h5/detail/206/319972322099200"
 
 //驾照年审年检
 #define lisenceUrl1 @"http://bbs.api.jxedt.com/news/h5/detail/208/276041156825088"

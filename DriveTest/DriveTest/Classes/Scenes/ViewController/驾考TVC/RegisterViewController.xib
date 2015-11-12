@@ -6,8 +6,15 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisterViewController">
             <connections>
+                <outlet property="phoneReView" destination="caf-xF-H8n" id="JNP-tV-Gfh"/>
+                <outlet property="registerMethod" destination="wDD-2S-aHs" id="9li-3P-yec"/>
                 <outlet property="registerNameTextField" destination="cNW-1O-TJa" id="iBM-dX-UAR"/>
+                <outlet property="registerPhonePwdTextField" destination="uPG-Yq-Qdc" id="Tco-b1-Y2Z"/>
+                <outlet property="registerPhoneTextField" destination="gdx-ge-I7a" id="KOS-0d-tlf"/>
                 <outlet property="registerPwdTextField" destination="Y4L-dt-d1e" id="7lH-lO-ls9"/>
+                <outlet property="userReView" destination="CAs-YV-aqW" id="uDy-jI-2a7"/>
+                <outlet property="verifyButton" destination="bS4-ti-foz" id="3LG-T3-xKK"/>
+                <outlet property="verifyTextField" destination="xSM-Cf-3mj" id="OZx-5p-9OG"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -16,46 +23,126 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="V5O-5d-W13">
-                    <rect key="frame" x="20" y="84" width="560" height="30"/>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="wDD-2S-aHs">
+                    <rect key="frame" x="30" y="84" width="540" height="29"/>
+                    <animations/>
+                    <segments>
+                        <segment title="账号注册"/>
+                        <segment title="手机注册"/>
+                    </segments>
+                    <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                </segmentedControl>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="caf-xF-H8n">
+                    <rect key="frame" x="0.0" y="162" width="600" height="188"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="账号" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D6c-zd-Day">
-                            <rect key="frame" x="0.0" y="0.0" width="34" height="30"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bS4-ti-foz">
+                            <rect key="frame" x="510" y="90" width="80" height="30"/>
                             <animations/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="账号不少于6位" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="cNW-1O-TJa">
-                            <rect key="frame" x="54" y="0.0" width="506" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="Arj-lo-qok"/>
+                                <constraint firstAttribute="width" constant="80" id="TeT-qZ-nzv"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" title="获取验证码">
+                                <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </state>
+                            <connections>
+                                <action selector="gainVerify:" destination="-1" eventType="touchUpInside" id="WJq-ZN-vUr"/>
+                            </connections>
+                        </button>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="jjr-gX-MoI">
+                            <rect key="frame" x="20" y="150" width="560" height="30"/>
+                            <subviews>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="密码不少于6位" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="uPG-Yq-Qdc">
+                                    <rect key="frame" x="0.0" y="0.0" width="560" height="30"/>
+                                    <animations/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                </textField>
+                            </subviews>
                             <animations/>
-                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                            <textInputTraits key="textInputTraits"/>
-                        </textField>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="WGk-uX-dji">
+                            <rect key="frame" x="20" y="90" width="480" height="30"/>
+                            <subviews>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="输入验证码" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xSM-Cf-3mj">
+                                    <rect key="frame" x="0.0" y="0.0" width="480" height="30"/>
+                                    <animations/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                </textField>
+                            </subviews>
+                            <animations/>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="m7k-ys-QRv">
+                            <rect key="frame" x="20" y="30" width="560" height="30"/>
+                            <subviews>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="输入正确地手机号码" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="gdx-ge-I7a">
+                                    <rect key="frame" x="0.0" y="0.0" width="560" height="30"/>
+                                    <animations/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                </textField>
+                            </subviews>
+                            <animations/>
+                        </stackView>
                     </subviews>
                     <animations/>
-                </stackView>
-                <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="r6F-LY-NZh">
-                    <rect key="frame" x="20" y="144" width="560" height="30"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="bS4-ti-foz" firstAttribute="leading" secondItem="WGk-uX-dji" secondAttribute="trailing" constant="10" id="0j3-eP-9X5"/>
+                        <constraint firstItem="m7k-ys-QRv" firstAttribute="top" secondItem="caf-xF-H8n" secondAttribute="top" constant="30" id="4Us-KB-s4r"/>
+                        <constraint firstItem="jjr-gX-MoI" firstAttribute="leading" secondItem="caf-xF-H8n" secondAttribute="leading" constant="20" id="5bz-zM-WGI"/>
+                        <constraint firstAttribute="trailing" secondItem="m7k-ys-QRv" secondAttribute="trailing" constant="20" id="8fs-1M-Jjr"/>
+                        <constraint firstAttribute="trailing" secondItem="WGk-uX-dji" secondAttribute="trailing" constant="100" id="L7H-h9-xps"/>
+                        <constraint firstItem="bS4-ti-foz" firstAttribute="top" secondItem="WGk-uX-dji" secondAttribute="top" id="MJT-76-w5i"/>
+                        <constraint firstItem="WGk-uX-dji" firstAttribute="top" secondItem="jjr-gX-MoI" secondAttribute="bottom" constant="-90" id="Sf9-LW-6MJ"/>
+                        <constraint firstItem="WGk-uX-dji" firstAttribute="top" secondItem="m7k-ys-QRv" secondAttribute="bottom" constant="30" id="iSI-Po-Bhr"/>
+                        <constraint firstAttribute="trailing" secondItem="jjr-gX-MoI" secondAttribute="trailing" constant="20" id="ky3-Sg-UtW"/>
+                        <constraint firstItem="m7k-ys-QRv" firstAttribute="leading" secondItem="caf-xF-H8n" secondAttribute="leading" constant="20" id="tQK-ei-vV5"/>
+                        <constraint firstItem="WGk-uX-dji" firstAttribute="leading" secondItem="caf-xF-H8n" secondAttribute="leading" constant="20" id="u1D-RV-PBw"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CAs-YV-aqW">
+                    <rect key="frame" x="0.0" y="162" width="600" height="188"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="密码" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aC5-Ox-kIf">
-                            <rect key="frame" x="0.0" y="0.0" width="34" height="30"/>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="V5O-5d-W13">
+                            <rect key="frame" x="20" y="30" width="560" height="30"/>
+                            <subviews>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="账号不少于6位" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="cNW-1O-TJa">
+                                    <rect key="frame" x="0.0" y="0.0" width="560" height="30"/>
+                                    <animations/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                            </subviews>
                             <animations/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="密码不少于6位" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Y4L-dt-d1e">
-                            <rect key="frame" x="54" y="0.0" width="506" height="30"/>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="r6F-LY-NZh">
+                            <rect key="frame" x="20" y="90" width="560" height="30"/>
+                            <subviews>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="密码不少于6位" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Y4L-dt-d1e">
+                                    <rect key="frame" x="0.0" y="0.0" width="560" height="30"/>
+                                    <animations/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                </textField>
+                            </subviews>
                             <animations/>
-                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                            <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
-                        </textField>
+                        </stackView>
                     </subviews>
                     <animations/>
-                </stackView>
+                    <constraints>
+                        <constraint firstItem="r6F-LY-NZh" firstAttribute="leading" secondItem="CAs-YV-aqW" secondAttribute="leading" constant="20" id="3af-Dm-U08"/>
+                        <constraint firstItem="V5O-5d-W13" firstAttribute="top" secondItem="CAs-YV-aqW" secondAttribute="top" constant="30" id="9zN-IF-bKf"/>
+                        <constraint firstItem="r6F-LY-NZh" firstAttribute="top" secondItem="cNW-1O-TJa" secondAttribute="bottom" constant="30" id="C5l-Z5-VIN"/>
+                        <constraint firstItem="V5O-5d-W13" firstAttribute="leading" secondItem="CAs-YV-aqW" secondAttribute="leading" constant="20" id="PlQ-OQ-NJ5"/>
+                        <constraint firstAttribute="trailing" secondItem="r6F-LY-NZh" secondAttribute="trailing" constant="20" id="TvV-8H-74N"/>
+                        <constraint firstAttribute="trailing" secondItem="V5O-5d-W13" secondAttribute="trailing" constant="20" id="lZY-Xf-dS6"/>
+                    </constraints>
+                </view>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Md-P0-jjP">
-                    <rect key="frame" x="279" y="224" width="42" height="38"/>
+                    <rect key="frame" x="20" y="362" width="560" height="38"/>
                     <animations/>
                     <fontDescription key="fontDescription" type="system" pointSize="21"/>
                     <state key="normal" title="注册">
@@ -69,14 +156,20 @@
             <animations/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="2Md-P0-jjP" firstAttribute="top" secondItem="r6F-LY-NZh" secondAttribute="bottom" constant="50" id="9fJ-tm-WKF"/>
-                <constraint firstItem="r6F-LY-NZh" firstAttribute="top" secondItem="V5O-5d-W13" secondAttribute="bottom" constant="30" id="Gpm-UT-nJt"/>
-                <constraint firstAttribute="trailing" secondItem="r6F-LY-NZh" secondAttribute="trailing" constant="20" id="RoL-kR-eMi"/>
-                <constraint firstItem="2Md-P0-jjP" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="aoS-Ax-tQw"/>
-                <constraint firstItem="r6F-LY-NZh" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="dC5-VU-1v4"/>
-                <constraint firstAttribute="trailing" secondItem="V5O-5d-W13" secondAttribute="trailing" constant="20" id="lRN-90-Var"/>
-                <constraint firstItem="V5O-5d-W13" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="qoV-I7-6Lf"/>
-                <constraint firstItem="V5O-5d-W13" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="84" id="yne-pS-3Ov"/>
+                <constraint firstItem="2Md-P0-jjP" firstAttribute="top" secondItem="jjr-gX-MoI" secondAttribute="bottom" constant="20" id="1M2-Qz-f4N"/>
+                <constraint firstItem="wDD-2S-aHs" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="84" id="3o3-og-Tnl"/>
+                <constraint firstAttribute="trailing" secondItem="2Md-P0-jjP" secondAttribute="trailing" constant="20" id="CuR-QT-o5S"/>
+                <constraint firstAttribute="bottom" secondItem="CAs-YV-aqW" secondAttribute="bottom" constant="250" id="Dct-cG-FYg"/>
+                <constraint firstItem="CAs-YV-aqW" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="GpN-1r-rIV"/>
+                <constraint firstItem="2Md-P0-jjP" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="QQu-ce-SdE"/>
+                <constraint firstItem="CAs-YV-aqW" firstAttribute="top" secondItem="wDD-2S-aHs" secondAttribute="bottom" constant="50" id="Wd0-LS-7uA"/>
+                <constraint firstAttribute="trailing" secondItem="wDD-2S-aHs" secondAttribute="trailing" constant="30" id="aOk-Lp-dEJ"/>
+                <constraint firstAttribute="bottom" secondItem="caf-xF-H8n" secondAttribute="bottom" constant="250" id="c4h-jE-fdb"/>
+                <constraint firstItem="caf-xF-H8n" firstAttribute="top" secondItem="wDD-2S-aHs" secondAttribute="bottom" constant="50" id="ocG-zH-1BO"/>
+                <constraint firstItem="caf-xF-H8n" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="pZg-qb-g4L"/>
+                <constraint firstItem="wDD-2S-aHs" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="qLL-N0-gTc"/>
+                <constraint firstAttribute="trailing" secondItem="CAs-YV-aqW" secondAttribute="trailing" id="qj2-8d-BYC"/>
+                <constraint firstAttribute="trailing" secondItem="caf-xF-H8n" secondAttribute="trailing" id="xc9-3F-ZON"/>
             </constraints>
             <point key="canvasLocation" x="54" y="174"/>
         </view>

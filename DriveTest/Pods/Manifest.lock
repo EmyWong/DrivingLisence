@@ -5,6 +5,7 @@ PODS:
   - SDWebImage (3.7.3):
     - SDWebImage/Core (= 3.7.3)
   - SDWebImage/Core (3.7.3)
+  - SMS_SDK (1.1.1)
   - XSDCycleScrollView (1.3.1):
     - SDWebImage
 
@@ -12,6 +13,7 @@ DEPENDENCIES:
   - AVOSCloud
   - MJRefresh (~> 3.0.1)
   - RNFrostedSidebar (~> 0.1.0)
+  - SMS_SDK (~> 1.1.1)
   - XSDCycleScrollView (~> 1.3.1)
 
 SPEC CHECKSUMS:
@@ -19,6 +21,7 @@ SPEC CHECKSUMS:
   MJRefresh: ca22bb7197c4a17a0491763773cd5cb106b2a810
   RNFrostedSidebar: 8621bab2f09315d4621e1af26c632aad86277f9c
   SDWebImage: 1d2b1a1efda1ade1b00b6f8498865f8ddedc8a84
+  SMS_SDK: 904effe1239a6d2677586adf5063cdf0a0024186
   XSDCycleScrollView: f11845ed1ef42cc61b860d25194782f973f84f91
 
 COCOAPODS: 0.39.0
