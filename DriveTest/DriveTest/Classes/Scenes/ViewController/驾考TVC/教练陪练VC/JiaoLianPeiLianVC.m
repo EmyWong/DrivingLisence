@@ -102,7 +102,12 @@
 }
 - (void)jianJieButtonAction
 {
-    NSLog(@"简介");
+    NSString *routeStr = [NSString stringWithFormat:@"http://api.jxedt.com/detail/%@/summary/?format=json&type=%@",self.string,self.type];
+    DrivingLisenceVC *testMethod = [DrivingLisenceVC new];
+    testMethod.url = routeStr;
+    testMethod.title = @"教练简介";
+    [testMethod setHidesBottomBarWhenPushed:YES];
+    [self.navigationController pushViewController:testMethod animated:YES];
 }
 - (void)dianPingButtonAction
 {

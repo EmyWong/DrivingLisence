@@ -33,13 +33,25 @@
     
     UIImageView *imageV = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 200, 200)];
     imageV.center = self.lunchView.center;
-    NSString *str = @"http://www.ittribalwo.com/upfiles/image/20140506181328.gif";
-    [imageV sd_setImageWithURL:[NSURL URLWithString:str] placeholderImage:[UIImage imageNamed:@""]];
+//    NSString *str = @"http://www.ittribalwo.com/upfiles/image/20140506181328.gif";
+//    [imageV sd_setImageWithURL:[NSURL URLWithString:str] placeholderImage:[UIImage imageNamed:@""]];
+    
+    NSMutableArray *arr = [NSMutableArray arrayWithCapacity:20];
+    for (int i = 1; i< 61; i++) {
+        NSString *str = [NSString stringWithFormat:@"loading%d.tiff",i];
+        UIImage *image = [UIImage imageNamed:str];
+        [arr addObject:image];
+    }
+    imageV.animationRepeatCount = 0;
+    imageV.animationImages = arr;
+    imageV.animationDuration = 3;
+    [imageV startAnimating];
     [_lunchView addSubview:imageV];
     
     [self.window bringSubviewToFront:_lunchView];
     
-    [NSTimer scheduledTimerWithTimeInterval:2 target:self selector:@selector(removeLun) userInfo:nil repeats:NO];
+    
+    [NSTimer scheduledTimerWithTimeInterval:3 target:self selector:@selector(removeLun) userInfo:nil repeats:NO];
     
     return YES;
 }
