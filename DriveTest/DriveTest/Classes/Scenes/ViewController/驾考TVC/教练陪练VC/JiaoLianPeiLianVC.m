@@ -99,6 +99,54 @@
 - (void)phoneNumberAction
 {
     NSLog(@"电话");
+    ClickJxInfo *clickJxInfo = self.allDataArray[0];
+    
+    Baseinfoarea * base = [Baseinfoarea new];
+    [base setValuesForKeysWithDictionary:clickJxInfo.baseinfoarea];
+    
+    NSMutableArray *resArr = [[NSMutableArray alloc] initWithCapacity:1];
+    NSArray *arr = base.tel;
+    //转id类型数据
+    for (id obj in arr) {
+        NSString *str = [NSString stringWithFormat:@"%@", obj];
+        [resArr addObject:str];
+    }
+    
+    UIAlertController *alertController = nil;
+    
+    alertController = [UIAlertController alertControllerWithTitle:@"选择号码" message:nil preferredStyle:UIAlertControllerStyleActionSheet];
+    
+    NSMutableArray *phoneArr = [NSMutableArray new];
+    
+    for (int i = 0; i < resArr.count; i ++) {
+        
+        UIAlertAction *action1 = [UIAlertAction actionWithTitle:resArr[i] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            
+            NSString *callString = resArr[i];
+            
+            NSString *URLString = [@"tel://" stringByAppendingString:callString];
+            
+            NSURL *URL = [NSURL URLWithString:URLString];
+            
+            [[UIApplication sharedApplication] openURL:URL];
+            
+        }];
+        
+        [phoneArr addObject:action1];
+        
+    }
+    
+    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+        
+    }];
+    
+    for (id obj in phoneArr) {
+        [alertController addAction:obj];
+    }
+    
+    [alertController addAction:cancelAction];
+    
+    [self presentViewController:alertController animated:YES completion:nil];
 }
 - (void)jianJieButtonAction
 {
