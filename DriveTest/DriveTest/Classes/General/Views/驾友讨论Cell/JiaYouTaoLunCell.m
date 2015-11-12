@@ -34,6 +34,9 @@
     self.dianZan.text = drive.liketip;
     self.pinglunNumber.text = drive.commenttip;
     [self.imgView sd_setImageWithURL:[NSURL URLWithString:drive.face]];
+    
+    
+    
 }
 
 

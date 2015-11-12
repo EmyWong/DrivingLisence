@@ -69,15 +69,15 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uoP-ad-Cid">
                                 <rect key="frame" x="0.0" y="72" width="360" height="50"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jiaxiao.png" translatesAutoresizingMaskIntoConstraints="NO" id="ClK-P4-TC9">
-                                        <rect key="frame" x="20" y="0.0" width="50" height="50"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="phone.png" translatesAutoresizingMaskIntoConstraints="NO" id="ClK-P4-TC9">
+                                        <rect key="frame" x="20" y="12" width="26" height="26"/>
                                         <animations/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="ClK-P4-TC9" secondAttribute="height" id="0pw-Z2-BR1"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DCy-cp-3mT">
-                                        <rect key="frame" x="80" y="14" width="260" height="22"/>
+                                        <rect key="frame" x="56" y="14" width="284" height="22"/>
                                         <animations/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
@@ -92,10 +92,10 @@
                                 <constraints>
                                     <constraint firstItem="DCy-cp-3mT" firstAttribute="centerY" secondItem="uoP-ad-Cid" secondAttribute="centerY" id="3Ia-12-262"/>
                                     <constraint firstAttribute="trailing" secondItem="DCy-cp-3mT" secondAttribute="trailing" constant="20" id="4yJ-3w-84U"/>
-                                    <constraint firstAttribute="bottom" secondItem="ClK-P4-TC9" secondAttribute="bottom" id="Y6K-WA-f8s"/>
+                                    <constraint firstAttribute="bottom" secondItem="ClK-P4-TC9" secondAttribute="bottom" constant="12" id="Y6K-WA-f8s"/>
                                     <constraint firstItem="ClK-P4-TC9" firstAttribute="leading" secondItem="uoP-ad-Cid" secondAttribute="leading" constant="20" id="Yzu-Pb-w1o"/>
                                     <constraint firstAttribute="bottom" secondItem="YXn-67-RCY" secondAttribute="bottom" id="cYh-ib-f8U"/>
-                                    <constraint firstItem="ClK-P4-TC9" firstAttribute="top" secondItem="uoP-ad-Cid" secondAttribute="top" id="gJ8-H1-OCc"/>
+                                    <constraint firstItem="ClK-P4-TC9" firstAttribute="top" secondItem="uoP-ad-Cid" secondAttribute="top" constant="12" id="gJ8-H1-OCc"/>
                                     <constraint firstAttribute="trailing" secondItem="YXn-67-RCY" secondAttribute="trailing" id="iet-pk-By8"/>
                                     <constraint firstItem="DCy-cp-3mT" firstAttribute="leading" secondItem="ClK-P4-TC9" secondAttribute="trailing" constant="10" id="ifR-Kp-lTb"/>
                                     <constraint firstItem="YXn-67-RCY" firstAttribute="top" secondItem="uoP-ad-Cid" secondAttribute="top" id="nVj-n4-PZC"/>
@@ -245,6 +245,6 @@
     </objects>
     <resources>
         <image name="cuoti.png" width="32" height="32"/>
-        <image name="jiaxiao.png" width="28" height="28"/>
+        <image name="phone.png" width="1024" height="1024"/>
     </resources>
 </document>

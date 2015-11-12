@@ -104,12 +104,16 @@
         JiaYouTaoLunCell *cell = [tableView dequeueReusableCellWithIdentifier:@"jiayoucell" forIndexPath:indexPath];
          cell.selectionStyle = UITableViewCellSelectionStyleNone;
         
+        [self loadAction:cell];
+        
         cell.drive = drive;
         return cell;
         
     }else{
         
         TaoLunCell *cell = [tableView dequeueReusableCellWithIdentifier:@"tupiancell" forIndexPath:indexPath];
+        
+        [self loadActionImg:cell];
         
         cell.drive = nil;
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
@@ -118,6 +122,59 @@
         return cell;
     }
     
+}
+
+
+#pragma mark 没图片的cell按钮监听事件
+- (void)loadAction:(JiaYouTaoLunCell *)sender
+{
+    [sender.dianzanBnt setImage:[UIImage imageNamed:@"dianzan"] forState:UIControlStateNormal];
+    [sender.dianzanBnt addTarget:self action:@selector(dianzanAction) forControlEvents:UIControlEventTouchUpInside];
+    
+    
+    [sender.pinglunBut setImage:[UIImage imageNamed:@"ppp"] forState:UIControlStateNormal];
+    
+    [sender.pinglunBut addTarget:self action:@selector(pingLunAction) forControlEvents:UIControlEventTouchUpInside];
+}
+
+- (void)dianzanAction
+{
+    NSLog(@"wwwwww");
+}
+
+- (void)pingLunAction
+{
+    NSLog(@"ssssss");
+}
+
+
+#pragma mark 有图片的cell按钮监听事件
+- (void)loadActionImg:(TaoLunCell *)sender
+{
+    [sender.dianzanBTN setImage:[UIImage imageNamed:@"dianzan"] forState:UIControlStateNormal];
+    
+    
+    [sender.dianzanBTN addTarget:self action:@selector(DZAction:) forControlEvents:UIControlEventTouchUpInside];
+    
+    [sender.pinglunBTN setImage:[UIImage imageNamed:@"ppp"] forState:UIControlStateNormal];
+    
+    [sender.pinglunBTN addTarget:self action:@selector(PLAction) forControlEvents:UIControlEventTouchUpInside];
+}
+
+- (void)DZAction:(UIButton *)sender
+{
+    if ([sender.imageView.image isEqual:[UIImage imageNamed:@"dianzaned"]]) {
+        [sender setImage:[UIImage imageNamed:@"dianzan"] forState:UIControlStateNormal];
+    }else{
+        [sender setImage:[UIImage imageNamed:@"dianzaned"] forState:UIControlStateNormal];
+    }
+    NSLog(@"img dz");
+}
+- (void)PLAction
+{
+    
+    
+    NSLog(@"img pl");
 }
 
 
