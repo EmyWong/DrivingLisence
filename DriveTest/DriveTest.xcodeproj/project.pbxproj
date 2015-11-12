@@ -162,6 +162,7 @@
 		C2272E191BF21D61004D5EFA /* 11.png in Resources */ = {isa = PBXBuildFile; fileRef = C2272E181BF21D61004D5EFA /* 11.png */; settings = {ASSET_TAGS = (); }; };
 		C26623461BF4881F005DF5C6 /* JiaYouTaoLunCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C26623441BF4881F005DF5C6 /* JiaYouTaoLunCell.m */; settings = {ASSET_TAGS = (); }; };
 		C26623471BF4881F005DF5C6 /* JiaYouTaoLunCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C26623451BF4881F005DF5C6 /* JiaYouTaoLunCell.xib */; settings = {ASSET_TAGS = (); }; };
+		C2918C3D1BF490C7005E21AE /* DriveDiscussion.m in Sources */ = {isa = PBXBuildFile; fileRef = C2918C3C1BF490C7005E21AE /* DriveDiscussion.m */; settings = {ASSET_TAGS = (); }; };
 		C29C11261BF0BAB1001030F2 /* School.m in Sources */ = {isa = PBXBuildFile; fileRef = C29C11211BF0BAB1001030F2 /* School.m */; settings = {ASSET_TAGS = (); }; };
 		C29C11271BF0BAB1001030F2 /* Infolist.m in Sources */ = {isa = PBXBuildFile; fileRef = C29C11231BF0BAB1001030F2 /* Infolist.m */; settings = {ASSET_TAGS = (); }; };
 		C29C11281BF0BAB1001030F2 /* ClickJxInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = C29C11251BF0BAB1001030F2 /* ClickJxInfo.m */; settings = {ASSET_TAGS = (); }; };
@@ -396,6 +397,8 @@
 		C26623431BF4881F005DF5C6 /* JiaYouTaoLunCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JiaYouTaoLunCell.h; sourceTree = "<group>"; };
 		C26623441BF4881F005DF5C6 /* JiaYouTaoLunCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JiaYouTaoLunCell.m; sourceTree = "<group>"; };
 		C26623451BF4881F005DF5C6 /* JiaYouTaoLunCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JiaYouTaoLunCell.xib; sourceTree = "<group>"; };
+		C2918C3B1BF490C7005E21AE /* DriveDiscussion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DriveDiscussion.h; sourceTree = "<group>"; };
+		C2918C3C1BF490C7005E21AE /* DriveDiscussion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DriveDiscussion.m; sourceTree = "<group>"; };
 		C29C11201BF0BAB1001030F2 /* School.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = School.h; sourceTree = "<group>"; };
 		C29C11211BF0BAB1001030F2 /* School.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = School.m; sourceTree = "<group>"; };
 		C29C11221BF0BAB1001030F2 /* Infolist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Infolist.h; sourceTree = "<group>"; };
@@ -848,6 +851,15 @@
 			path = "驾友讨论Cell";
 			sourceTree = "<group>";
 		};
+		C2918C3E1BF490CF005E21AE /* 驾友讨论数据模型 */ = {
+			isa = PBXGroup;
+			children = (
+				C2918C3B1BF490C7005E21AE /* DriveDiscussion.h */,
+				C2918C3C1BF490C7005E21AE /* DriveDiscussion.m */,
+			);
+			name = "驾友讨论数据模型";
+			sourceTree = "<group>";
+		};
 		C2AC446D1BF08357006AB483 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -952,6 +964,7 @@
 				95493BC91BF1CF18006C2323 /* 练习模型 */,
 				C21023391BF43409000B605D /* 驾校基本信息模型 */,
 				C210233A1BF43459000B605D /* 驾校详情页面数据模型 */,
+				C2918C3E1BF490CF005E21AE /* 驾友讨论数据模型 */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -1446,6 +1459,7 @@
 				C2AC44B31BF08402006AB483 /* DrivingLicenseTVC.m in Sources */,
 				C2272E141BF21047004D5EFA /* naBenCell.m in Sources */,
 				95493BE51BF1DDD3006C2323 /* ViewController.m in Sources */,
+				C2918C3D1BF490C7005E21AE /* DriveDiscussion.m in Sources */,
 				C2AC44B61BF08410006AB483 /* CommunityTVC.m in Sources */,
 				C210234C1BF4348C000B605D /* Descarea.m in Sources */,
 				959EE6871BF41E9C0073B92B /* DrivingLisenceVC.m in Sources */,

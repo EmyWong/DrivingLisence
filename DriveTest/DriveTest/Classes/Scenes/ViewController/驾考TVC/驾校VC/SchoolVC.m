@@ -211,6 +211,12 @@
 - (void)taoLunButtonAction
 {
     NSLog(@"讨论");
+    [[AnalyticalData sharedIntance]driveDiscussionLoadDataWithInfoid:@"4755" pageindex:@"1" option:^(NSArray *array) {
+        DriveDiscussion * drive = [DriveDiscussion new];
+        drive = array[0];
+        NSLog(@"%@",drive.group);
+    }];
+
 }
 
 //驾友点评
