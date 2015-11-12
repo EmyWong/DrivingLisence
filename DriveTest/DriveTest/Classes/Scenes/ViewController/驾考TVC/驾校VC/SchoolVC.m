@@ -135,7 +135,7 @@
         
         UIAlertAction *action1 = [UIAlertAction actionWithTitle:resArr[i] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
             
-            NSString *callString = resArr.firstObject;
+            NSString *callString = resArr[i];
             
             NSString *URLString = [@"tel://" stringByAppendingString:callString];
             
