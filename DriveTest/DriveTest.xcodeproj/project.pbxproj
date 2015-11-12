@@ -525,7 +525,6 @@
 				95493BD21BF1D055006C2323 /* cuoti.png */,
 			);
 			name = "练习图片";
-			path = ../../Resources;
 			sourceTree = "<group>";
 		};
 		95493BD81BF1D21D006C2323 /* 科一/四练习VC */ = {
@@ -821,12 +820,13 @@
 		C2AC44791BF08357006AB483 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				95493BD11BF1D047006C2323 /* 练习图片 */,
 				959EE6881BF454480073B92B /* 加载图片 */,
 				959EE67B1BF38D530073B92B /* 星星 */,
 				79EC03041BF17FFE002C568F /* 侧栏图片 */,
 				C2AC447A1BF08357006AB483 /* 图标 */,
-				C2AC44DF1BF0988E006AB483 /* nvshen@2x.jpg */,
 				959EE67C1BF38D5F0073B92B /* 法规 */,
+				C2AC44DF1BF0988E006AB483 /* nvshen@2x.jpg */,
 				C2272DD71BF19360004D5EFA /* image090.png */,
 				C2AC44E11BF09899006AB483 /* image.jpg */,
 			);
@@ -895,14 +895,13 @@
 		C2AC44821BF08357006AB483 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				95493BD11BF1D047006C2323 /* 练习图片 */,
 				C2AC44AE1BF083F2006AB483 /* RootViewController.h */,
 				C2AC44AF1BF083F2006AB483 /* RootViewController.m */,
 				C2AC44851BF08357006AB483 /* 拿本TVC */,
 				C2AC44881BF08357006AB483 /* 社区TVC */,
 				C2AC448B1BF08357006AB483 /* 路考TVC */,
 				C2AC448E1BF08357006AB483 /* 题考TVC */,
-				C2AC44911BF08357006AB483 /* 驾考TVC */,
+				C2AC44911BF08357006AB483 /* 驾校TVC */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -957,7 +956,7 @@
 			path = "题考TVC";
 			sourceTree = "<group>";
 		};
-		C2AC44911BF08357006AB483 /* 驾考TVC */ = {
+		C2AC44911BF08357006AB483 /* 驾校TVC */ = {
 			isa = PBXGroup;
 			children = (
 				C2E340331BF3618B006B2AF0 /* 教练陪练VC */,
@@ -966,6 +965,7 @@
 				C20C89C41BF22035003B691D /* DriveSchoolVC.h */,
 				C20C89C51BF22035003B691D /* DriveSchoolVC.m */,
 			);
+			name = "驾校TVC";
 			path = "驾考TVC";
 			sourceTree = "<group>";
 		};

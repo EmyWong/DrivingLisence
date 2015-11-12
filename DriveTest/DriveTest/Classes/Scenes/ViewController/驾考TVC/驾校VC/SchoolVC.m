@@ -116,25 +116,45 @@
 //路线
 - (void)luXianButtonAction
 {
-    NSLog(@"路线");
+    NSString *routeStr = [NSString stringWithFormat:@"http://api.jxedt.com/detail/%@/bus/?format=json&type=%@",self.string,self.type];
+    DrivingLisenceVC *testMethod = [DrivingLisenceVC new];
+    testMethod.url = routeStr;
+    testMethod.title = @"班车路线";
+    [testMethod setHidesBottomBarWhenPushed:YES];
+    [self.navigationController pushViewController:testMethod animated:YES];
 }
 
 //简介
 - (void)jianJieButtonAction
 {
-    NSLog(@"简介");
+    NSString *routeStr = [NSString stringWithFormat:@"http://api.jxedt.com/detail/%@/summary/?format=json&type=%@",self.string,self.type];
+    DrivingLisenceVC *testMethod = [DrivingLisenceVC new];
+    testMethod.url = routeStr;
+    testMethod.title = @"驾校简介";
+    [testMethod setHidesBottomBarWhenPushed:YES];
+    [self.navigationController pushViewController:testMethod animated:YES];
 }
 
 //驾校特色
 - (void)teSeButtonAction
 {
-    NSLog(@"//驾校特色");
+    NSString *routeStr = [NSString stringWithFormat:@"http://api.jxedt.com/detail/%@/feature/?format=json&type=%@",self.string,self.type];
+    DrivingLisenceVC *testMethod = [DrivingLisenceVC new];
+    testMethod.url = routeStr;
+    testMethod.title = @"驾校特色";
+    [testMethod setHidesBottomBarWhenPushed:YES];
+    [self.navigationController pushViewController:testMethod animated:YES];
 }
 
 //驾校新闻
 - (void)xinWenButtonAction
 {
-    NSLog(@"新闻");
+    NSString *routeStr = [NSString stringWithFormat:@"http://api.jxedt.com/detail/%@/news/list/?format=json&type=%@",self.string,self.type];
+    DrivingLisenceVC *testMethod = [DrivingLisenceVC new];
+    testMethod.url = routeStr;
+    testMethod.title = @"驾校新闻";
+    [testMethod setHidesBottomBarWhenPushed:YES];
+    [self.navigationController pushViewController:testMethod animated:YES];
 }
 
 //驾友讨论
