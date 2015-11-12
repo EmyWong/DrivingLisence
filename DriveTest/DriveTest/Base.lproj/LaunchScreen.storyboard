@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -17,19 +16,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZUb-2G-STD">
-                                <rect key="frame" x="60" y="184" width="200" height="200"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="70c-aR-Xj1"/>
-                                    <constraint firstAttribute="width" secondItem="ZUb-2G-STD" secondAttribute="height" multiplier="1:1" id="suU-1R-Hmk"/>
-                                </constraints>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lauch.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZUb-2G-STD">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="ZUb-2G-STD" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="GhF-wA-AUi"/>
-                            <constraint firstItem="ZUb-2G-STD" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="iNC-0C-uht"/>
+                            <constraint firstItem="ZUb-2G-STD" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="-20" id="CQI-eA-nEi"/>
+                            <constraint firstAttribute="trailing" secondItem="ZUb-2G-STD" secondAttribute="trailing" id="O92-38-L5M"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="ZUb-2G-STD" secondAttribute="bottom" id="d9B-r0-wiD"/>
+                            <constraint firstItem="ZUb-2G-STD" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="rcp-Zj-156"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
@@ -39,4 +36,7 @@
             <point key="canvasLocation" x="207" y="387"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="lauch.png" width="320" height="559"/>
+    </resources>
 </document>
