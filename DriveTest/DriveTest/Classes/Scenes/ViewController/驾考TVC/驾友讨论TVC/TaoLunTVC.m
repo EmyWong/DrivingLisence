@@ -29,6 +29,10 @@
     
     [self.tableView registerNib:[UINib nibWithNibName:@"TaoLunCell" bundle:nil] forCellReuseIdentifier:@"tupiancell"];
     
+    
+    self.tableView.tableFooterView = [UIView new];
+    
+    
     self.tableView.rowHeight = UITableViewAutomaticDimension;
     self.tableView.estimatedRowHeight = 100;
     //加载数据
