@@ -1,0 +1,94 @@
+//
+//  FirstGroup.pch
+//  DriveTest
+//
+//  Created by lanou3g on 15/11/9.
+//  Copyright © 2015年 第一小组. All rights reserved.
+//
+
+#ifndef FirstGroup_pch
+#define FirstGroup_pch
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+
+//***********************************
+//pch文件使用说明：1）引入的文件，请做好注释
+//               2）引入的文件书写到相应的 pragma mark 下
+//***********************************
+
+#import "AppDelegate.h" //程序入口
+
+
+//***********************************
+#pragma mark ScreenSize 屏幕尺寸
+
+//屏幕高
+#define kScreenHight [UIScreen mainScreen].bounds.size.height
+//屏幕宽
+#define kScreenWidth [UIScreen mainScreen].bounds.size.width
+
+
+//***********************************
+#pragma mark General 通用控制器和cell
+//自定义cell
+//自定义科目一cell
+#import "ClassOneCell.h"    //科目一
+#import "ClassFourCell.h"   //科目四
+
+#import "RoadTwoTestCell.h" //科目二
+#import "RoadThreeTestCell.h"   //科目三
+
+//*******************************************
+
+
+//***********************************
+#pragma mark Helper 帮助类
+//接收驾校信息的model
+#import "School.h"
+#import "Infolist.h"
+#import "ClickJxInfo.h"
+//
+#import "AnalyticalData.h"
+
+
+//***********************************
+#pragma mark Macro 网址文件
+#import "URLs.h" //解析数据网址存储文件
+
+
+
+//***********************************
+#pragma mark Sences 控制器和视图文件
+//题考
+#import "ProblemsTestTVC.h"  //科目一控制器
+#import "ClassFourTestTVC.h"   //科目四控制器
+
+
+//路考
+#import "RoadTestTVC.h"     //科目二
+#import "RoadTestThreeTVC.h"    //科目三
+
+
+//***********************************
+#pragma mark Venders 第三方头文件
+#import "SDCycleScrollView.h" //轮播图头文件
+
+
+//***********************************
+//科一科四 随机练习 顺序练习 错题集模块
+#import "QuestionCell.h"
+#import "PanduanCell.h"
+#import "ImagePDCell.h"
+#import "ImageQuestionCell.h"
+#import "TestHelper.h"
+#import "TestResult.h"
+#import "TimerDisappearAlertView.h"
+#import "ViewController.h"
+#import "CuoTiViewController.h"
+
+//************************************
+#import "UIImageView+WebCache.h"
+
+
+#endif /* FirstGroup_pch */

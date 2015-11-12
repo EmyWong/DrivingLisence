@@ -1,0 +1,1 @@
+../../../XSDCycleScrollView/XSDCycleScrollView/TAAnimatedDotView.h
