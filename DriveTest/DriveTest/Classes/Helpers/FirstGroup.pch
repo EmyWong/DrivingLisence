@@ -130,4 +130,8 @@
 //LeanCloud
 #import <AVOSCloud/AVOSCloud.h>
 
+//********************************
+//SMS_SDK
+#import <SMS_SDK/SMSSDK.h>
+
 #endif /* FirstGroup_pch */

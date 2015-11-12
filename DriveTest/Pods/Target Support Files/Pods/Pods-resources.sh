@@ -59,9 +59,13 @@ install_resource()
 }
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_resource "MJRefresh/MJRefresh/MJRefresh.bundle"
+  install_resource "SMS_SDK/SMS_SDK/en.lproj"
+  install_resource "SMS_SDK/SMS_SDK/zh-Hans.lproj"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_resource "MJRefresh/MJRefresh/MJRefresh.bundle"
+  install_resource "SMS_SDK/SMS_SDK/en.lproj"
+  install_resource "SMS_SDK/SMS_SDK/zh-Hans.lproj"
 fi
 
 mkdir -p "${CONFIGURATION_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"
