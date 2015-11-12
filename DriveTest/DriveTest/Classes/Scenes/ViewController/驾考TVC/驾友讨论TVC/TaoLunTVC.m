@@ -38,7 +38,7 @@
     self.tableView.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingBlock:^{
         //刷新数据
         _pageindex ++;
-        if (_pageindex <= _articletip % 10 +1) {
+        if (_pageindex <= _articletip / 10 + 1) {
             [[AnalyticalData sharedIntance]driveDiscussionLoadDataWithInfoid:self.infoid pageindex:[NSString stringWithFormat:@"%ld",_pageindex] option:^(NSArray *array){
                 //接收数据
                 [self.allDataArray addObjectsFromArray:array];
