@@ -61,7 +61,7 @@
 {
     [self.activity stopAnimating];
     
-    [webView stringByEvaluatingJavaScriptFromString:@"document.getElementById('d_top').style.display = 'none'"];
+    [webView stringByEvaluatingJavaScriptFromString:@"document.getElementById('d_top').style.display = 'none';document.getElementById('d_recommend').style.display = 'none'"];
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
