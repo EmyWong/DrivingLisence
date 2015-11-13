@@ -217,7 +217,12 @@ static NSString *const classOneCellId = @"ClassOneID";
 //评论按钮
 - (void)commentAction
 {
-    NSLog(@"评论按钮");
+    TaoLunTVC * VC = [TaoLunTVC new];
+    UINavigationController *NC = [[UINavigationController alloc] initWithRootViewController:VC];
+    VC.infoid = @"201";
+    VC.articletip = -1;
+    VC.title = @"驾友讨论";
+    [self presentViewController:NC animated:YES completion:nil];
 }
 
 
