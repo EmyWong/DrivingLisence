@@ -129,7 +129,7 @@
 - (void)loadAction:(JiaYouTaoLunCell *)sender
 {
     [sender.dianzanBnt setImage:[UIImage imageNamed:@"dianzan"] forState:UIControlStateNormal];
-    [sender.dianzanBnt addTarget:self action:@selector(dianzanAction) forControlEvents:UIControlEventTouchUpInside];
+    [sender.dianzanBnt addTarget:self action:@selector(dianzanAction:) forControlEvents:UIControlEventTouchUpInside];
     
     
     [sender.pinglunBut setImage:[UIImage imageNamed:@"ppp"] forState:UIControlStateNormal];
@@ -137,8 +137,15 @@
     [sender.pinglunBut addTarget:self action:@selector(pingLunAction) forControlEvents:UIControlEventTouchUpInside];
 }
 
-- (void)dianzanAction
+- (void)dianzanAction:(UIButton *)sender
 {
+    
+    if ([sender.imageView.image isEqual:[UIImage imageNamed:@"dianzaned"]]) {
+        [sender setImage:[UIImage imageNamed:@"dianzan"] forState:UIControlStateNormal];
+    }else{
+        [sender setImage:[UIImage imageNamed:@"dianzaned"] forState:UIControlStateNormal];
+    }
+    
     NSLog(@"wwwwww");
 }
 
