@@ -47,11 +47,52 @@ static NSString *const classOneCellId = @"ClassOneID";
     //将tableView向下偏移轮播图高度的距离
     self.tableView.contentInset = UIEdgeInsetsMake(offset, 0, 0, 0);
     
-    NSArray *images = @[[UIImage imageNamed:@"nvshen.jpg"],
-                        [UIImage imageNamed:@"f2.jpg"],
-                        [UIImage imageNamed:@"f5.jpg"],
-                        [UIImage imageNamed:@"f9.jpg"],
-                        [UIImage imageNamed:@"f12"]                        ];
+    NSURL *url=[NSURL URLWithString:@"http://img1.gtimg.com/cq/pics/hv1/97/246/1244/80953927.jpg"];
+    //2.创建请求对象
+    NSURLRequest *request=[[NSURLRequest alloc]initWithURL:url];
+    //3.链接，下载
+    NSData *data=[NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
+    //4.获取图片
+    UIImage *image1=[UIImage imageWithData:data];
+    
+    NSURL *url1=[NSURL URLWithString:@"http://img1.gtimg.com/cq/pics/hv1/71/246/1244/80953901.jpg"];
+    //2.创建请求对象
+    NSURLRequest *request1=[[NSURLRequest alloc]initWithURL:url1];
+    //3.链接，下载
+    NSData *data1=[NSURLConnection sendSynchronousRequest:request1 returningResponse:nil error:nil];
+    //4.获取图片
+    UIImage *image2=[UIImage imageWithData:data1];
+    
+    NSURL *url2=[NSURL URLWithString:@"http://img1.gtimg.com/cq/pics/hv1/74/246/1244/80953904.jpg"];
+    //2.创建请求对象
+    NSURLRequest *request2=[[NSURLRequest alloc]initWithURL:url2];
+    //3.链接，下载
+    NSData *data2=[NSURLConnection sendSynchronousRequest:request2 returningResponse:nil error:nil];
+    //4.获取图片
+    UIImage *image3=[UIImage imageWithData:data2];
+    
+    NSURL *url3=[NSURL URLWithString:@"http://img1.gtimg.com/cq/pics/hv1/79/246/1244/80953909.jpg"];
+    //2.创建请求对象
+    NSURLRequest *request3=[[NSURLRequest alloc]initWithURL:url3];
+    //3.链接，下载
+    NSData *data3=[NSURLConnection sendSynchronousRequest:request3 returningResponse:nil error:nil];
+    //4.获取图片
+    UIImage *image4=[UIImage imageWithData:data3];
+    
+    NSURL *url4=[NSURL URLWithString:@"http://img1.gtimg.com/cq/pics/hv1/84/246/1244/80953914.jpg"];
+    //2.创建请求对象
+    NSURLRequest *request4=[[NSURLRequest alloc]initWithURL:url3];
+    //3.链接，下载
+    NSData *data4=[NSURLConnection sendSynchronousRequest:request4 returningResponse:nil error:nil];
+    //4.获取图片
+    UIImage *image5=[UIImage imageWithData:data4];
+    
+    
+    NSArray *images = @[image1,
+                        image2,
+                        image3,
+                        image4,
+                        image5];
   
     //第三方视图
     SDCycleScrollView *cycleScrollView = [SDCycleScrollView cycleScrollViewWithFrame:CGRectMake(0, -offset, kScreenWidth, offset) imagesGroup:images];
