@@ -152,7 +152,7 @@
                                         </subviews>
                                     </stackView>
                                 </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="0.29999999999999999" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="0.16" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="E0D-Bn-xQT" secondAttribute="trailing" id="A7G-ip-H7a"/>
                                     <constraint firstItem="E0D-Bn-xQT" firstAttribute="height" secondItem="cxi-RP-3lp" secondAttribute="height" multiplier="0.5" id="BC4-KD-O9i"/>
@@ -286,7 +286,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="360" height="140"/>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="0.47999999999999998" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="0.16" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="140" id="2Q2-m8-2dS"/>
                                     <constraint firstAttribute="trailing" secondItem="eQc-Yg-Vpu" secondAttribute="trailing" id="5tO-nd-fuG"/>
@@ -304,7 +304,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="0.47999999999999998" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="0.16" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="OWZ-eL-Cco" firstAttribute="top" secondItem="cxi-RP-3lp" secondAttribute="bottom" constant="20" id="25x-Lb-BVQ"/>
                             <constraint firstItem="OWZ-eL-Cco" firstAttribute="leading" secondItem="vxJ-mN-6Id" secondAttribute="leading" id="29a-nF-z57"/>
