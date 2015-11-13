@@ -35,6 +35,12 @@
     
     self.tableView.rowHeight = UITableViewAutomaticDimension;
     self.tableView.estimatedRowHeight = 100;
+    
+    //给予pageindex初始值为1
+    self.pageindex = 1;
+    //初始化数组
+    self.allDataArray = [NSMutableArray array];
+    
     //加载数据
     [self loadData];
     
@@ -42,28 +48,20 @@
     self.tableView.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingBlock:^{
         //刷新数据
         _pageindex ++;
-        if (_pageindex <= _articletip / 10 + 1) {
-            [[AnalyticalData sharedIntance]driveDiscussionLoadDataWithInfoid:self.infoid pageindex:[NSString stringWithFormat:@"%ld",_pageindex] option:^(NSArray *array){
-                //接收数据
-                [self.allDataArray addObjectsFromArray:array];
-                //刷新表视图
-                [self.tableView reloadData];
-                
-            }];
-             [self.tableView.mj_footer endRefreshing];
+        if (_articletip == -1) {
+            [self loadData];
+            [self.tableView.mj_footer endRefreshing];
+        }else if (_pageindex <= _articletip / 10 + 1) {
+            [self loadData];
+            [self.tableView.mj_footer endRefreshing];
         }else {
-        [self.tableView.mj_footer noticeNoMoreData];
+            [self.tableView.mj_footer noticeNoMoreData];
         }
     }];
-
-    
 }
 
 - (void)loadData {
-    //给予pageindex初始值为1
-    self.pageindex = 1;
-    //初始化数组
-    self.allDataArray = [NSMutableArray array];
+    
     [[AnalyticalData sharedIntance]driveDiscussionLoadDataWithInfoid:self.infoid pageindex:[NSString stringWithFormat:@"%ld",_pageindex] option:^(NSArray *array) {
         //接收数据
         [self.allDataArray addObjectsFromArray:array];

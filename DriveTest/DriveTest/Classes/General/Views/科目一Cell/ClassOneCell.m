@@ -32,7 +32,7 @@
 
 - (void)awakeFromNib {
     
-    NSURL *url = [NSURL URLWithString:kJxcommentUrl];
+    NSURL *url = [NSURL URLWithString:@"http://bbs.api.jxedt.com/listcate/201/?&pageindex=1"];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     
     //测试是否有网络连接
@@ -46,16 +46,25 @@
          NSMutableDictionary *dic = [NSJSONSerialization JSONObjectWithData:data options:(NSJSONReadingAllowFragments) error:nil];
          NSMutableDictionary *dic1 = dic[@"result"];
          NSMutableDictionary *dic2 = dic1[@"list"];
-         NSMutableArray *arr = dic2[@"photolist"];
-         self.allPicArr = [NSMutableArray arrayWithCapacity:7];
-         [self.allPicArr addObjectsFromArray:arr];
-         [self.img1 sd_setImageWithURL:[NSURL URLWithString:self.allPicArr[0]]];
-         [self.img2 sd_setImageWithURL:[NSURL URLWithString:self.allPicArr[1]]];
-         [self.img3 sd_setImageWithURL:[NSURL URLWithString:self.allPicArr[2]]];
-         [self.img4 sd_setImageWithURL:[NSURL URLWithString:self.allPicArr[3]]];
-         [self.img5 sd_setImageWithURL:[NSURL URLWithString:self.allPicArr[4]]];
-         [self.img6 sd_setImageWithURL:[NSURL URLWithString:self.allPicArr[5]]];
-         [self.img7 sd_setImageWithURL:[NSURL URLWithString:self.allPicArr[6]]];
+         self.numberCommentLabel.text = [NSString stringWithFormat:@"有%@",dic2[@"totalusercount"]];
+         self.allPicArr = [NSMutableArray array];
+         for (NSDictionary * dic  in dic2[@"infolist"]) {
+             DriveDiscussion * driveDiscussion = [DriveDiscussion new];
+             [driveDiscussion setValuesForKeysWithDictionary:dic];
+             [self.allPicArr addObject:driveDiscussion.face];
+         }
+         if (self.allPicArr.count > 8) {
+             [self.allPicArr removeObjectAtIndex:0];
+             [self.allPicArr removeObjectAtIndex:0];
+             [self.img1 sd_setImageWithURL:[NSURL URLWithString:self.allPicArr[0]]];
+             [self.img2 sd_setImageWithURL:[NSURL URLWithString:self.allPicArr[1]]];
+             [self.img3 sd_setImageWithURL:[NSURL URLWithString:self.allPicArr[2]]];
+             [self.img4 sd_setImageWithURL:[NSURL URLWithString:self.allPicArr[3]]];
+             [self.img5 sd_setImageWithURL:[NSURL URLWithString:self.allPicArr[4]]];
+             [self.img6 sd_setImageWithURL:[NSURL URLWithString:self.allPicArr[5]]];
+             [self.img7 sd_setImageWithURL:[NSURL URLWithString:self.allPicArr[6]]];
+
+         }
          
      }];
     }
