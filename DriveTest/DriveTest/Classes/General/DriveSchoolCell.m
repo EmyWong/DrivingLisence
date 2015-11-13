@@ -32,13 +32,14 @@
 
 - (void)awakeFromNib {
     
-    self.starRateView = [[WYHStarRateView alloc] initWithFrame:CGRectMake(0, (self.attentionnumLabel.frame.origin.y - self.nameLabel.frame.origin.y - self.nameLabel.frame.size.height)/2, 90, 25) numberOfStars:5];
+    self.starRateView = [[WYHStarRateView alloc] initWithFrame:CGRectMake(0, (self.attentionnumLabel.frame.origin.y - self.nameLabel.frame.origin.y - self.nameLabel.frame.size.height)/2, 80, 25) numberOfStars:5];
     self.starRateView.scorePercent = 0.2;
     self.starRateView.allowIncompleteStar = YES;
     self.starRateView.hasAnimation = YES;
     [self.nameLabel addSubview:self.starRateView];
     
-    self.amountLabel = [[UILabel alloc]initWithFrame:CGRectMake(self.contentView.frame.size.width -self.nameLabel.frame.origin.x - 120, 0, 80, 25)];
+    
+    self.amountLabel = [[UILabel alloc]initWithFrame:CGRectMake(kScreenWidth - self.nameLabel.frame.origin.x - 70 ,0, 60, 25)];
     self.amountLabel.textColor = [UIColor redColor];
     self.amountLabel.font = [UIFont systemFontOfSize:15];
     [self.starRateView addSubview:self.amountLabel];
