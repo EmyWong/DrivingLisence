@@ -64,7 +64,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FCb-5X-hfF">
                                                 <rect key="frame" x="181" y="0.0" width="179" height="180"/>
                                                 <subviews>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="11.png" translatesAutoresizingMaskIntoConstraints="NO" id="ebJ-I1-E8W">
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ele.png" translatesAutoresizingMaskIntoConstraints="NO" id="ebJ-I1-E8W">
                                                         <rect key="frame" x="30" y="10" width="119" height="120"/>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="合格标准" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CMp-He-7tw">
@@ -376,7 +376,7 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="11.png" width="69" height="69"/>
+        <image name="ele.png" width="69" height="69"/>
         <image name="kaoshijinyan.png" width="129" height="129"/>
         <image name="kaoshizhunbei.png" width="57" height="57"/>
         <image name="miji.png" width="86" height="86"/>

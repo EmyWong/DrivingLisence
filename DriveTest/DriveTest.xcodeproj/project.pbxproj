@@ -156,7 +156,7 @@
 		C2272E141BF21047004D5EFA /* naBenCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C2272E121BF21047004D5EFA /* naBenCell.m */; settings = {ASSET_TAGS = (); }; };
 		C2272E151BF21047004D5EFA /* naBenCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C2272E131BF21047004D5EFA /* naBenCell.xib */; settings = {ASSET_TAGS = (); }; };
 		C2272E171BF219F2004D5EFA /* 1 2.png in Resources */ = {isa = PBXBuildFile; fileRef = C2272E161BF219F2004D5EFA /* 1 2.png */; settings = {ASSET_TAGS = (); }; };
-		C2272E191BF21D61004D5EFA /* 11.png in Resources */ = {isa = PBXBuildFile; fileRef = C2272E181BF21D61004D5EFA /* 11.png */; settings = {ASSET_TAGS = (); }; };
+		C2272E191BF21D61004D5EFA /* ele.png in Resources */ = {isa = PBXBuildFile; fileRef = C2272E181BF21D61004D5EFA /* ele.png */; settings = {ASSET_TAGS = (); }; };
 		C26623461BF4881F005DF5C6 /* JiaYouTaoLunCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C26623441BF4881F005DF5C6 /* JiaYouTaoLunCell.m */; settings = {ASSET_TAGS = (); }; };
 		C26623471BF4881F005DF5C6 /* JiaYouTaoLunCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C26623451BF4881F005DF5C6 /* JiaYouTaoLunCell.xib */; settings = {ASSET_TAGS = (); }; };
 		C26623521BF49752005DF5C6 /* TaoLunTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C26623501BF49752005DF5C6 /* TaoLunTVC.m */; settings = {ASSET_TAGS = (); }; };
@@ -446,7 +446,7 @@
 		C2272E121BF21047004D5EFA /* naBenCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = naBenCell.m; sourceTree = "<group>"; };
 		C2272E131BF21047004D5EFA /* naBenCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = naBenCell.xib; sourceTree = "<group>"; };
 		C2272E161BF219F2004D5EFA /* 1 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1 2.png"; sourceTree = "<group>"; };
-		C2272E181BF21D61004D5EFA /* 11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 11.png; sourceTree = "<group>"; };
+		C2272E181BF21D61004D5EFA /* ele.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ele.png; sourceTree = "<group>"; };
 		C26623431BF4881F005DF5C6 /* JiaYouTaoLunCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JiaYouTaoLunCell.h; sourceTree = "<group>"; };
 		C26623441BF4881F005DF5C6 /* JiaYouTaoLunCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JiaYouTaoLunCell.m; sourceTree = "<group>"; };
 		C26623451BF4881F005DF5C6 /* JiaYouTaoLunCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JiaYouTaoLunCell.xib; sourceTree = "<group>"; };
@@ -1137,7 +1137,7 @@
 		C2AC447A1BF08357006AB483 /* 图标 */ = {
 			isa = PBXGroup;
 			children = (
-				C2272E181BF21D61004D5EFA /* 11.png */,
+				C2272E181BF21D61004D5EFA /* ele.png */,
 				C2272DFF1BF1EF33004D5EFA /* lukaomijue.png */,
 				C2272E161BF219F2004D5EFA /* 1 2.png */,
 				C2272E091BF1F070004D5EFA /* xuzhi@2x.png */,
@@ -1629,7 +1629,7 @@
 				95493BD61BF1D05C006C2323 /* weixuanzhong.png in Resources */,
 				959EE74F1BF47D2A0073B92B /* loading10.tiff in Resources */,
 				C2AC44E51BF0D5D6006AB483 /* weixihuan.png in Resources */,
-				C2272E191BF21D61004D5EFA /* 11.png in Resources */,
+				C2272E191BF21D61004D5EFA /* ele.png in Resources */,
 				79EC03491BF232C6002C568F /* f19.png in Resources */,
 				959EE7661BF47D2A0073B92B /* loading31.tiff in Resources */,
 				79EC030D1BF18014002C568F /* lianxi_numlist@2x.png in Resources */,
