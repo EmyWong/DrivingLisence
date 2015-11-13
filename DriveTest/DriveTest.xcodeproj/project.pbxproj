@@ -214,6 +214,10 @@
 		C2E340381BF361C0006B2AF0 /* JiaoLianPeiLianVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C2E340361BF361C0006B2AF0 /* JiaoLianPeiLianVC.xib */; settings = {ASSET_TAGS = (); }; };
 		C2E3403D1BF37076006B2AF0 /* JLPLCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C2E3403B1BF37076006B2AF0 /* JLPLCell.m */; settings = {ASSET_TAGS = (); }; };
 		C2E3403E1BF37076006B2AF0 /* JLPLCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C2E3403C1BF37076006B2AF0 /* JLPLCell.xib */; settings = {ASSET_TAGS = (); }; };
+		C2F80F641BF5827A0006E789 /* XueYuanCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C2F80F621BF5827A0006E789 /* XueYuanCell.m */; settings = {ASSET_TAGS = (); }; };
+		C2F80F651BF5827A0006E789 /* XueYuanCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C2F80F631BF5827A0006E789 /* XueYuanCell.xib */; settings = {ASSET_TAGS = (); }; };
+		C2F80F6A1BF585830006E789 /* XueYuanDPTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C2F80F681BF585830006E789 /* XueYuanDPTVC.m */; settings = {ASSET_TAGS = (); }; };
+		C2F80F6B1BF585830006E789 /* XueYuanDPTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C2F80F691BF585830006E789 /* XueYuanDPTVC.xib */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -484,6 +488,12 @@
 		C2E3403A1BF37076006B2AF0 /* JLPLCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLPLCell.h; sourceTree = "<group>"; };
 		C2E3403B1BF37076006B2AF0 /* JLPLCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLPLCell.m; sourceTree = "<group>"; };
 		C2E3403C1BF37076006B2AF0 /* JLPLCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JLPLCell.xib; sourceTree = "<group>"; };
+		C2F80F611BF5827A0006E789 /* XueYuanCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XueYuanCell.h; sourceTree = "<group>"; };
+		C2F80F621BF5827A0006E789 /* XueYuanCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XueYuanCell.m; sourceTree = "<group>"; };
+		C2F80F631BF5827A0006E789 /* XueYuanCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XueYuanCell.xib; sourceTree = "<group>"; };
+		C2F80F671BF585830006E789 /* XueYuanDPTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XueYuanDPTVC.h; sourceTree = "<group>"; };
+		C2F80F681BF585830006E789 /* XueYuanDPTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XueYuanDPTVC.m; sourceTree = "<group>"; };
+		C2F80F691BF585830006E789 /* XueYuanDPTVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XueYuanDPTVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -965,6 +975,7 @@
 		C2AC44741BF08357006AB483 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C2F80F601BF582610006E789 /* 学员点评cell */,
 				C26623421BF48538005DF5C6 /* 驾友讨论Cell */,
 				C2272E0B1BF1F4D2004D5EFA /* 拿本Cell */,
 				C2272DE81BF1D429004D5EFA /* 科目三Cell */,
@@ -1161,6 +1172,7 @@
 		C2AC44911BF08357006AB483 /* 驾校TVC */ = {
 			isa = PBXGroup;
 			children = (
+				C2F80F661BF5855B0006E789 /* 学员点评TVC */,
 				C266234E1BF49752005DF5C6 /* 驾友讨论TVC */,
 				C2E340331BF3618B006B2AF0 /* 教练陪练VC */,
 				C2E340271BF34C75006B2AF0 /* 驾校VC */,
@@ -1218,6 +1230,26 @@
 				C2E3403C1BF37076006B2AF0 /* JLPLCell.xib */,
 			);
 			path = "教练陪练详情cell";
+			sourceTree = "<group>";
+		};
+		C2F80F601BF582610006E789 /* 学员点评cell */ = {
+			isa = PBXGroup;
+			children = (
+				C2F80F611BF5827A0006E789 /* XueYuanCell.h */,
+				C2F80F621BF5827A0006E789 /* XueYuanCell.m */,
+				C2F80F631BF5827A0006E789 /* XueYuanCell.xib */,
+			);
+			path = "学员点评cell";
+			sourceTree = "<group>";
+		};
+		C2F80F661BF5855B0006E789 /* 学员点评TVC */ = {
+			isa = PBXGroup;
+			children = (
+				C2F80F671BF585830006E789 /* XueYuanDPTVC.h */,
+				C2F80F681BF585830006E789 /* XueYuanDPTVC.m */,
+				C2F80F691BF585830006E789 /* XueYuanDPTVC.xib */,
+			);
+			path = "学员点评TVC";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1328,6 +1360,7 @@
 				C26623611BF4D4F0005DF5C6 /* mycom.png in Resources */,
 				959EE7691BF47D2A0073B92B /* loading34.tiff in Resources */,
 				C2272E021BF1EF53004D5EFA /* kaochangjingyan.png in Resources */,
+				C2F80F6B1BF585830006E789 /* XueYuanDPTVC.xib in Resources */,
 				959EE76D1BF47D2A0073B92B /* loading38.tiff in Resources */,
 				95493ACE1BF045D2006C2323 /* LaunchScreen.storyboard in Resources */,
 				95493BEA1BF1E9A1006C2323 /* ImageQuestionCell.xib in Resources */,
@@ -1366,6 +1399,7 @@
 				79EC030B1BF18014002C568F /* lianxi_del@2x.png in Resources */,
 				959EE7891BF47D2A0073B92B /* loading9.tiff in Resources */,
 				95493BC41BF1CE77006C2323 /* QuestionCell.xib in Resources */,
+				C2F80F651BF5827A0006E789 /* XueYuanCell.xib in Resources */,
 				C2AC44EE1BF0EA1E006AB483 /* suijilianxiOn@2x.png in Resources */,
 				C2272DF21BF1D474004D5EFA /* RoadThreeTestCell.xib in Resources */,
 				C26623641BF4D4F0005DF5C6 /* phone.png in Resources */,
@@ -1499,6 +1533,7 @@
 				95493BCC1BF1CF25006C2323 /* TestResult.m in Sources */,
 				C2272DCB1BF17FFB004D5EFA /* ClassFourTestTVC.m in Sources */,
 				C2AC44DB1BF085FC006AB483 /* test7.m in Sources */,
+				C2F80F641BF5827A0006E789 /* XueYuanCell.m in Sources */,
 				959EE67A1BF38D370073B92B /* RuleViewController.m in Sources */,
 				C2E340311BF34CE5006B2AF0 /* SchoolInfoCell.m in Sources */,
 				C2AC44B91BF0841F006AB483 /* RoadTestTVC.m in Sources */,
@@ -1519,6 +1554,7 @@
 				C29C11261BF0BAB1001030F2 /* School.m in Sources */,
 				C21023491BF4348C000B605D /* Baseinfoarea.m in Sources */,
 				C2AC44B31BF08402006AB483 /* DrivingLicenseTVC.m in Sources */,
+				C2F80F6A1BF585830006E789 /* XueYuanDPTVC.m in Sources */,
 				C2272E141BF21047004D5EFA /* naBenCell.m in Sources */,
 				95493BE51BF1DDD3006C2323 /* ViewController.m in Sources */,
 				C26623521BF49752005DF5C6 /* TaoLunTVC.m in Sources */,

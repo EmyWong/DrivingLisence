@@ -48,6 +48,9 @@
 #import "JiaYouTaoLunCell.h"    //讨论cell
 #import "TaoLunCell.h"  //讨论图片cell
 
+
+#import "XueYuanCell.h"     //学员点评cell
+
 //*******************************************
 
 
@@ -105,6 +108,10 @@
 
 //驾友讨论控制器
 #import "TaoLunTVC.h"   //驾友讨论控制器
+
+
+//学员点评控制器
+#import "XueYuanDPTVC.h"    //学员点评控制器
 
 //***********************************
 #pragma mark Venders 第三方头文件
