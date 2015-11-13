@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface XueYuanDPTVC : UITableViewController
+@property (nonatomic,copy)NSString* infoid;
+@property (nonatomic,copy)NSString* type;
+
 
 @end

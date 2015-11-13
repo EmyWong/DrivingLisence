@@ -10,6 +10,14 @@
 
 @implementation XueYuanCell
 
+- (void)setCommentlist:(Commentlist *)commentlist {
+    self.name.text = commentlist.name;
+    self.connent.text = commentlist.comment;
+    self.time.text = commentlist.time;
+    
+}
+
+
 - (void)awakeFromNib {
     // Initialization code
 }

@@ -28,4 +28,12 @@ typedef void(^Block) (NSArray* array);
 - (void)driveDiscussionLoadDataWithInfoid:(NSString*)infoid
                                 pageindex:(NSString*)pageindex
                                    option:(Block)block;
+
+//点击学员讨论页面的方法
+- (void)commentlistLoadDataWithInfoid:(NSString*)infoid
+                                 type:(NSString*)type
+                            pageindex:(NSString*)pageindex
+                               option:(Block)block;
+
+
 @end

@@ -226,11 +226,13 @@
 //驾友点评
 - (void)dianPingButtonAction
 {
-    UINavigationController *NC = [[UINavigationController alloc] initWithRootViewController:[XueYuanDPTVC new]];
-    
+    XueYuanDPTVC * VC = [XueYuanDPTVC new];
+    UINavigationController *NC = [[UINavigationController alloc] initWithRootViewController:VC];
+    VC.infoid = self.string;
+    VC.type = self.type;
     [self presentViewController:NC animated:YES completion:nil];
     
-    NSLog(@"点评");
+    
 }
 
 

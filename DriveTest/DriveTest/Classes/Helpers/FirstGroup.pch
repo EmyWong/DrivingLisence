@@ -72,6 +72,8 @@
 #import "DriveDiscussion.h"
 //解析驾校信息的方法类
 #import "AnalyticalData.h"
+//学员点评数据模型
+#import "Commentlist.h"
 //解决网络错误的方法类
 #import "NetWorkManager.h"
 

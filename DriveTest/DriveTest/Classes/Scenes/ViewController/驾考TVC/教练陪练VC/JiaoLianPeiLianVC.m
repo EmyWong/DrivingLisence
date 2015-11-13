@@ -157,9 +157,16 @@
     [testMethod setHidesBottomBarWhenPushed:YES];
     [self.navigationController pushViewController:testMethod animated:YES];
 }
+
+
+//学员点评跳转
 - (void)dianPingButtonAction
 {
-    NSLog(@"点评");
+    XueYuanDPTVC * VC = [XueYuanDPTVC new];
+    UINavigationController *NC = [[UINavigationController alloc] initWithRootViewController:VC];
+    VC.infoid = self.string;
+    VC.type = self.type;
+    [self presentViewController:NC animated:YES completion:nil];
 }
 
 

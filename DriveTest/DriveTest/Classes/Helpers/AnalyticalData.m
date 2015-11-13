@@ -164,5 +164,38 @@
     }
 }
 
+//点击学员讨论页面的方法
+- (void)commentlistLoadDataWithInfoid:(NSString *)infoid type:(NSString *)type pageindex:(NSString *)pageindex option:(Block)block {
+    //测试是否有网络连接
+    if ([[NetWorkManager sharedWithManager] isConnectionAvailable]== NO) {
+        UIAlertView *alertView = [[UIAlertView alloc]initWithTitle:@"提示" message:@"无网络连接" delegate:self cancelButtonTitle:@"好的" otherButtonTitles:nil, nil];
+        [alertView show];
+    }
+    else {
+        //创建一个可变数据，用来接受数据
+        self.allDataArray = [NSMutableArray array];
+        NSString * url = [NSString stringWithFormat:@"http://api.jxedt.com/detail/%@/comment/list/?type=%@&pageindex=%@",infoid,type,pageindex];
+        NSURLRequest * request = [NSURLRequest requestWithURL:[NSURL URLWithString:url]];
+        [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse * _Nullable response, NSData * _Nullable data, NSError * _Nullable connectionError) {
+            //字典接收data数据
+            NSDictionary * dict = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:nil];
+            NSDictionary * resultDict = dict[@"result"];
+            NSDictionary * listDict = resultDict[@"list"];
+            for (NSDictionary * dic  in listDict[@"commentlist"]) {
+                Commentlist * commentlist = [Commentlist new];
+                [commentlist setValuesForKeysWithDictionary:dic];
+                [self.allDataArray addObject:commentlist];
+            }
+            block(self.allDataArray);
+            
+        }];
+    }
+    
+    
+    
+}
+
+
+
 
 @end

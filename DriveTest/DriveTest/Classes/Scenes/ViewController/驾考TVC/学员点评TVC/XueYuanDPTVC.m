@@ -9,6 +9,10 @@
 #import "XueYuanDPTVC.h"
 
 @interface XueYuanDPTVC ()
+//声明一个pageindex，用于刷新数据
+@property (nonatomic,assign)NSInteger pageindex;
+//声明一个数组，用来接收数据
+@property (nonatomic,strong)NSMutableArray * allDataArray;
 
 @end
 
@@ -25,7 +29,38 @@
     
     self.tableView.rowHeight = UITableViewAutomaticDimension;
     self.tableView.estimatedRowHeight = 100;
-    
+    //加载数据
+    [self loadData];
+    //下拉刷新
+    self.tableView.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingBlock:^{
+        //刷新数据
+        _pageindex ++;
+           [[AnalyticalData sharedIntance]commentlistLoadDataWithInfoid:self.infoid type:self.type pageindex:[NSString stringWithFormat:@"%ld",_pageindex] option:^(NSArray *array) {
+            //接收数据
+            [self.allDataArray addObjectsFromArray:array];
+            //刷新表视图
+            [self.tableView reloadData];
+            
+            
+            }];
+            [self.tableView.mj_footer endRefreshing];
+        }];
+
+}
+
+- (void)loadData {
+    //给予pageindex初始值为1
+    self.pageindex = 1;
+    //初始化数组
+    self.allDataArray = [NSMutableArray array];
+    [[AnalyticalData sharedIntance]commentlistLoadDataWithInfoid:self.infoid type:self.type pageindex:[NSString stringWithFormat:@"%ld",_pageindex] option:^(NSArray *array) {
+        //接收数据
+        [self.allDataArray addObjectsFromArray:array];
+        //刷新表视图
+        [self.tableView reloadData];
+
+        
+    }];
 }
 
 
@@ -48,14 +83,15 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 5;
+    return _allDataArray.count;
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"xueyuancell" forIndexPath:indexPath];
+    XueYuanCell *cell = [tableView dequeueReusableCellWithIdentifier:@"xueyuancell" forIndexPath:indexPath];
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
-    
+    Commentlist * commentlist = self.allDataArray[indexPath.row];
+    cell.commentlist = commentlist;
     return cell;
 }
 
