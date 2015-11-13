@@ -48,6 +48,8 @@
     [self loadData];
     
     
+    self.tableView.tableFooterView = [[UIView alloc] init];
+    
     //下拉刷新
     self.tableView.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingBlock:^{
         //刷新数据

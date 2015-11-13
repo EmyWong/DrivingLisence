@@ -29,6 +29,9 @@
     [self.tableView registerNib:[UINib nibWithNibName:@"XueYuanCell" bundle:nil] forCellReuseIdentifier:@"xueyuancell"];
     
     
+    self.tableView.tableFooterView = [[UIView alloc] init];
+    
+    
     self.tableView.rowHeight = UITableViewAutomaticDimension;
     self.tableView.estimatedRowHeight = 100;
     //加载数据

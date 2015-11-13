@@ -27,6 +27,9 @@
     //注册tableView
     [self.myTableView registerNib:[UINib nibWithNibName:@"SchoolInfoCell" bundle:nil] forCellReuseIdentifier:@"schoolCell"];
     
+    
+    self.myTableView.tableFooterView = [[UIView alloc] init];
+    
     //设置代理数据源
     self.myTableView.delegate = self;
     self.myTableView.dataSource = self;

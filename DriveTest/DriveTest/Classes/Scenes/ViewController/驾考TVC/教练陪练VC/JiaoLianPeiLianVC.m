@@ -33,6 +33,9 @@
     //注册tableView
     [self.myTableVIew registerNib:[UINib nibWithNibName:@"JLPLCell" bundle:nil] forCellReuseIdentifier:@"JLCell"];
     
+    
+    self.myTableVIew.tableFooterView = [[UIView alloc] init];
+    
     //设置代理数据源
     self.myTableVIew.delegate = self;
     self.myTableVIew.dataSource = self;
