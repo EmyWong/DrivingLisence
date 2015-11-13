@@ -10,4 +10,6 @@
 @class Infolist;
 @interface DriveSchoolCell : UITableViewCell
 @property (nonatomic,strong)Infolist * info;
+@property (weak, nonatomic) IBOutlet UIButton *selectButton;
+
 @end

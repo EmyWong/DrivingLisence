@@ -105,15 +105,22 @@
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     Infolist * info = _allDataArray[indexPath.row];
     cell.info = info;
+    //加载cell上buuton的点击事件
+    [self loadAction:cell];
     return cell;
 }
-//返回row的高度
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 120;
+
+#pragma mark 加载cell上Button的点击事件
+- (void)loadAction:(DriveSchoolCell*)sender {
+    [sender.selectButton addTarget:self action:@selector(selectButtonAction:) forControlEvents:UIControlEventTouchUpInside];
 }
 
-//点击cell的方法
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+//点击进入下一页的方法
+- (void)selectButtonAction:(UIButton*)sender {
+    
+    DriveSchoolCell *cell = (DriveSchoolCell *)[[sender superview] superview];
+    NSIndexPath *indexPath = [self.tableView indexPathForCell:cell];
+    
     
     //如果是驾校cell，跳转进入驾校详情
     if ([self.type isEqualToString:@"jx"]) {
@@ -122,8 +129,9 @@
         UINavigationController *NC = [[UINavigationController alloc] initWithRootViewController:VC];
         Infolist * info = _allDataArray[indexPath.row];
         VC.type = self.type;
+        
         VC.string = [NSString stringWithFormat:@"%@",info.infoid];
-
+        
         [self presentViewController:NC animated:YES completion:nil];
     }else{
         JiaoLianPeiLianVC *VC = [JiaoLianPeiLianVC new];
@@ -135,6 +143,13 @@
     }
     
 }
+
+
+//返回row的高度
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 120;
+}
+
 
 
 //SegmentedControl(驾校，教练，陪练)的点击实现方法
