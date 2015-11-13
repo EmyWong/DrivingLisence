@@ -160,12 +160,12 @@
             <connections>
                 <outlet property="address" destination="ff0-FB-AhR" id="TjG-Zg-2bk"/>
                 <outlet property="connent" destination="znK-JU-REo" id="xCV-IX-dqj"/>
-                <outlet property="dianZan" destination="s9J-7p-10P" id="Qw4-gX-kFC"/>
+                <outlet property="dianZan" destination="s9J-7p-10P" id="lEo-wg-eNL"/>
                 <outlet property="dianzanBnt" destination="P1Y-we-5B1" id="bAM-7R-TfI"/>
                 <outlet property="imgView" destination="PoD-dv-XGK" id="7R5-lb-kWj"/>
                 <outlet property="name" destination="JAK-OJ-pap" id="1At-RY-JNw"/>
                 <outlet property="pinglunBut" destination="g6O-55-p4m" id="BBf-mg-gsx"/>
-                <outlet property="pinglunNumber" destination="syZ-kn-egg" id="WtX-Ko-iTN"/>
+                <outlet property="pinglunNumber" destination="syZ-kn-egg" id="vLY-IN-a82"/>
                 <outlet property="time" destination="9Rf-I9-MPQ" id="WGN-Lo-eCx"/>
             </connections>
             <point key="canvasLocation" x="360" y="345"/>

@@ -140,9 +140,29 @@
 - (void)dianzanAction:(UIButton *)sender
 {
     
+    JiaYouTaoLunCell *cell = (JiaYouTaoLunCell *)[[[[sender superview] superview] superview] superview];
+    NSIndexPath *indexPath = [self.tableView indexPathForCell:cell];
+    
+    DriveDiscussion *drive = self.allDataArray[indexPath.row];
+    
+    NSString *likeTip = drive.liketip;
+    
+    NSInteger num = [likeTip intValue];
+    
+    
     if ([sender.imageView.image isEqual:[UIImage imageNamed:@"dianzaned"]]) {
+        
+        cell.dianZan.text = likeTip;
+        
         [sender setImage:[UIImage imageNamed:@"dianzan"] forState:UIControlStateNormal];
     }else{
+        
+        num = num + 1;
+        NSString *str = [NSString stringWithFormat:@"%ld", num];
+        
+        cell.dianZan.text = str;
+        
+        
         [sender setImage:[UIImage imageNamed:@"dianzaned"] forState:UIControlStateNormal];
     }
     
@@ -170,9 +190,30 @@
 
 - (void)DZAction:(UIButton *)sender
 {
+    
+    TaoLunCell *cell = (TaoLunCell *)[[[[sender superview] superview] superview] superview];
+    NSIndexPath *indexPath = [self.tableView indexPathForCell:cell];
+    
+    DriveDiscussion *drive = self.allDataArray[indexPath.row];
+    
+    NSString *likeTip = drive.liketip;
+    
+    NSInteger num = [likeTip intValue];
+    
+    
+    
     if ([sender.imageView.image isEqual:[UIImage imageNamed:@"dianzaned"]]) {
+        
+        cell.dianzan.text = likeTip;
+        
         [sender setImage:[UIImage imageNamed:@"dianzan"] forState:UIControlStateNormal];
     }else{
+        
+        num = num + 1;
+        NSString *str = [NSString stringWithFormat:@"%ld", num];
+        
+        cell.dianzan.text = str;
+        
         [sender setImage:[UIImage imageNamed:@"dianzaned"] forState:UIControlStateNormal];
     }
     NSLog(@"img dz");

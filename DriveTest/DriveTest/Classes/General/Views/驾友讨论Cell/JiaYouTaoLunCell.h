@@ -12,7 +12,9 @@
 @property (weak, nonatomic) IBOutlet UIButton *pinglunBut;
 @property (weak, nonatomic) IBOutlet UIButton *dianzanBnt;
 @property (nonatomic,strong) DriveDiscussion * drive;
+@property (weak, nonatomic) IBOutlet UILabel *dianZan;
 
+@property (weak, nonatomic) IBOutlet UILabel *pinglunNumber;
 
 
 

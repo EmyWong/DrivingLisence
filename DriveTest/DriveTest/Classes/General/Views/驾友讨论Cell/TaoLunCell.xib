@@ -202,13 +202,13 @@
             <connections>
                 <outlet property="address" destination="2Ut-ns-fkm" id="B2p-JL-HX2"/>
                 <outlet property="connent" destination="2QR-JI-3Vp" id="GHc-LB-CUF"/>
-                <outlet property="dianzan" destination="rvg-Wu-lrX" id="mxt-SW-Dhk"/>
+                <outlet property="dianzan" destination="t4S-VP-Wf7" id="d6V-9B-uIK"/>
                 <outlet property="dianzanBTN" destination="0KW-Do-Njt" id="BeH-Y4-Pfj"/>
                 <outlet property="img1" destination="KCL-Zc-wHB" id="Lk6-J2-Ssj"/>
                 <outlet property="img2" destination="dha-8n-11O" id="GBp-l5-H0z"/>
                 <outlet property="img3" destination="D6c-ql-2BB" id="msF-y7-xOS"/>
                 <outlet property="name" destination="tMr-1e-Hfr" id="ifs-G3-C23"/>
-                <outlet property="pinglun" destination="t4S-VP-Wf7" id="dyf-IC-lSO"/>
+                <outlet property="pinglun" destination="rvg-Wu-lrX" id="gbv-ZV-Lwb"/>
                 <outlet property="pinglunBTN" destination="2b3-xn-QGm" id="fRd-Iy-sMC"/>
                 <outlet property="time" destination="z5y-mm-gmx" id="rk8-ja-3dv"/>
                 <outlet property="touXiangImg" destination="1aL-uF-JD9" id="xpy-UA-BNY"/>
