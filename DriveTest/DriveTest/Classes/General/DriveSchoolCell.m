@@ -39,7 +39,8 @@
     [self.nameLabel addSubview:self.starRateView];
     
     
-    self.amountLabel = [[UILabel alloc]initWithFrame:CGRectMake(kScreenWidth - self.nameLabel.frame.origin.x - 70 ,0, 60, 25)];
+    self.amountLabel = [[UILabel alloc]initWithFrame:CGRectMake(kScreenWidth - self.nameLabel.frame.origin.x - 110 ,0, 100, 25)];
+    self.amountLabel.textAlignment = NSTextAlignmentRight;
     self.amountLabel.textColor = [UIColor redColor];
     self.amountLabel.font = [UIFont systemFontOfSize:15];
     [self.starRateView addSubview:self.amountLabel];
