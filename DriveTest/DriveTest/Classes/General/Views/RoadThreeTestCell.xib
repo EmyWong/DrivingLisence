@@ -332,7 +332,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="0.13" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="0.47999999999999998" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="32J-Qi-x2J" firstAttribute="leading" secondItem="0j1-UN-7GH" secondAttribute="leading" id="0XH-LG-dnP"/>
                             <constraint firstAttribute="bottom" secondItem="32J-Qi-x2J" secondAttribute="bottom" constant="8" id="CAB-5o-do7"/>

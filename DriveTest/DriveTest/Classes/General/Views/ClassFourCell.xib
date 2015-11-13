@@ -304,7 +304,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="0.13" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="0.47999999999999998" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="OWZ-eL-Cco" firstAttribute="top" secondItem="cxi-RP-3lp" secondAttribute="bottom" constant="20" id="25x-Lb-BVQ"/>
                             <constraint firstItem="OWZ-eL-Cco" firstAttribute="leading" secondItem="vxJ-mN-6Id" secondAttribute="leading" id="29a-nF-z57"/>
