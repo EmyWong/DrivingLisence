@@ -45,8 +45,8 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n2v-9d-KB7">
                                         <rect key="frame" x="0.0" y="1" width="360" height="40"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jiakaofagui.png" translatesAutoresizingMaskIntoConstraints="NO" id="Jit-MT-670">
-                                                <rect key="frame" x="20" y="0.0" width="40" height="40"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="phone.png" translatesAutoresizingMaskIntoConstraints="NO" id="Jit-MT-670">
+                                                <rect key="frame" x="20" y="8" width="24" height="24"/>
                                                 <animations/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="Jit-MT-670" secondAttribute="height" id="Y83-Ch-vac"/>
@@ -61,7 +61,7 @@
                                                 </constraints>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0671-88921256" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8gG-BY-ttk">
-                                                <rect key="frame" x="65" y="10" width="110" height="21"/>
+                                                <rect key="frame" x="49" y="10" width="126" height="21"/>
                                                 <animations/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
@@ -92,10 +92,10 @@
                                             <constraint firstItem="E0j-Be-f9X" firstAttribute="leading" secondItem="hmt-Pe-gcD" secondAttribute="trailing" constant="31" id="5PN-9H-BM8"/>
                                             <constraint firstAttribute="bottom" secondItem="goF-e2-Mvy" secondAttribute="bottom" constant="5" id="7H2-BU-suu"/>
                                             <constraint firstItem="goF-e2-Mvy" firstAttribute="centerX" secondItem="n2v-9d-KB7" secondAttribute="centerX" id="9x8-ke-wXD"/>
-                                            <constraint firstItem="Jit-MT-670" firstAttribute="top" secondItem="n2v-9d-KB7" secondAttribute="top" id="FEs-Fc-Dfa"/>
+                                            <constraint firstItem="Jit-MT-670" firstAttribute="top" secondItem="n2v-9d-KB7" secondAttribute="top" constant="8" id="FEs-Fc-Dfa"/>
                                             <constraint firstItem="goF-e2-Mvy" firstAttribute="leading" secondItem="8gG-BY-ttk" secondAttribute="trailing" constant="5" id="Hq8-4d-RqU"/>
                                             <constraint firstItem="goF-e2-Mvy" firstAttribute="top" secondItem="n2v-9d-KB7" secondAttribute="top" constant="5" id="JCS-qN-z1V"/>
-                                            <constraint firstAttribute="bottom" secondItem="Jit-MT-670" secondAttribute="bottom" id="K9p-rQ-QAV"/>
+                                            <constraint firstAttribute="bottom" secondItem="Jit-MT-670" secondAttribute="bottom" constant="8" id="K9p-rQ-QAV"/>
                                             <constraint firstItem="05l-64-68X" firstAttribute="top" secondItem="n2v-9d-KB7" secondAttribute="top" id="PGX-wO-qrS"/>
                                             <constraint firstItem="8gG-BY-ttk" firstAttribute="centerY" secondItem="n2v-9d-KB7" secondAttribute="centerY" id="Q1M-bb-T7a"/>
                                             <constraint firstAttribute="height" constant="40" id="REa-bO-ohH"/>
@@ -119,15 +119,15 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dYv-5G-bWc">
                                         <rect key="frame" x="0.0" y="42" width="360" height="40"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kaochangjingyan.png" translatesAutoresizingMaskIntoConstraints="NO" id="nJu-eX-dWg">
-                                                <rect key="frame" x="20" y="0.0" width="40" height="40"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mydizhi.png" translatesAutoresizingMaskIntoConstraints="NO" id="nJu-eX-dWg">
+                                                <rect key="frame" x="20" y="8" width="24" height="24"/>
                                                 <animations/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="nJu-eX-dWg" secondAttribute="height" multiplier="1:1" id="DmY-fK-kg6"/>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="西湖区振华路199号西侧友谊驾校" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fIv-Ba-HQF">
-                                                <rect key="frame" x="65" y="9" width="275" height="21"/>
+                                                <rect key="frame" x="49" y="9" width="291" height="21"/>
                                                 <animations/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
@@ -139,25 +139,25 @@
                                         <constraints>
                                             <constraint firstItem="fIv-Ba-HQF" firstAttribute="leading" secondItem="nJu-eX-dWg" secondAttribute="trailing" constant="5" id="MKE-4z-MmZ"/>
                                             <constraint firstItem="nJu-eX-dWg" firstAttribute="leading" secondItem="dYv-5G-bWc" secondAttribute="leading" constant="20" id="O7e-2M-GXW"/>
-                                            <constraint firstItem="nJu-eX-dWg" firstAttribute="top" secondItem="dYv-5G-bWc" secondAttribute="top" id="dVV-CF-pdY"/>
+                                            <constraint firstItem="nJu-eX-dWg" firstAttribute="top" secondItem="dYv-5G-bWc" secondAttribute="top" constant="8" id="dVV-CF-pdY"/>
                                             <constraint firstItem="fIv-Ba-HQF" firstAttribute="centerY" secondItem="dYv-5G-bWc" secondAttribute="centerY" id="kpP-fP-IqB"/>
                                             <constraint firstAttribute="trailing" secondItem="fIv-Ba-HQF" secondAttribute="trailing" constant="20" id="nb9-ix-RMe"/>
                                             <constraint firstAttribute="height" constant="40" id="o0B-vo-gD2"/>
-                                            <constraint firstAttribute="bottom" secondItem="nJu-eX-dWg" secondAttribute="bottom" id="qc0-JS-nrf"/>
+                                            <constraint firstAttribute="bottom" secondItem="nJu-eX-dWg" secondAttribute="bottom" constant="8" id="qc0-JS-nrf"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wxx-eo-2eO">
                                         <rect key="frame" x="0.0" y="83" width="360" height="40"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="xuanzhong.png" translatesAutoresizingMaskIntoConstraints="NO" id="60O-t5-UwZ">
-                                                <rect key="frame" x="20" y="0.0" width="40" height="40"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mygongjiao.png" translatesAutoresizingMaskIntoConstraints="NO" id="60O-t5-UwZ">
+                                                <rect key="frame" x="20" y="8" width="24" height="24"/>
                                                 <animations/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="60O-t5-UwZ" secondAttribute="height" multiplier="1:1" id="ddb-FK-cng"/>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="班车路线" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="avu-zb-AEx">
-                                                <rect key="frame" x="65" y="9" width="68" height="21"/>
+                                                <rect key="frame" x="49" y="9" width="68" height="21"/>
                                                 <animations/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
@@ -177,9 +177,9 @@
                                         <animations/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstItem="60O-t5-UwZ" firstAttribute="top" secondItem="wxx-eo-2eO" secondAttribute="top" id="BgI-gc-2UZ"/>
+                                            <constraint firstItem="60O-t5-UwZ" firstAttribute="top" secondItem="wxx-eo-2eO" secondAttribute="top" constant="8" id="BgI-gc-2UZ"/>
                                             <constraint firstAttribute="trailing" secondItem="avu-zb-AEx" secondAttribute="trailing" constant="20" id="Dvw-kE-4VP"/>
-                                            <constraint firstAttribute="bottom" secondItem="60O-t5-UwZ" secondAttribute="bottom" id="R3b-pb-8KO"/>
+                                            <constraint firstAttribute="bottom" secondItem="60O-t5-UwZ" secondAttribute="bottom" constant="8" id="R3b-pb-8KO"/>
                                             <constraint firstItem="5bU-Ob-mub" firstAttribute="centerY" secondItem="wxx-eo-2eO" secondAttribute="centerY" constant="-2" id="RG9-9w-yhw"/>
                                             <constraint firstAttribute="trailing" secondItem="PI4-0k-5BF" secondAttribute="trailing" id="Tiq-EQ-pWC"/>
                                             <constraint firstItem="avu-zb-AEx" firstAttribute="leading" secondItem="60O-t5-UwZ" secondAttribute="trailing" constant="5" id="Vn2-Xa-ea3"/>
@@ -512,8 +512,8 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="jiakaofagui.png" width="86" height="86"/>
-        <image name="kaochangjingyan.png" width="86" height="86"/>
-        <image name="xuanzhong.png" width="32" height="32"/>
+        <image name="mydizhi.png" width="1024" height="1024"/>
+        <image name="mygongjiao.png" width="1024" height="1024"/>
+        <image name="phone.png" width="1024" height="1024"/>
     </resources>
 </document>
