@@ -10,4 +10,14 @@
 
 @interface XueYuanCell : UITableViewCell
 
+@property (weak, nonatomic) IBOutlet UIImageView *touXiang;
+@property (weak, nonatomic) IBOutlet UILabel *name;
+
+@property (weak, nonatomic) IBOutlet UILabel *connent;
+
+@property (weak, nonatomic) IBOutlet UILabel *time;
+@property (weak, nonatomic) IBOutlet UIButton *dianzanBTN;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *dianzanNum;
+
+
 @end
