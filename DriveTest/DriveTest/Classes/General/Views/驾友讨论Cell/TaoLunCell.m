@@ -7,7 +7,6 @@
 //
 
 #import "TaoLunCell.h"
-
 @implementation TaoLunCell
 
 - (void)setDrive:(DriveDiscussion *)drive {
@@ -39,9 +38,32 @@
 
 
 - (void)awakeFromNib {
-    // Initialization code
-}
+    self.img1.userInteractionEnabled = YES;
+    UITapGestureRecognizer *tap1 = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(Max1Action:)];
+    [self.img1 addGestureRecognizer:tap1];
+    self.img2.userInteractionEnabled = YES;
+    UITapGestureRecognizer *tap2 = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(Max2Action:)];
+    [self.img2 addGestureRecognizer:tap2];
+    self.img3.userInteractionEnabled = YES;
+    UITapGestureRecognizer *tap3 = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(Max3Action:)];
+    [self.img3 addGestureRecognizer:tap3];
 
+}
+- (void)Max1Action:(UITapGestureRecognizer *)sender
+{
+    [[NSUserDefaults standardUserDefaults]setValue:@"1" forKey:@"img"];
+    self.transportBlock();
+}
+- (void)Max2Action:(UITapGestureRecognizer *)sender
+{
+    [[NSUserDefaults standardUserDefaults]setValue:@"2" forKey:@"img"];
+    self.transportBlock();
+}
+- (void)Max3Action:(UITapGestureRecognizer *)sender
+{
+    [[NSUserDefaults standardUserDefaults]setValue:@"3" forKey:@"img"];
+    self.transportBlock();
+}
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
 

@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+typedef void(^TransportBlock)();
 @interface TaoLunCell : UITableViewCell
 
 @property (weak, nonatomic) IBOutlet UIImageView *touXiangImg;
@@ -27,7 +27,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *pinglunBTN;
 
 @property (nonatomic,strong) DriveDiscussion * drive;
-
+@property (nonatomic,strong) TransportBlock transportBlock;
 
 
 

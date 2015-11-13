@@ -49,6 +49,7 @@
 		95493C4E1BF31F84006C2323 /* fail.png in Resources */ = {isa = PBXBuildFile; fileRef = 95493C4D1BF31F84006C2323 /* fail.png */; settings = {ASSET_TAGS = (); }; };
 		9556B4811BF58577008CB614 /* FileService.m in Sources */ = {isa = PBXBuildFile; fileRef = 9556B4801BF58577008CB614 /* FileService.m */; settings = {ASSET_TAGS = (); }; };
 		9556B4841BF5B756008CB614 /* touxiang1.png in Resources */ = {isa = PBXBuildFile; fileRef = 9556B4831BF5B756008CB614 /* touxiang1.png */; settings = {ASSET_TAGS = (); }; };
+		9556B4881BF615A1008CB614 /* MaxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9556B4871BF615A1008CB614 /* MaxViewController.m */; settings = {ASSET_TAGS = (); }; };
 		959EE6701BF324A20073B92B /* WYHStarRateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 959EE66F1BF324A20073B92B /* WYHStarRateView.m */; settings = {ASSET_TAGS = (); }; };
 		959EE67A1BF38D370073B92B /* RuleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 959EE6791BF38D370073B92B /* RuleViewController.m */; settings = {ASSET_TAGS = (); }; };
 		959EE6871BF41E9C0073B92B /* DrivingLisenceVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 959EE6861BF41E9C0073B92B /* DrivingLisenceVC.m */; settings = {ASSET_TAGS = (); }; };
@@ -322,6 +323,8 @@
 		9556B47F1BF58577008CB614 /* FileService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileService.h; sourceTree = "<group>"; };
 		9556B4801BF58577008CB614 /* FileService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileService.m; sourceTree = "<group>"; };
 		9556B4831BF5B756008CB614 /* touxiang1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = touxiang1.png; sourceTree = "<group>"; };
+		9556B4861BF615A1008CB614 /* MaxViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaxViewController.h; sourceTree = "<group>"; };
+		9556B4871BF615A1008CB614 /* MaxViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaxViewController.m; sourceTree = "<group>"; };
 		959EE66E1BF324A20073B92B /* WYHStarRateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYHStarRateView.h; sourceTree = "<group>"; };
 		959EE66F1BF324A20073B92B /* WYHStarRateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYHStarRateView.m; sourceTree = "<group>"; };
 		959EE6781BF38D370073B92B /* RuleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RuleViewController.h; sourceTree = "<group>"; };
@@ -796,6 +799,15 @@
 			name = "缓存管理助手";
 			sourceTree = "<group>";
 		};
+		9556B4851BF61586008CB614 /* 放大VC */ = {
+			isa = PBXGroup;
+			children = (
+				9556B4861BF615A1008CB614 /* MaxViewController.h */,
+				9556B4871BF615A1008CB614 /* MaxViewController.m */,
+			);
+			name = "放大VC";
+			sourceTree = "<group>";
+		};
 		959EE66D1BF324900073B92B /* 星星分数 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1217,6 +1229,7 @@
 			children = (
 				C2AC44AE1BF083F2006AB483 /* RootViewController.h */,
 				C2AC44AF1BF083F2006AB483 /* RootViewController.m */,
+				9556B4851BF61586008CB614 /* 放大VC */,
 				C2AC44851BF08357006AB483 /* 拿本TVC */,
 				C2AC44881BF08357006AB483 /* 社区TVC */,
 				C2AC448B1BF08357006AB483 /* 路考TVC */,
@@ -1740,6 +1753,7 @@
 				C2AC44B91BF0841F006AB483 /* RoadTestTVC.m in Sources */,
 				C210234D1BF4348C000B605D /* Questionarea.m in Sources */,
 				95493AC91BF045D2006C2323 /* DriveTest.xcdatamodeld in Sources */,
+				9556B4881BF615A1008CB614 /* MaxViewController.m in Sources */,
 				C2272DE31BF1CF70004D5EFA /* RoadTestThreeTVC.m in Sources */,
 				C2AC44C41BF0851C006AB483 /* ClassOneCell.m in Sources */,
 				C29C11281BF0BAB1001030F2 /* ClickJxInfo.m in Sources */,

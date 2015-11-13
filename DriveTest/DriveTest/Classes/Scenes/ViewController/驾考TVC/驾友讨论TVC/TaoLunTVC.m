@@ -7,7 +7,7 @@
 //
 
 #import "TaoLunTVC.h"
-
+#import "MaxViewController.h"
 @interface TaoLunTVC ()
 //声明一个pageindex，用于刷新数据
 @property (nonatomic,assign)NSInteger pageindex;
@@ -117,6 +117,15 @@
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
         
         cell.drive = drive;
+        
+        //执行Block
+        __weak typeof(self)temp = self;
+        cell.transportBlock = ^()
+        {
+            MaxViewController  *VC = [MaxViewController new];
+            VC.drive = drive;
+            [temp presentViewController:VC animated:YES completion:nil];
+        };
         return cell;
     }
     
