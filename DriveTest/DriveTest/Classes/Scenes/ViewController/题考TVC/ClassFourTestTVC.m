@@ -41,7 +41,7 @@ static NSString *const classFourCellId = @"ClassFourID";
 - (void)loadHeaderImage
 {
     
-    CGFloat offest = 120;
+    CGFloat offest = 150;
     
     self.tableView.contentInset = UIEdgeInsetsMake(offest, 0, 0, 0);
     self.imgVIew = [[UIImageView alloc] init];
