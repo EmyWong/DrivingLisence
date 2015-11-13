@@ -104,7 +104,7 @@
     [sender.taoLunButton addTarget:self action:@selector(taoLunButtonAction) forControlEvents:UIControlEventTouchUpInside];
     
     //学员点评
-    [sender.dianPingButton addTarget:self action:@selector(dianPingButtonAction) forControlEvents:UIControlEventTouchUpInside];
+    [sender.dianPingButton addTarget:self action:@selector(dianPingButtonAction:) forControlEvents:UIControlEventTouchUpInside];
 }
 
 //电话
@@ -224,12 +224,28 @@
 }
 
 //驾友点评
-- (void)dianPingButtonAction
+- (void)dianPingButtonAction:(UIButton *)sender
 {
+    
+    SchoolInfoCell *cell = (SchoolInfoCell *)[[[[[sender superview] superview] superview] superview] superview];
+    
+    NSIndexPath *indexPath = [self.myTableView indexPathForCell:cell];
+    ClickJxInfo *click = self.allDataArray[indexPath.row];
+    
+    //学员点评：commentarea 字典
+    Commentarea * commentarea = [Commentarea new];
+    [commentarea setValuesForKeysWithDictionary:click.commentarea];
+    NSString *comment = commentarea.moretext;
+    NSString *str = [comment substringFromIndex:4];
+    NSString *str1 = [str substringToIndex:2];
+    
+    
+    
     XueYuanDPTVC * VC = [XueYuanDPTVC new];
     UINavigationController *NC = [[UINavigationController alloc] initWithRootViewController:VC];
     VC.infoid = self.string;
     VC.type = self.type;
+    VC.num = [str1 intValue];
     [self presentViewController:NC animated:YES completion:nil];
     
     

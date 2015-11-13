@@ -14,6 +14,10 @@
     self.name.text = commentlist.name;
     self.connent.text = commentlist.comment;
     self.time.text = commentlist.time;
+    self.dianzanNum.text = [NSString stringWithFormat:@"%ld", commentlist.likecount];
+    
+    NSInteger num = arc4random()%37;
+    self.touXiang.image = [UIImage imageNamed:[NSString stringWithFormat:@"%ld", num]];
     
 }
 

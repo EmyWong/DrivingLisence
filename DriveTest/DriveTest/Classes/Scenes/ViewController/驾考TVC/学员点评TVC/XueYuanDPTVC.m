@@ -21,6 +21,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    NSLog(@"%ld", self.num);
     
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"返回" style:UIBarButtonItemStylePlain target:self action:@selector(returnAction)];
     
@@ -35,16 +36,22 @@
     self.tableView.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingBlock:^{
         //刷新数据
         _pageindex ++;
-           [[AnalyticalData sharedIntance]commentlistLoadDataWithInfoid:self.infoid type:self.type pageindex:[NSString stringWithFormat:@"%ld",_pageindex] option:^(NSArray *array) {
-            //接收数据
-            [self.allDataArray addObjectsFromArray:array];
-            //刷新表视图
-            [self.tableView reloadData];
-            
-            
+        NSLog(@"@@@@@@@@@%ld", _pageindex);
+        if (_pageindex <= self.num / 10 + 1) {
+            [[AnalyticalData sharedIntance]commentlistLoadDataWithInfoid:self.infoid type:self.type pageindex:[NSString stringWithFormat:@"%ld",_pageindex] option:^(NSArray *array) {
+                //接收数据
+                [self.allDataArray addObjectsFromArray:array];
+                //刷新表视图
+                [self.tableView reloadData];
+                
+                
             }];
             [self.tableView.mj_footer endRefreshing];
-        }];
+        }else{
+            [self.tableView.mj_footer noticeNoMoreData];
+        }
+        
+    }];
 
 }
 
@@ -89,12 +96,51 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     XueYuanCell *cell = [tableView dequeueReusableCellWithIdentifier:@"xueyuancell" forIndexPath:indexPath];
+    [self loadAction:cell];
+    
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     Commentlist * commentlist = self.allDataArray[indexPath.row];
     cell.commentlist = commentlist;
+    
+    
     return cell;
 }
 
+
+- (void)loadAction:(XueYuanCell *)sender
+{
+    [sender.dianzanBTN setImage:[UIImage imageNamed:@"dianzan"] forState:UIControlStateNormal];
+    
+    [sender.dianzanBTN addTarget:self action:@selector(dianzaiAction:) forControlEvents:UIControlEventTouchUpInside];
+}
+
+- (void)dianzaiAction:(UIButton *)sender
+{
+    XueYuanCell *cell = (XueYuanCell *)[[[sender superview] superview] superview];
+    
+    NSIndexPath *indexPath = [self.tableView indexPathForCell:cell];
+    
+    Commentlist *comment = self.allDataArray[indexPath.row];
+    
+    NSInteger num = comment.likecount;
+    
+    
+    
+    if ([sender.imageView.image isEqual:[UIImage imageNamed:@"dianzan"]]) {
+        
+        num = num + 1;
+        
+        cell.dianzanNum.text = [NSString stringWithFormat:@"%ld", num];
+        
+        [sender setImage:[UIImage imageNamed:@"dianzaned"] forState:UIControlStateNormal];
+    }else
+    {
+        
+        cell.dianzanNum.text = [NSString stringWithFormat:@"%ld", comment.likecount];
+        
+        [sender setImage:[UIImage imageNamed:@"dianzan"] forState:UIControlStateNormal];
+    }
+}
 
 /*
 // Override to support conditional editing of the table view.

@@ -17,7 +17,8 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *time;
 @property (weak, nonatomic) IBOutlet UIButton *dianzanBTN;
-@property (weak, nonatomic) IBOutlet NSLayoutConstraint *dianzanNum;
+@property (weak, nonatomic) IBOutlet UILabel *dianzanNum;
+
 @property (nonatomic,strong)Commentlist * commentlist;
 
 @end

@@ -11,6 +11,6 @@
 @interface XueYuanDPTVC : UITableViewController
 @property (nonatomic,copy)NSString* infoid;
 @property (nonatomic,copy)NSString* type;
-
+@property (nonatomic, assign) NSInteger num;
 
 @end

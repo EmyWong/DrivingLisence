@@ -66,28 +66,28 @@
     if (indexPath.row == 0) {
         cell.textLabel.text = @"2013年《机动车驾驶证申领和使用规定》";
         cell.detailTextLabel.text = @"机动车驾驶证申领和使用规定";
-        cell.imageView.image = [UIImage imageNamed:@"1"];
+        cell.imageView.image = [UIImage imageNamed:@"a1"];
         
     }
     else if (indexPath.row == 1)
     {
         cell.textLabel.text = @"2015驾校考驾照规定";
         cell.detailTextLabel.text = @"驾校考驾照规定";
-        cell.imageView.image = [UIImage imageNamed:@"2"];
+        cell.imageView.image = [UIImage imageNamed:@"a2"];
         
     }
     else if (indexPath.row == 2)
     {
         cell.textLabel.text = @"道路交通安全违法行为记分分值（2015版）";
         cell.detailTextLabel.text = @"违法行为记分分值";
-        cell.imageView.image = [UIImage imageNamed:@"3"];
+        cell.imageView.image = [UIImage imageNamed:@"a3"];
         
     }
     else
     {
         cell.textLabel.text = @"醉驾处罚-2015版酒驾醉驾处罚";
         cell.detailTextLabel.text = @"醉驾处罚";
-        cell.imageView.image = [UIImage imageNamed:@"4"];
+        cell.imageView.image = [UIImage imageNamed:@"a4"];
         
     }
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
