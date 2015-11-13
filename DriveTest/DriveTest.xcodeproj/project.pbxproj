@@ -11,6 +11,8 @@
 		79245D151BF438CA00F9BE32 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79245D101BF438C900F9BE32 /* LoginViewController.xib */; settings = {ASSET_TAGS = (); }; };
 		79245D161BF438CA00F9BE32 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79245D121BF438C900F9BE32 /* RegisterViewController.m */; settings = {ASSET_TAGS = (); }; };
 		79245D171BF438CA00F9BE32 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79245D131BF438C900F9BE32 /* RegisterViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		79BA8CD41BF5FC8800CC604D /* communityCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 79BA8CD21BF5FC8800CC604D /* communityCell.m */; settings = {ASSET_TAGS = (); }; };
+		79BA8CD51BF5FC8800CC604D /* communityCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79BA8CD31BF5FC8800CC604D /* communityCell.xib */; settings = {ASSET_TAGS = (); }; };
 		79EC030A1BF18014002C568F /* lianxi_collect@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 79EC03051BF18014002C568F /* lianxi_collect@2x.png */; settings = {ASSET_TAGS = (); }; };
 		79EC030B1BF18014002C568F /* lianxi_del@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 79EC03061BF18014002C568F /* lianxi_del@2x.png */; settings = {ASSET_TAGS = (); }; };
 		79EC030C1BF18014002C568F /* lianxi_exption@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 79EC03071BF18014002C568F /* lianxi_exption@2x.png */; settings = {ASSET_TAGS = (); }; };
@@ -267,6 +269,9 @@
 		79245D111BF438C900F9BE32 /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
 		79245D121BF438C900F9BE32 /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
 		79245D131BF438C900F9BE32 /* RegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
+		79BA8CD11BF5FC8800CC604D /* communityCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = communityCell.h; sourceTree = "<group>"; };
+		79BA8CD21BF5FC8800CC604D /* communityCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = communityCell.m; sourceTree = "<group>"; };
+		79BA8CD31BF5FC8800CC604D /* communityCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = communityCell.xib; sourceTree = "<group>"; };
 		79EC03051BF18014002C568F /* lianxi_collect@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lianxi_collect@2x.png"; sourceTree = "<group>"; };
 		79EC03061BF18014002C568F /* lianxi_del@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lianxi_del@2x.png"; sourceTree = "<group>"; };
 		79EC03071BF18014002C568F /* lianxi_exption@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lianxi_exption@2x.png"; sourceTree = "<group>"; };
@@ -608,6 +613,16 @@
 				79245D131BF438C900F9BE32 /* RegisterViewController.xib */,
 			);
 			name = Login/Register;
+			sourceTree = "<group>";
+		};
+		79BA8CD01BF5FC4700CC604D /* 社区cell */ = {
+			isa = PBXGroup;
+			children = (
+				79BA8CD11BF5FC8800CC604D /* communityCell.h */,
+				79BA8CD21BF5FC8800CC604D /* communityCell.m */,
+				79BA8CD31BF5FC8800CC604D /* communityCell.xib */,
+			);
+			name = "社区cell";
 			sourceTree = "<group>";
 		};
 		79EC03041BF17FFE002C568F /* 侧栏图片 */ = {
@@ -1063,6 +1078,7 @@
 		C2AC44741BF08357006AB483 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				79BA8CD01BF5FC4700CC604D /* 社区cell */,
 				C2F80F601BF582610006E789 /* 学员点评cell */,
 				C26623421BF48538005DF5C6 /* 驾友讨论Cell */,
 				C2272E0B1BF1F4D2004D5EFA /* 拿本Cell */,
@@ -1598,6 +1614,7 @@
 				959EE7501BF47D2A0073B92B /* loading11.tiff in Resources */,
 				C2272E151BF21047004D5EFA /* naBenCell.xib in Resources */,
 				C2F80F991BF5A0170006E789 /* 17.png in Resources */,
+				79BA8CD51BF5FC8800CC604D /* communityCell.xib in Resources */,
 				C2F80FC41BF5AFFB0006E789 /* a3.png in Resources */,
 				959EE7761BF47D2A0073B92B /* loading46.tiff in Resources */,
 				C2F80FA61BF5A0170006E789 /* 29.png in Resources */,
@@ -1735,6 +1752,7 @@
 				95493BC81BF1CF08006C2323 /* TestHelper.m in Sources */,
 				C21B1FB61BF2DC640020018A /* NetWorkManager.m in Sources */,
 				79245D141BF438CA00F9BE32 /* LoginViewController.m in Sources */,
+				79BA8CD41BF5FC8800CC604D /* communityCell.m in Sources */,
 				C29C11261BF0BAB1001030F2 /* School.m in Sources */,
 				C21023491BF4348C000B605D /* Baseinfoarea.m in Sources */,
 				C2AC44B31BF08402006AB483 /* DrivingLicenseTVC.m in Sources */,
