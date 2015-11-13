@@ -21,7 +21,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    
+    self.title = @"驾校详情";
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"返回" style:UIBarButtonItemStylePlain target:self action:@selector(leaftAction)];
     
     //注册tableView
@@ -213,6 +213,7 @@
     ClickJxInfo * info = self.allDataArray[0];
     Bbsgrouparea * bbsgrouparea = [Bbsgrouparea new];
     [bbsgrouparea setValuesForKeysWithDictionary:info.bbsgrouparea];
+    
     NSString * infoid = [NSString stringWithFormat:@"%@",bbsgrouparea.groupaction[@"extparam"][@"infoid"]];
     
     
@@ -220,6 +221,7 @@
     UINavigationController *NC = [[UINavigationController alloc] initWithRootViewController:VC];
     VC.infoid = infoid;
     VC.articletip = bbsgrouparea.articletip;
+    VC.title = bbsgrouparea.title;
     [self presentViewController:NC animated:YES completion:nil];
 }
 
