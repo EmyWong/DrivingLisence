@@ -99,7 +99,7 @@ static NSString *const classOneCellId = @"ClassOneID";
     
     NSURL *url4=[NSURL URLWithString:@"http://img1.gtimg.com/cq/pics/hv1/102/246/1244/80953932.jpg"];
     //2.创建请求对象
-    NSURLRequest *request4=[[NSURLRequest alloc]initWithURL:url3];
+    NSURLRequest *request4=[[NSURLRequest alloc]initWithURL:url4];
     //3.链接，下载
     NSData *data4=[NSURLConnection sendSynchronousRequest:request4 returningResponse:nil error:nil];
     //4.获取图片
