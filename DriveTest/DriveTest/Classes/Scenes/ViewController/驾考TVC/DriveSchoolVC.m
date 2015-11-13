@@ -7,10 +7,10 @@
 //
 
 #import "DriveSchoolVC.h"
+#import "FileService.h"
 
 
-
-@interface DriveSchoolVC ()<UITableViewDataSource,UITableViewDelegate,RNFrostedSidebarDelegate>
+@interface DriveSchoolVC ()<UITableViewDataSource,UITableViewDelegate,RNFrostedSidebarDelegate,UIAlertViewDelegate>
 //声明方法
 - (IBAction)firstSegmentedControlAction:(UISegmentedControl *)sender;
 - (IBAction)secondSegmentedControlAction:(UISegmentedControl *)sender;
@@ -27,6 +27,9 @@
 @property (nonatomic,assign)NSInteger pageindex;
 
 @property (nonatomic,strong) RNFrostedSidebar *callout;
+
+@property (nonatomic,retain) NSString *cachePath;
+@property (nonatomic,strong) UIAlertView *hcAlertView;
 @end
 
 @implementation DriveSchoolVC
@@ -63,6 +66,10 @@
     UIImage *image = [UIImage imageNamed:@"touxiang1"];
     image = [image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:image style:UIBarButtonItemStyleDone target:self action:@selector(menuAction)];
+    
+    //缓存路径
+    NSArray * paths = NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES);
+    self.cachePath = [[paths objectAtIndex:0] stringByAppendingFormat:@"/Caches"];
 
     
 }
@@ -240,7 +247,19 @@
             break;
         case 4:
         {
-            NSLog(@"设置");
+            [self.callout dismiss];
+            CGFloat size = [FileService folderSizeAtPath:self.cachePath];
+            if (size > .01f )
+            {
+                self.hcAlertView = [[UIAlertView alloc]initWithTitle:@"提示" message:[NSString stringWithFormat:@"缓存大小为%.2fM，确定要清除缓存吗",size]delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"确定", nil];
+                [self.hcAlertView show];
+                
+            }
+            else
+            {
+                UIAlertView *alertView = [[UIAlertView alloc]initWithTitle:@"提示" message:@"暂时没有缓存" delegate:self cancelButtonTitle:@"好的" otherButtonTitles:nil, nil];
+                [alertView show];
+            }
         }
             break;
             
@@ -248,7 +267,14 @@
             break;
     }
 }
-
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    if (alertView == self.hcAlertView) {
+    [FileService clearCache:self.cachePath];
+    UIAlertView *alertView1 = [[UIAlertView alloc]initWithTitle:@"提示" message:@"清除缓存成功" delegate:self cancelButtonTitle:@"好的" otherButtonTitles:nil, nil];
+    [alertView1 show];
+    }
+}
 
 
 @end

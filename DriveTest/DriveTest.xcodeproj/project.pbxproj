@@ -47,6 +47,7 @@
 		95493C4E1BF31F84006C2323 /* fail.png in Resources */ = {isa = PBXBuildFile; fileRef = 95493C4D1BF31F84006C2323 /* fail.png */; settings = {ASSET_TAGS = (); }; };
 		9556B47C1BF584B2008CB614 /* touxiang.png in Resources */ = {isa = PBXBuildFile; fileRef = 9556B47B1BF584B2008CB614 /* touxiang.png */; settings = {ASSET_TAGS = (); }; };
 		9556B47E1BF584D7008CB614 /* touxiang1.png in Resources */ = {isa = PBXBuildFile; fileRef = 9556B47D1BF584D7008CB614 /* touxiang1.png */; settings = {ASSET_TAGS = (); }; };
+		9556B4811BF58577008CB614 /* FileService.m in Sources */ = {isa = PBXBuildFile; fileRef = 9556B4801BF58577008CB614 /* FileService.m */; settings = {ASSET_TAGS = (); }; };
 		959EE6701BF324A20073B92B /* WYHStarRateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 959EE66F1BF324A20073B92B /* WYHStarRateView.m */; settings = {ASSET_TAGS = (); }; };
 		959EE67A1BF38D370073B92B /* RuleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 959EE6791BF38D370073B92B /* RuleViewController.m */; settings = {ASSET_TAGS = (); }; };
 		959EE6811BF38D770073B92B /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 959EE67D1BF38D770073B92B /* 1.png */; settings = {ASSET_TAGS = (); }; };
@@ -275,6 +276,8 @@
 		95493C4D1BF31F84006C2323 /* fail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fail.png; sourceTree = "<group>"; };
 		9556B47B1BF584B2008CB614 /* touxiang.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = touxiang.png; sourceTree = "<group>"; };
 		9556B47D1BF584D7008CB614 /* touxiang1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = touxiang1.png; sourceTree = "<group>"; };
+		9556B47F1BF58577008CB614 /* FileService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileService.h; sourceTree = "<group>"; };
+		9556B4801BF58577008CB614 /* FileService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileService.m; sourceTree = "<group>"; };
 		959EE66E1BF324A20073B92B /* WYHStarRateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYHStarRateView.h; sourceTree = "<group>"; };
 		959EE66F1BF324A20073B92B /* WYHStarRateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYHStarRateView.m; sourceTree = "<group>"; };
 		959EE6781BF38D370073B92B /* RuleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RuleViewController.h; sourceTree = "<group>"; };
@@ -685,6 +688,15 @@
 			name = "考试技巧VC";
 			sourceTree = "<group>";
 		};
+		9556B4821BF5857A008CB614 /* 缓存管理助手 */ = {
+			isa = PBXGroup;
+			children = (
+				9556B47F1BF58577008CB614 /* FileService.h */,
+				9556B4801BF58577008CB614 /* FileService.m */,
+			);
+			name = "缓存管理助手";
+			sourceTree = "<group>";
+		};
 		959EE66D1BF324900073B92B /* 星星分数 */ = {
 			isa = PBXGroup;
 			children = (
@@ -996,6 +1008,7 @@
 		C2AC44761BF08357006AB483 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				9556B4821BF5857A008CB614 /* 缓存管理助手 */,
 				95493BC51BF1CEE0006C2323 /* 练习助手 */,
 				C29C11291BF0DE13001030F2 /* AnalyticalData.h */,
 				C29C112A1BF0DE13001030F2 /* AnalyticalData.m */,
@@ -1549,6 +1562,7 @@
 				95493BBE1BF1CE6B006C2323 /* PanduanCell.m in Sources */,
 				95493BEE1BF1F523006C2323 /* ImagePDCell.m in Sources */,
 				C2AC44C81BF08532006AB483 /* test1.m in Sources */,
+				9556B4811BF58577008CB614 /* FileService.m in Sources */,
 				C2AC44B01BF083F2006AB483 /* RootViewController.m in Sources */,
 				95493ABD1BF045D2006C2323 /* main.m in Sources */,
 				C2AC44BC1BF0842C006AB483 /* ProblemsTestTVC.m in Sources */,
