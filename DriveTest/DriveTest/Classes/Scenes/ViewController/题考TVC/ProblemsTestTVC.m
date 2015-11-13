@@ -43,7 +43,7 @@ static NSString *const classOneCellId = @"ClassOneID";
 //加载轮播图
 - (void)loadSDCycleImage
 {
-    CGFloat offset = 120; //设置偏移量和轮播图的高度相等
+    CGFloat offset = 150; //设置偏移量和轮播图的高度相等
     //将tableView向下偏移轮播图高度的距离
     self.tableView.contentInset = UIEdgeInsetsMake(offset, 0, 0, 0);
     
