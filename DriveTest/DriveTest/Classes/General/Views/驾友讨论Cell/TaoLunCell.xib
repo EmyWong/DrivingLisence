@@ -73,22 +73,28 @@
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.20999999999999999" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rvg-Wu-lrX">
-                                        <rect key="frame" x="300" y="20" width="40" height="20"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rvg-Wu-lrX">
+                                        <rect key="frame" x="310" y="20" width="30" height="20"/>
                                         <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="AkN-vX-Rfl"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.20999999999999999" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t4S-VP-Wf7">
-                                        <rect key="frame" x="218" y="20" width="40" height="20"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="22" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t4S-VP-Wf7">
+                                        <rect key="frame" x="248" y="20" width="20" height="20"/>
                                         <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="20" id="Mbp-Fr-9BS"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.20999999999999999" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0KW-Do-Njt">
-                                        <rect key="frame" x="186" y="15" width="30" height="30"/>
+                                        <rect key="frame" x="216" y="15" width="30" height="30"/>
                                         <animations/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="0KW-Do-Njt" secondAttribute="height" multiplier="1:1" id="N5k-eZ-692"/>
@@ -96,7 +102,7 @@
                                         <state key="normal" title="Button"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2b3-xn-QGm">
-                                        <rect key="frame" x="268" y="15" width="30" height="30"/>
+                                        <rect key="frame" x="278" y="15" width="30" height="30"/>
                                         <animations/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="2b3-xn-QGm" secondAttribute="height" multiplier="1:1" id="fNE-L7-nOW"/>
