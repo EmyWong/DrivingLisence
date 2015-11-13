@@ -269,7 +269,7 @@
 }
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
 {
-    if (alertView == self.hcAlertView) {
+    if (alertView == self.hcAlertView   && buttonIndex == 1) {
     [FileService clearCache:self.cachePath];
     UIAlertView *alertView1 = [[UIAlertView alloc]initWithTitle:@"提示" message:@"清除缓存成功" delegate:self cancelButtonTitle:@"好的" otherButtonTitles:nil, nil];
     [alertView1 show];

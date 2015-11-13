@@ -47,13 +47,31 @@ static NSString *const classOneCellId = @"ClassOneID";
     //将tableView向下偏移轮播图高度的距离
     self.tableView.contentInset = UIEdgeInsetsMake(offset, 0, 0, 0);
     
+    
+    UIImage *image1 = [UIImage new];
+    UIImage *image2 = [UIImage new];
+    UIImage *image3 = [UIImage new];
+    UIImage *image4 = [UIImage new];
+    UIImage *image5 = [UIImage new];
+    //测试是否有网络连接
+    if ([[NetWorkManager sharedWithManager] isConnectionAvailable]== NO) {
+        image1 = [UIImage imageNamed:@"fail"];
+        image2 = [UIImage imageNamed:@"fail"];
+        image3 = [UIImage imageNamed:@"fail"];
+        image4 = [UIImage imageNamed:@"fail"];
+        image5 = [UIImage imageNamed:@"fail"];
+   
+    }
+    else
+    {
+    
     NSURL *url=[NSURL URLWithString:@"http://img1.gtimg.com/cq/pics/hv1/97/246/1244/80953927.jpg"];
     //2.创建请求对象
     NSURLRequest *request=[[NSURLRequest alloc]initWithURL:url];
     //3.链接，下载
     NSData *data=[NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
     //4.获取图片
-    UIImage *image1=[UIImage imageWithData:data];
+    image1=[UIImage imageWithData:data];
     
     NSURL *url1=[NSURL URLWithString:@"http://img1.gtimg.com/cq/pics/hv1/71/246/1244/80953901.jpg"];
     //2.创建请求对象
@@ -61,7 +79,7 @@ static NSString *const classOneCellId = @"ClassOneID";
     //3.链接，下载
     NSData *data1=[NSURLConnection sendSynchronousRequest:request1 returningResponse:nil error:nil];
     //4.获取图片
-    UIImage *image2=[UIImage imageWithData:data1];
+    image2=[UIImage imageWithData:data1];
     
     NSURL *url2=[NSURL URLWithString:@"http://img1.gtimg.com/cq/pics/hv1/74/246/1244/80953904.jpg"];
     //2.创建请求对象
@@ -69,7 +87,7 @@ static NSString *const classOneCellId = @"ClassOneID";
     //3.链接，下载
     NSData *data2=[NSURLConnection sendSynchronousRequest:request2 returningResponse:nil error:nil];
     //4.获取图片
-    UIImage *image3=[UIImage imageWithData:data2];
+    image3=[UIImage imageWithData:data2];
     
     NSURL *url3=[NSURL URLWithString:@"http://img1.gtimg.com/cq/pics/hv1/79/246/1244/80953909.jpg"];
     //2.创建请求对象
@@ -77,7 +95,7 @@ static NSString *const classOneCellId = @"ClassOneID";
     //3.链接，下载
     NSData *data3=[NSURLConnection sendSynchronousRequest:request3 returningResponse:nil error:nil];
     //4.获取图片
-    UIImage *image4=[UIImage imageWithData:data3];
+    image4=[UIImage imageWithData:data3];
     
     NSURL *url4=[NSURL URLWithString:@"http://img1.gtimg.com/cq/pics/hv1/102/246/1244/80953932.jpg"];
     //2.创建请求对象
@@ -85,18 +103,18 @@ static NSString *const classOneCellId = @"ClassOneID";
     //3.链接，下载
     NSData *data4=[NSURLConnection sendSynchronousRequest:request4 returningResponse:nil error:nil];
     //4.获取图片
-    UIImage *image5=[UIImage imageWithData:data4];
-    
+    image5=[UIImage imageWithData:data4];
+    }
     
     NSArray *images = @[image1,
                         image2,
                         image3,
                         image4,
                         image5];
-  
+    
     //第三方视图
     SDCycleScrollView *cycleScrollView = [SDCycleScrollView cycleScrollViewWithFrame:CGRectMake(0, -offset, kScreenWidth, offset) imagesGroup:images];
-
+    
     
     
     cycleScrollView.infiniteLoop = YES;

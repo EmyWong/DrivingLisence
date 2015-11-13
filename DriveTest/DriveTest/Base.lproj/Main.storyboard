@@ -18,7 +18,7 @@
                     </tabBar>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="color" keyPath="tabBar.tintColor">
-                            <color key="value" red="0.0" green="1" blue="0.0" alpha="0.47999999999999998" colorSpace="calibratedRGB"/>
+                            <color key="value" red="0.45882352941176469" green="0.77254901960784317" blue="0.011764705882352941" alpha="1" colorSpace="calibratedRGB"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                     <connections>
@@ -106,6 +106,7 @@
                                     <segment title="人气"/>
                                     <segment title="价格"/>
                                 </segments>
+                                <color key="tintColor" red="0.45882352939999999" green="0.7725490196" blue="0.01176470588" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="secondSegmentedControlAction:" destination="BLo-WF-A4Y" eventType="valueChanged" id="r87-Z7-PlC"/>
                                 </connections>
@@ -139,6 +140,7 @@
                                 <segment title="教练"/>
                                 <segment title="陪练"/>
                             </segments>
+                            <color key="tintColor" red="0.45882352941176469" green="0.77254901960784317" blue="0.011764705882352941" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="firstSegmentedControlAction:" destination="BLo-WF-A4Y" eventType="valueChanged" id="csk-d6-hPH"/>
                             </connections>
@@ -177,7 +179,7 @@
                                 <segment title="科目一"/>
                                 <segment title="科目四"/>
                             </segments>
-                            <color key="tintColor" red="0.0" green="1" blue="0.0" alpha="0.38" colorSpace="calibratedRGB"/>
+                            <color key="tintColor" red="0.45882352939999999" green="0.7725490196" blue="0.01176470588" alpha="1" colorSpace="calibratedRGB"/>
                         </segmentedControl>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
@@ -246,7 +248,7 @@
                                 <segment title="科目二"/>
                                 <segment title="科目三"/>
                             </segments>
-                            <color key="tintColor" red="0.0" green="1" blue="0.0" alpha="0.38" colorSpace="calibratedRGB"/>
+                            <color key="tintColor" red="0.45882352939999999" green="0.7725490196" blue="0.01176470588" alpha="1" colorSpace="calibratedRGB"/>
                         </segmentedControl>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
