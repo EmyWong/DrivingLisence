@@ -242,7 +242,14 @@
     [commentarea setValuesForKeysWithDictionary:click.commentarea];
     NSString *comment = commentarea.moretext;
     NSString *str = [comment substringFromIndex:4];
-    NSString *str1 = [str substringToIndex:2];
+    NSArray *arr = [str componentsSeparatedByString:@"条"];
+    NSString *str1 = nil;
+    if (arr.count != 0) {
+        str1 = arr.firstObject;
+        NSLog(@"%@", str1);
+    }else{
+        str1 = @"0";
+    }
     
     
     

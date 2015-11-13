@@ -77,7 +77,13 @@
     //学员点评：commentarea 字典
     Commentarea * commentarea = [Commentarea new];
     [commentarea setValuesForKeysWithDictionary:clickJxInfo.commentarea];
-    self.dianPinRenShu.text = commentarea.moretext;
+    if (commentarea.moretext == nil) {
+        self.dianPinRenShu.text = @"暂无学员点评";
+    }else{
+        self.dianPinRenShu.text = commentarea.moretext;
+    }
+    
+    
     
     
 }
