@@ -215,7 +215,7 @@
             break;
         case 1:
         {
-            TestMethodVC *testMethod = [TestMethodVC new];
+            DrivingLisenceVC *testMethod = [DrivingLisenceVC new];
             testMethod.url = @"http://bbs.api.jxedt.com/news/h5/201/index";
             testMethod.title = @"新手须知";
             [testMethod setHidesBottomBarWhenPushed:YES];
@@ -226,7 +226,7 @@
             break;
         case 2:
         {
-            TestMethodVC *testMethod = [TestMethodVC new];
+            DrivingLisenceVC *testMethod = [DrivingLisenceVC new];
             testMethod.url = @"http://bbs.api.jxedt.com/news/h5/208/index";
             testMethod.title = @"学车指南";
             [testMethod setHidesBottomBarWhenPushed:YES];
@@ -237,7 +237,7 @@
             break;
         case 3:
         {
-            TestMethodVC *testMethod = [TestMethodVC new];
+            DrivingLisenceVC *testMethod = [DrivingLisenceVC new];
             testMethod.url = @"http://bbs.api.jxedt.com/news/h5/101/index";
             testMethod.title = @"驾考头条";
             [testMethod setHidesBottomBarWhenPushed:YES];
