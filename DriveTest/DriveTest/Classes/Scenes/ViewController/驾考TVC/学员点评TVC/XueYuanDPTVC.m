@@ -22,6 +22,10 @@
     
     [self.tableView registerNib:[UINib nibWithNibName:@"XueYuanCell" bundle:nil] forCellReuseIdentifier:@"xueyuancell"];
     
+    
+    self.tableView.rowHeight = UITableViewAutomaticDimension;
+    self.tableView.estimatedRowHeight = 100;
+    
 }
 
 
