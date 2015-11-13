@@ -79,7 +79,7 @@ static NSString *const classOneCellId = @"ClassOneID";
     //4.获取图片
     UIImage *image4=[UIImage imageWithData:data3];
     
-    NSURL *url4=[NSURL URLWithString:@"http://img1.gtimg.com/cq/pics/hv1/84/246/1244/80953914.jpg"];
+    NSURL *url4=[NSURL URLWithString:@"http://img1.gtimg.com/cq/pics/hv1/102/246/1244/80953932.jpg"];
     //2.创建请求对象
     NSURLRequest *request4=[[NSURLRequest alloc]initWithURL:url3];
     //3.链接，下载

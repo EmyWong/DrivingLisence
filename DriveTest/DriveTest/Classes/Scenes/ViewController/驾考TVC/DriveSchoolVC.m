@@ -7,10 +7,10 @@
 //
 
 #import "DriveSchoolVC.h"
+#import "FileService.h"
 
 
-
-@interface DriveSchoolVC ()<UITableViewDataSource,UITableViewDelegate,RNFrostedSidebarDelegate>
+@interface DriveSchoolVC ()<UITableViewDataSource,UITableViewDelegate,RNFrostedSidebarDelegate,UIAlertViewDelegate>
 //声明方法
 - (IBAction)firstSegmentedControlAction:(UISegmentedControl *)sender;
 - (IBAction)secondSegmentedControlAction:(UISegmentedControl *)sender;
@@ -27,6 +27,9 @@
 @property (nonatomic,assign)NSInteger pageindex;
 
 @property (nonatomic,strong) RNFrostedSidebar *callout;
+
+@property (nonatomic,retain) NSString *cachePath;
+@property (nonatomic,strong) UIAlertView *hcAlertView;
 @end
 
 @implementation DriveSchoolVC
@@ -60,9 +63,13 @@
     
     
     //金科的抽屉
-    UIImage *image = [UIImage imageNamed:@"menu_icon"];
+    UIImage *image = [UIImage imageNamed:@"touxiang1"];
     image = [image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:image style:UIBarButtonItemStyleDone target:self action:@selector(menuAction)];
+    
+    //缓存路径
+    NSArray * paths = NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES);
+    self.cachePath = [[paths objectAtIndex:0] stringByAppendingFormat:@"/Caches"];
 
     
 }
@@ -199,7 +206,6 @@
     switch (index) {
         case 0:
         {
-            NSLog(@"index>>%ld",index);
             LoginViewController *loginVC = [LoginViewController new];
             [loginVC setHidesBottomBarWhenPushed:YES];
             [self.navigationController pushViewController:loginVC animated:YES];
@@ -209,22 +215,51 @@
             break;
         case 1:
         {
-            NSLog(@"index>>%ld",index);
+            TestMethodVC *testMethod = [TestMethodVC new];
+            testMethod.url = @"http://bbs.api.jxedt.com/news/h5/201/index";
+            testMethod.title = @"新手须知";
+            [testMethod setHidesBottomBarWhenPushed:YES];
+            [self.navigationController pushViewController:testMethod animated:YES];
+            [self.callout dismiss];
+            
         }
             break;
         case 2:
         {
-            NSLog(@"index>>%ld",index);
+            TestMethodVC *testMethod = [TestMethodVC new];
+            testMethod.url = @"http://bbs.api.jxedt.com/news/h5/208/index";
+            testMethod.title = @"学车指南";
+            [testMethod setHidesBottomBarWhenPushed:YES];
+            [self.navigationController pushViewController:testMethod animated:YES];
+            [self.callout dismiss];
+            
         }
             break;
         case 3:
         {
-            NSLog(@"index>>%ld",index);
+            TestMethodVC *testMethod = [TestMethodVC new];
+            testMethod.url = @"http://bbs.api.jxedt.com/news/h5/101/index";
+            testMethod.title = @"驾考头条";
+            [testMethod setHidesBottomBarWhenPushed:YES];
+            [self.navigationController pushViewController:testMethod animated:YES];
+            [self.callout dismiss];
         }
             break;
         case 4:
         {
-            NSLog(@"index>>%ld",index);
+            [self.callout dismiss];
+            CGFloat size = [FileService folderSizeAtPath:self.cachePath];
+            if (size > .01f )
+            {
+                self.hcAlertView = [[UIAlertView alloc]initWithTitle:@"提示" message:[NSString stringWithFormat:@"缓存大小为%.2fM，确定要清除缓存吗",size]delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"确定", nil];
+                [self.hcAlertView show];
+                
+            }
+            else
+            {
+                UIAlertView *alertView = [[UIAlertView alloc]initWithTitle:@"提示" message:@"暂时没有缓存" delegate:self cancelButtonTitle:@"好的" otherButtonTitles:nil, nil];
+                [alertView show];
+            }
         }
             break;
             
@@ -232,7 +267,14 @@
             break;
     }
 }
-
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    if (alertView == self.hcAlertView) {
+    [FileService clearCache:self.cachePath];
+    UIAlertView *alertView1 = [[UIAlertView alloc]initWithTitle:@"提示" message:@"清除缓存成功" delegate:self cancelButtonTitle:@"好的" otherButtonTitles:nil, nil];
+    [alertView1 show];
+    }
+}
 
 
 @end
