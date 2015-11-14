@@ -75,7 +75,7 @@ static NSString *const classFourCellId = @"ClassFourID";
     self.tableView.contentInset = UIEdgeInsetsMake(offest, 0, 0, 0);
     self.imgVIew = [[UIImageView alloc] init];
     self.imgVIew.frame = CGRectMake(0, -offest, kScreenWidth, offest);
-    self.imgVIew.image = [UIImage imageNamed:@"image090"];
+    [self.imgVIew sd_setImageWithURL:[NSURL URLWithString:@"http://pic.cn2che.com/Editors/2013/07/31/20130731114342657.jpg"] placeholderImage:[UIImage imageNamed:@"fail"]];
     [self.tableView addSubview:self.imgVIew];
 }
 
