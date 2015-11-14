@@ -82,8 +82,7 @@
     ThRreeCell *cell = [tableView dequeueReusableCellWithIdentifier:@"threecellid" forIndexPath:indexPath];
     
 
-    RoadThreeTestCell *cell = [tableView dequeueReusableCellWithIdentifier:@"roadThreeID" forIndexPath:indexPath];
-    cell.listHelper = listHelper;
+  
 
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     

@@ -79,8 +79,7 @@
     ClassTwoXCell *cell = [tableView dequeueReusableCellWithIdentifier:@"XiuGaiCellTwo" forIndexPath:indexPath];
     
 
-    RoadTwoTestCell *cell = [tableView dequeueReusableCellWithIdentifier:@"roadTwoID" forIndexPath:indexPath];
-    cell.listHelper = listHelper;
+ 
 
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     
