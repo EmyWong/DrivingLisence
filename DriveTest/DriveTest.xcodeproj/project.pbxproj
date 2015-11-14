@@ -130,6 +130,7 @@
 		C210234F1BF4348C000B605D /* Titlearea.m in Sources */ = {isa = PBXBuildFile; fileRef = C21023481BF4348C000B605D /* Titlearea.m */; settings = {ASSET_TAGS = (); }; };
 		C21023511BF44F88000B605D /* SchoolInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C21023501BF44F88000B605D /* SchoolInfoCell.xib */; settings = {ASSET_TAGS = (); }; };
 		C21B1FB61BF2DC640020018A /* NetWorkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C21B1FB41BF2DC640020018A /* NetWorkManager.m */; settings = {ASSET_TAGS = (); }; };
+		C21B97CA1BF6DB42008150E8 /* ListHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = C21B97C91BF6DB42008150E8 /* ListHelper.m */; settings = {ASSET_TAGS = (); }; };
 		C2272DCB1BF17FFB004D5EFA /* ClassFourTestTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C2272DCA1BF17FFB004D5EFA /* ClassFourTestTVC.m */; settings = {ASSET_TAGS = (); }; };
 		C2272DCE1BF182CB004D5EFA /* ClassOneFourVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C2272DCD1BF182CB004D5EFA /* ClassOneFourVC.m */; settings = {ASSET_TAGS = (); }; };
 		C2272DD51BF19022004D5EFA /* ClassFourCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C2272DD31BF19022004D5EFA /* ClassFourCell.m */; settings = {ASSET_TAGS = (); }; };
@@ -425,6 +426,8 @@
 		C21023501BF44F88000B605D /* SchoolInfoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SchoolInfoCell.xib; sourceTree = "<group>"; };
 		C21B1FB41BF2DC640020018A /* NetWorkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetWorkManager.m; sourceTree = "<group>"; };
 		C21B1FB51BF2DC640020018A /* NetWorkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetWorkManager.h; sourceTree = "<group>"; };
+		C21B97C81BF6DB42008150E8 /* ListHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListHelper.h; sourceTree = "<group>"; };
+		C21B97C91BF6DB42008150E8 /* ListHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListHelper.m; sourceTree = "<group>"; };
 		C2272DC91BF17FFB004D5EFA /* ClassFourTestTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassFourTestTVC.h; sourceTree = "<group>"; };
 		C2272DCA1BF17FFB004D5EFA /* ClassFourTestTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassFourTestTVC.m; sourceTree = "<group>"; };
 		C2272DCC1BF182CB004D5EFA /* ClassOneFourVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassOneFourVC.h; sourceTree = "<group>"; };
@@ -1045,6 +1048,8 @@
 			children = (
 				C2918C3B1BF490C7005E21AE /* DriveDiscussion.h */,
 				C2918C3C1BF490C7005E21AE /* DriveDiscussion.m */,
+				C21B97C81BF6DB42008150E8 /* ListHelper.h */,
+				C21B97C91BF6DB42008150E8 /* ListHelper.m */,
 			);
 			name = "驾友讨论数据模型";
 			sourceTree = "<group>";
@@ -1779,6 +1784,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				95493BF41BF2EC4C006C2323 /* TestMethodVC.m in Sources */,
+				C21B97CA1BF6DB42008150E8 /* ListHelper.m in Sources */,
 				959EE6701BF324A20073B92B /* WYHStarRateView.m in Sources */,
 				C2BAEAEF1BF714530059E8A7 /* ClassTwoXCell.m in Sources */,
 				C210234B1BF4348C000B605D /* Commentarea.m in Sources */,

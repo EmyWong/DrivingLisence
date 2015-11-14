@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+@class ListHelper;
 @interface naBenCell : UITableViewCell
 
 @property (weak, nonatomic) IBOutlet UIButton *nianJian;
@@ -23,6 +23,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *tingChe;
 
 @property (weak, nonatomic) IBOutlet UIButton *commentButton;
+@property (nonatomic,strong)ListHelper * listHelper;
 
 
 

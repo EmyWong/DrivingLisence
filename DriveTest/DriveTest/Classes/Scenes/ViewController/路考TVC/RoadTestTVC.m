@@ -9,6 +9,9 @@
 #import "RoadTestTVC.h"
 
 @interface RoadTestTVC ()
+{
+    ListHelper * listHelper;
+}
 
 @end
 
@@ -28,7 +31,32 @@
     //
     self.tableView.rowHeight = UITableViewAutomaticDimension;
     self.tableView.estimatedRowHeight = 100;
+    
+    [self loadData];
 }
+
+
+- (void)loadData {
+    NSURL *url = [NSURL URLWithString:@"http://bbs.api.jxedt.com/listcate/202/?createtime=0&pageindex=1"];
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    
+    //测试是否有网络连接
+    if ([[NetWorkManager sharedWithManager] isConnectionAvailable]== NO) {
+        
+    }
+    else
+    {
+        [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse * _Nullable response, NSData * _Nullable data, NSError * _Nullable connectionError) {
+            
+            NSMutableDictionary *dic = [NSJSONSerialization JSONObjectWithData:data options:(NSJSONReadingAllowFragments) error:nil];
+            NSMutableDictionary *resultDic = dic[@"result"];
+            listHelper = [ListHelper new];
+            [listHelper setValuesForKeysWithDictionary:resultDic[@"list"]];
+            [self.tableView reloadData];
+        }];
+    }
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -47,8 +75,13 @@
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+
     ClassTwoXCell *cell = [tableView dequeueReusableCellWithIdentifier:@"XiuGaiCellTwo" forIndexPath:indexPath];
     
+
+    RoadTwoTestCell *cell = [tableView dequeueReusableCellWithIdentifier:@"roadTwoID" forIndexPath:indexPath];
+    cell.listHelper = listHelper;
+
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     
     if (indexPath.row != 0) {
@@ -148,7 +181,7 @@
     TaoLunTVC * VC = [TaoLunTVC new];
     UINavigationController *NC = [[UINavigationController alloc] initWithRootViewController:VC];
     VC.infoid = @"202";
-    VC.articletip = -1;
+    VC.articletip = listHelper.totalusercount;
     VC.title = @"科目二";
     [self presentViewController:NC animated:YES completion:nil];
 }

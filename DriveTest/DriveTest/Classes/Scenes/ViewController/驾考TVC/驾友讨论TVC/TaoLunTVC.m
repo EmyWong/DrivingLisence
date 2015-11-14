@@ -48,10 +48,7 @@
     self.tableView.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingBlock:^{
         //刷新数据
         _pageindex ++;
-        if (_articletip == -1) {
-            [self loadData];
-            [self.tableView.mj_footer endRefreshing];
-        }else if (_pageindex <= _articletip / 10 + 1) {
+        if (_pageindex <= _articletip / 10 + 1) {
             [self loadData];
             [self.tableView.mj_footer endRefreshing];
         }else {

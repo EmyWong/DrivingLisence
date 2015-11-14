@@ -1,19 +1,18 @@
 //
-//  ClassFourCell.m
+//  RoadThreeTestCell.m
 //  DriveTest
 //
 //  Created by lanou3g on 15/11/10.
 //  Copyright © 2015年 第一小组. All rights reserved.
 //
 
-#import "ClassFourCell.h"
+#import "RoadThreeTestCell.h"
 
-@interface ClassFourCell ()
-@property (weak, nonatomic) IBOutlet UILabel *numberCommentLabel;
+@interface RoadThreeTestCell ()
 
+@property (weak, nonatomic) IBOutlet UILabel *haveNumber;
 @property (weak, nonatomic) IBOutlet UIImageView *img1;
 @property (weak, nonatomic) IBOutlet UIImageView *img2;
-
 @property (weak, nonatomic) IBOutlet UIImageView *img3;
 @property (weak, nonatomic) IBOutlet UIImageView *img4;
 @property (weak, nonatomic) IBOutlet UIImageView *img5;
@@ -21,13 +20,18 @@
 @property (weak, nonatomic) IBOutlet UIImageView *img7;
 
 @property (nonatomic,strong) NSMutableArray *allPicArr;
+
+
+
+
+
 @end
 
 
-@implementation ClassFourCell
+@implementation RoadThreeTestCell
 
 - (void)setListHelper:(ListHelper *)listHelper {
-    self.numberCommentLabel.text = [NSString stringWithFormat:@"有%ld",listHelper.totalusercount];
+    self.haveNumber.text = [NSString stringWithFormat:@"有%ld",listHelper.totalusercount];
     self.allPicArr = [NSMutableArray array];
     for (NSDictionary * dic  in listHelper.infolist) {
         DriveDiscussion * driveDiscussion = [DriveDiscussion new];
@@ -49,6 +53,7 @@
     
     
 }
+
 
 
 

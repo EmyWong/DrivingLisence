@@ -9,10 +9,13 @@
 #import "DrivingLisenceVC.h"
 
 @interface DrivingLisenceVC ()<UIAlertViewDelegate,UIWebViewDelegate>
+
 //网页
 @property (nonatomic,strong) UIWebView *webView;
 //小菊花
 @property (nonatomic,strong) UIActivityIndicatorView *activity;
+
+
 @end
 
 @implementation DrivingLisenceVC
@@ -49,6 +52,10 @@
         [self.view addSubview:_activity];
         [_activity startAnimating];
         [self.webView loadRequest:request];
+        
+        
+        
+        
     }
     self.webView.delegate = self;
     
