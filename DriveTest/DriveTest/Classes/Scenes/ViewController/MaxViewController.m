@@ -8,10 +8,10 @@
 
 #import "MaxViewController.h"
 
-@interface MaxViewController ()<UIScrollViewDelegate>
+@interface MaxViewController ()<UIScrollViewDelegate,UIAlertViewDelegate>
 @property (nonatomic,retain) UIScrollView *scrollView;
 @property (nonatomic,strong) UIPageControl *pageControl;
-
+@property (nonatomic,strong) UIImageView *imgView;
 @end
 
 @implementation MaxViewController
@@ -29,14 +29,20 @@
     [self.view addSubview:self.scrollView];
     
     for (int i= 0; i < self.drive.imageurl.count; i++) {
-        UIImageView *imgView = [[UIImageView alloc]initWithFrame:CGRectMake(self.view.frame.size.width*i, 20, self.view.frame.size.width, self.view.frame.size.height-40)];
+        self.imgView = [[UIImageView alloc]initWithFrame:CGRectMake(self.view.frame.size.width*i, 20, self.view.frame.size.width, self.view.frame.size.height-40)];
         
-        [imgView sd_setImageWithURL:[NSURL URLWithString:self.drive.imageurl[i][@"imgUrl"]] placeholderImage:[UIImage imageNamed:@"fail"]];
+        [_imgView sd_setImageWithURL:[NSURL URLWithString:self.drive.imageurl[i][@"imgUrl"]] placeholderImage:[UIImage imageNamed:@"fail"]];
         UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tapAction:)];
-        [imgView addGestureRecognizer:tap];
-        imgView.userInteractionEnabled = YES;
-        [self.scrollView addSubview:imgView];
+        [_imgView addGestureRecognizer:tap];
+        
+        UILongPressGestureRecognizer *longPress = [[UILongPressGestureRecognizer alloc]initWithTarget:self action:@selector(tapSaveImageToIphone)];
+        [_imgView addGestureRecognizer:longPress];
+        
+        
+        _imgView.userInteractionEnabled = YES;
+        [self.scrollView addSubview:_imgView];
     }
+   
     
     self.scrollView.delegate = self;
     self.scrollView.delegate = self;
@@ -58,10 +64,7 @@
     }
 
 }
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
-{
-    [self dismissViewControllerAnimated:YES completion:nil];
-}
+
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
     //使用偏移量/scrollView的宽度，得到当前页数的下标
@@ -80,6 +83,36 @@
 {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
+- (void)tapSaveImageToIphone{
+    
+    UIAlertController *alertController = [[UIAlertController alloc]init];
+    
+    UIAlertAction *cancel  = [UIAlertAction actionWithTitle:@"取消" style:(UIAlertActionStyleCancel) handler:nil];
+    UIAlertAction *save = [UIAlertAction actionWithTitle:@"保存至相册" style:(UIAlertActionStyleDefault) handler:^(UIAlertAction * _Nonnull action) {
+        UIImageWriteToSavedPhotosAlbum(self.imgView.image, self, @selector(image:didFinishSavingWithError:contextInfo:), nil);
+    }];
+    [alertController addAction:cancel];
+    [alertController addAction:save];
+    
+    [self presentViewController:alertController animated:YES completion:nil];
+    
+}
+
+- (void)image:(UIImage *)image didFinishSavingWithError:(NSError *)error contextInfo:(void*)contextInfo
+{
+    if (error == nil) {
+        
+        TimerDisappearAlertView *alert = [[TimerDisappearAlertView alloc]initWithTitle:@"保存成功"];
+        [alert show];
+        
+    }else{
+        
+        
+        TimerDisappearAlertView *alert = [[TimerDisappearAlertView alloc]initWithTitle:@"保存失败"];
+        [alert show];
+    }
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
