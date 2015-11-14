@@ -22,7 +22,7 @@
     self.navigationController.navigationBar.translucent = NO;
     
     
-    [self.tableView registerNib:[UINib nibWithNibName:@"RoadTwoTestCell" bundle:nil] forCellReuseIdentifier:@"roadTwoID"];
+    [self.tableView registerNib:[UINib nibWithNibName:@"ClassTwoXCell" bundle:nil] forCellReuseIdentifier:@"XiuGaiCellTwo"];
     
     
     //
@@ -47,7 +47,7 @@
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    RoadTwoTestCell *cell = [tableView dequeueReusableCellWithIdentifier:@"roadTwoID" forIndexPath:indexPath];
+    ClassTwoXCell *cell = [tableView dequeueReusableCellWithIdentifier:@"XiuGaiCellTwo" forIndexPath:indexPath];
     
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     
@@ -60,7 +60,13 @@
     }
     
     //加载cell上buuton的点击事件
-    [self loadAction:cell];
+//    [self loadAction:cell];
+    
+    
+    //加载cell上buuton的点击事件
+    [self loadTwoCellAction:cell];
+    
+    
     
     //cell点击时不显示不显示选状态
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
@@ -69,20 +75,31 @@
     return cell;
 }
 
-- (void)loadAction:(RoadTwoTestCell *)sender
+
+- (void)loadTwoCellAction:(ClassTwoXCell *)sender
 {
     //考前准备按钮添加监听事件
-    [sender.kaoQianButton addTarget:self action:@selector(kaoQianAction) forControlEvents:UIControlEventTouchUpInside];
+    [sender.kaoqianzhunbei addTarget:self action:@selector(kaoQianAction) forControlEvents:UIControlEventTouchUpInside];
+    
     //合格标准按钮添加监听事件
-    [sender.heGeButton addTarget:self action:@selector(heGeAction) forControlEvents:UIControlEventTouchUpInside];
-    //开始经验按钮添加监听事件
-    [sender.jinYanButton addTarget:self action:@selector(jinYanAction) forControlEvents:UIControlEventTouchUpInside];
+    [sender.hegebiaozhun addTarget:self action:@selector(heGeAction) forControlEvents:UIControlEventTouchUpInside];
+    
     //秘籍指导按钮添加监听事件
-    [sender.miJiButton addTarget:self action:@selector(miJiAction) forControlEvents:UIControlEventTouchUpInside];
+    [sender.mijizhidao addTarget:self action:@selector(miJiAction) forControlEvents:UIControlEventTouchUpInside];
+#warning 需要重新实现
+    //小贴士
+    [sender.xiaotieshi addTarget:self action:@selector(xiaoTieShiAction) forControlEvents:UIControlEventTouchUpInside];
+    
+    //开始经验按钮添加监听事件
+    [sender.kaoshijingyan addTarget:self action:@selector(jinYanAction) forControlEvents:UIControlEventTouchUpInside];
+    
     
     //评论按钮添加监听事件
-    [sender.commentButton addTarget:self action:@selector(commentAction) forControlEvents:UIControlEventTouchUpInside];
+    [sender.comment addTarget:self action:@selector(commentAction) forControlEvents:UIControlEventTouchUpInside];
 }
+
+
+
 
 
 //考前准备按钮
@@ -136,6 +153,11 @@
     [self presentViewController:NC animated:YES completion:nil];
 }
 
+
+- (void)xiaoTieShiAction
+{
+    NSLog(@"新增小贴士功能");
+}
 
 
 /*

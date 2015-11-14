@@ -36,8 +36,8 @@
 #import "ClassOneCell.h"    //科目一
 #import "ClassFourCell.h"   //科目四
 
-#import "RoadTwoTestCell.h" //科目二
-#import "RoadThreeTestCell.h"   //科目三
+
+
 
 #import "naBenCell.h"   //拿本cell
 
@@ -51,6 +51,9 @@
 
 #import "XueYuanCell.h"     //学员点评cell
 
+#import "ClassTwoXCell.h"   //科目二
+
+#import "ThRreeCell.h"    //科目三
 //*******************************************
 
 

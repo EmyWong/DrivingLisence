@@ -21,7 +21,7 @@
     self.automaticallyAdjustsScrollViewInsets = NO;
     
     
-    [self.tableView registerNib:[UINib nibWithNibName:@"RoadThreeTestCell" bundle:nil] forCellReuseIdentifier:@"roadThreeID"];
+    [self.tableView registerNib:[UINib nibWithNibName:@"ThRreeCell" bundle:nil] forCellReuseIdentifier:@"threecellid"];
     
     
     self.tableView.rowHeight = UITableViewAutomaticDimension;
@@ -53,7 +53,7 @@
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    RoadThreeTestCell *cell = [tableView dequeueReusableCellWithIdentifier:@"roadThreeID" forIndexPath:indexPath];
+    ThRreeCell *cell = [tableView dequeueReusableCellWithIdentifier:@"threecellid" forIndexPath:indexPath];
     
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     
@@ -67,7 +67,12 @@
     
     
     //加载cell上buuton的点击事件
-    [self loadAction:cell];
+//    [self loadAction:cell];
+    
+    //加载cell上buuton的点击事件
+    [self loadThreeAction:cell];
+    
+    
     
     //cell点击时不显示不显示选状态
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
@@ -77,20 +82,27 @@
 }
 
 
-- (void)loadAction:(RoadThreeTestCell *)sender
+- (void)loadThreeAction:(ThRreeCell *)sender
 {
     //评判标准按钮添加监听事件
-    [sender.pingPanButton addTarget:self action:@selector(pingPanAction) forControlEvents:UIControlEventTouchUpInside];
+    [sender.pingpanbiaozhun addTarget:self action:@selector(pingPanAction) forControlEvents:UIControlEventTouchUpInside];
     //路考秘诀按钮添加监听事件
-    [sender.roadTestButton addTarget:self action:@selector(roadTestAction) forControlEvents:UIControlEventTouchUpInside];
-    //考场经验按钮添加监听事件
-    [sender.kaoChangButton addTarget:self action:@selector(kaoChangAction) forControlEvents:UIControlEventTouchUpInside];
+    [sender.lukaomijue addTarget:self action:@selector(roadTestAction) forControlEvents:UIControlEventTouchUpInside];
+    
     //秘籍指导按钮添加监听事件
-    [sender.miJiButton addTarget:self action:@selector(miJiAction) forControlEvents:UIControlEventTouchUpInside];
+    [sender.mijizhidao addTarget:self action:@selector(miJiAction) forControlEvents:UIControlEventTouchUpInside];
+    //考场经验按钮添加监听事件
+    [sender.kaoshijingtan addTarget:self action:@selector(kaoChangAction) forControlEvents:UIControlEventTouchUpInside];
     
     //评论按钮添加监听事件
-    [sender.CommentButton addTarget:self action:@selector(commentAction) forControlEvents:UIControlEventTouchUpInside];
+    [sender.comment addTarget:self action:@selector(commentAction) forControlEvents:UIControlEventTouchUpInside];
+    
+#warning 需要添加
+    [sender.xiaotieshi addTarget:self action:@selector(xiaoTieShiAction) forControlEvents:UIControlEventTouchUpInside];
+    
 }
+
+
 
 
 //评判标准按钮
@@ -102,6 +114,8 @@
     [testMethod setHidesBottomBarWhenPushed:YES];
     [self.navigationController pushViewController:testMethod animated:YES];
 }
+
+
 
 //路考秘诀按钮
 - (void)roadTestAction
@@ -144,7 +158,11 @@
     [self presentViewController:NC animated:YES completion:nil];
 }
 
-
+//小贴士
+- (void)xiaoTieShiAction
+{
+    NSLog(@"小贴士");
+}
 
 
 /*

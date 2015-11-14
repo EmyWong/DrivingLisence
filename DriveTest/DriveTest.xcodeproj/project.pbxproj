@@ -141,10 +141,6 @@
 		C2272DE01BF1B4C0004D5EFA /* f12@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C2272DDC1BF1B4C0004D5EFA /* f12@3x.png */; settings = {ASSET_TAGS = (); }; };
 		C2272DE31BF1CF70004D5EFA /* RoadTestThreeTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C2272DE21BF1CF70004D5EFA /* RoadTestThreeTVC.m */; settings = {ASSET_TAGS = (); }; };
 		C2272DE61BF1CFA8004D5EFA /* ClassTwoThreeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C2272DE51BF1CFA8004D5EFA /* ClassTwoThreeVC.m */; settings = {ASSET_TAGS = (); }; };
-		C2272DEC1BF1D452004D5EFA /* RoadTwoTestCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C2272DEA1BF1D452004D5EFA /* RoadTwoTestCell.m */; settings = {ASSET_TAGS = (); }; };
-		C2272DED1BF1D452004D5EFA /* RoadTwoTestCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C2272DEB1BF1D452004D5EFA /* RoadTwoTestCell.xib */; settings = {ASSET_TAGS = (); }; };
-		C2272DF11BF1D474004D5EFA /* RoadThreeTestCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C2272DEF1BF1D474004D5EFA /* RoadThreeTestCell.m */; settings = {ASSET_TAGS = (); }; };
-		C2272DF21BF1D474004D5EFA /* RoadThreeTestCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C2272DF01BF1D474004D5EFA /* RoadThreeTestCell.xib */; settings = {ASSET_TAGS = (); }; };
 		C2272DF41BF1D6F0004D5EFA /* mijizhidao@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C2272DF31BF1D6F0004D5EFA /* mijizhidao@2x.png */; settings = {ASSET_TAGS = (); }; };
 		C2272DF61BF1D734004D5EFA /* kaoshizhunbei.png in Resources */ = {isa = PBXBuildFile; fileRef = C2272DF51BF1D734004D5EFA /* kaoshizhunbei.png */; settings = {ASSET_TAGS = (); }; };
 		C2272DF81BF1D79D004D5EFA /* kaoshijinyan.png in Resources */ = {isa = PBXBuildFile; fileRef = C2272DF71BF1D79D004D5EFA /* kaoshijinyan.png */; settings = {ASSET_TAGS = (); }; };
@@ -209,6 +205,17 @@
 		C2AC44EE1BF0EA1E006AB483 /* suijilianxiOn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C2AC44ED1BF0EA1E006AB483 /* suijilianxiOn@2x.png */; settings = {ASSET_TAGS = (); }; };
 		C2AC44F11BF0EADE006AB483 /* jiakaofagui.png in Resources */ = {isa = PBXBuildFile; fileRef = C2AC44EF1BF0EADE006AB483 /* jiakaofagui.png */; settings = {ASSET_TAGS = (); }; };
 		C2AC44F21BF0EADE006AB483 /* kaoshijiqiao.png in Resources */ = {isa = PBXBuildFile; fileRef = C2AC44F01BF0EADE006AB483 /* kaoshijiqiao.png */; settings = {ASSET_TAGS = (); }; };
+		C2BAEAEF1BF714530059E8A7 /* ClassTwoXCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C2BAEAED1BF714530059E8A7 /* ClassTwoXCell.m */; settings = {ASSET_TAGS = (); }; };
+		C2BAEAF01BF714530059E8A7 /* ClassTwoXCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C2BAEAEE1BF714530059E8A7 /* ClassTwoXCell.xib */; settings = {ASSET_TAGS = (); }; };
+		C2BAEAF91BF71D050059E8A7 /* 合格标准.png in Resources */ = {isa = PBXBuildFile; fileRef = C2BAEAF31BF71D050059E8A7 /* 合格标准.png */; settings = {ASSET_TAGS = (); }; };
+		C2BAEAFA1BF71D050059E8A7 /* 小贴士.png in Resources */ = {isa = PBXBuildFile; fileRef = C2BAEAF41BF71D050059E8A7 /* 小贴士.png */; settings = {ASSET_TAGS = (); }; };
+		C2BAEAFB1BF71D050059E8A7 /* 秘籍指导.png in Resources */ = {isa = PBXBuildFile; fileRef = C2BAEAF51BF71D050059E8A7 /* 秘籍指导.png */; settings = {ASSET_TAGS = (); }; };
+		C2BAEAFC1BF71D050059E8A7 /* 考前准备.png in Resources */ = {isa = PBXBuildFile; fileRef = C2BAEAF61BF71D050059E8A7 /* 考前准备.png */; settings = {ASSET_TAGS = (); }; };
+		C2BAEAFD1BF71D050059E8A7 /* 考试经验.png in Resources */ = {isa = PBXBuildFile; fileRef = C2BAEAF71BF71D050059E8A7 /* 考试经验.png */; settings = {ASSET_TAGS = (); }; };
+		C2BAEB0E1BF721220059E8A7 /* 评判标准.png in Resources */ = {isa = PBXBuildFile; fileRef = C2BAEB0C1BF721220059E8A7 /* 评判标准.png */; settings = {ASSET_TAGS = (); }; };
+		C2BAEB0F1BF721220059E8A7 /* 路考秘诀.png in Resources */ = {isa = PBXBuildFile; fileRef = C2BAEB0D1BF721220059E8A7 /* 路考秘诀.png */; settings = {ASSET_TAGS = (); }; };
+		C2BAEB1D1BF72F8E0059E8A7 /* ThRreeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C2BAEB1B1BF72F8E0059E8A7 /* ThRreeCell.m */; settings = {ASSET_TAGS = (); }; };
+		C2BAEB1E1BF72F8E0059E8A7 /* ThRreeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C2BAEB1C1BF72F8E0059E8A7 /* ThRreeCell.xib */; settings = {ASSET_TAGS = (); }; };
 		C2E3402B1BF34C75006B2AF0 /* SchoolVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C2E340291BF34C75006B2AF0 /* SchoolVC.m */; settings = {ASSET_TAGS = (); }; };
 		C2E3402C1BF34C75006B2AF0 /* SchoolVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C2E3402A1BF34C75006B2AF0 /* SchoolVC.xib */; settings = {ASSET_TAGS = (); }; };
 		C2E340311BF34CE5006B2AF0 /* SchoolInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C2E3402F1BF34CE5006B2AF0 /* SchoolInfoCell.m */; settings = {ASSET_TAGS = (); }; };
@@ -434,12 +441,6 @@
 		C2272DE21BF1CF70004D5EFA /* RoadTestThreeTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoadTestThreeTVC.m; sourceTree = "<group>"; };
 		C2272DE41BF1CFA8004D5EFA /* ClassTwoThreeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassTwoThreeVC.h; sourceTree = "<group>"; };
 		C2272DE51BF1CFA8004D5EFA /* ClassTwoThreeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassTwoThreeVC.m; sourceTree = "<group>"; };
-		C2272DE91BF1D452004D5EFA /* RoadTwoTestCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoadTwoTestCell.h; sourceTree = "<group>"; };
-		C2272DEA1BF1D452004D5EFA /* RoadTwoTestCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoadTwoTestCell.m; sourceTree = "<group>"; };
-		C2272DEB1BF1D452004D5EFA /* RoadTwoTestCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RoadTwoTestCell.xib; sourceTree = "<group>"; };
-		C2272DEE1BF1D474004D5EFA /* RoadThreeTestCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoadThreeTestCell.h; sourceTree = "<group>"; };
-		C2272DEF1BF1D474004D5EFA /* RoadThreeTestCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoadThreeTestCell.m; sourceTree = "<group>"; };
-		C2272DF01BF1D474004D5EFA /* RoadThreeTestCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RoadThreeTestCell.xib; sourceTree = "<group>"; };
 		C2272DF31BF1D6F0004D5EFA /* mijizhidao@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mijizhidao@2x.png"; sourceTree = "<group>"; };
 		C2272DF51BF1D734004D5EFA /* kaoshizhunbei.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kaoshizhunbei.png; sourceTree = "<group>"; };
 		C2272DF71BF1D79D004D5EFA /* kaoshijinyan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kaoshijinyan.png; sourceTree = "<group>"; };
@@ -525,6 +526,19 @@
 		C2AC44ED1BF0EA1E006AB483 /* suijilianxiOn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "suijilianxiOn@2x.png"; sourceTree = "<group>"; };
 		C2AC44EF1BF0EADE006AB483 /* jiakaofagui.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jiakaofagui.png; sourceTree = "<group>"; };
 		C2AC44F01BF0EADE006AB483 /* kaoshijiqiao.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kaoshijiqiao.png; sourceTree = "<group>"; };
+		C2BAEAEC1BF714530059E8A7 /* ClassTwoXCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassTwoXCell.h; sourceTree = "<group>"; };
+		C2BAEAED1BF714530059E8A7 /* ClassTwoXCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassTwoXCell.m; sourceTree = "<group>"; };
+		C2BAEAEE1BF714530059E8A7 /* ClassTwoXCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ClassTwoXCell.xib; sourceTree = "<group>"; };
+		C2BAEAF31BF71D050059E8A7 /* 合格标准.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "合格标准.png"; sourceTree = "<group>"; };
+		C2BAEAF41BF71D050059E8A7 /* 小贴士.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "小贴士.png"; sourceTree = "<group>"; };
+		C2BAEAF51BF71D050059E8A7 /* 秘籍指导.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "秘籍指导.png"; sourceTree = "<group>"; };
+		C2BAEAF61BF71D050059E8A7 /* 考前准备.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "考前准备.png"; sourceTree = "<group>"; };
+		C2BAEAF71BF71D050059E8A7 /* 考试经验.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "考试经验.png"; sourceTree = "<group>"; };
+		C2BAEB0C1BF721220059E8A7 /* 评判标准.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "评判标准.png"; sourceTree = "<group>"; };
+		C2BAEB0D1BF721220059E8A7 /* 路考秘诀.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "路考秘诀.png"; sourceTree = "<group>"; };
+		C2BAEB1A1BF72F8E0059E8A7 /* ThRreeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThRreeCell.h; sourceTree = "<group>"; };
+		C2BAEB1B1BF72F8E0059E8A7 /* ThRreeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThRreeCell.m; sourceTree = "<group>"; };
+		C2BAEB1C1BF72F8E0059E8A7 /* ThRreeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThRreeCell.xib; sourceTree = "<group>"; };
 		C2E340281BF34C75006B2AF0 /* SchoolVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SchoolVC.h; sourceTree = "<group>"; };
 		C2E340291BF34C75006B2AF0 /* SchoolVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SchoolVC.m; sourceTree = "<group>"; };
 		C2E3402A1BF34C75006B2AF0 /* SchoolVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SchoolVC.xib; sourceTree = "<group>"; };
@@ -967,9 +981,9 @@
 		C2272DE71BF1D41D004D5EFA /* 科目二Cell */ = {
 			isa = PBXGroup;
 			children = (
-				C2272DE91BF1D452004D5EFA /* RoadTwoTestCell.h */,
-				C2272DEA1BF1D452004D5EFA /* RoadTwoTestCell.m */,
-				C2272DEB1BF1D452004D5EFA /* RoadTwoTestCell.xib */,
+				C2BAEAEC1BF714530059E8A7 /* ClassTwoXCell.h */,
+				C2BAEAED1BF714530059E8A7 /* ClassTwoXCell.m */,
+				C2BAEAEE1BF714530059E8A7 /* ClassTwoXCell.xib */,
 			);
 			name = "科目二Cell";
 			sourceTree = "<group>";
@@ -977,9 +991,9 @@
 		C2272DE81BF1D429004D5EFA /* 科目三Cell */ = {
 			isa = PBXGroup;
 			children = (
-				C2272DEE1BF1D474004D5EFA /* RoadThreeTestCell.h */,
-				C2272DEF1BF1D474004D5EFA /* RoadThreeTestCell.m */,
-				C2272DF01BF1D474004D5EFA /* RoadThreeTestCell.xib */,
+				C2BAEB1A1BF72F8E0059E8A7 /* ThRreeCell.h */,
+				C2BAEB1B1BF72F8E0059E8A7 /* ThRreeCell.m */,
+				C2BAEB1C1BF72F8E0059E8A7 /* ThRreeCell.xib */,
 			);
 			name = "科目三Cell";
 			sourceTree = "<group>";
@@ -1151,6 +1165,8 @@
 		C2AC44791BF08357006AB483 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C2BAEB0B1BF721220059E8A7 /* lukaotupian */,
+				C2BAEAF11BF71D050059E8A7 /* lukaoImage */,
 				C2F80FB51BF5AF6E0006E789 /* 法规1 */,
 				C2F80F6C1BF5A0170006E789 /* touxiang */,
 				959EE7111BF47D290073B92B /* 小汽车加载 */,
@@ -1310,6 +1326,27 @@
 				959EE66D1BF324900073B92B /* 星星分数 */,
 			);
 			path = Venders;
+			sourceTree = "<group>";
+		};
+		C2BAEAF11BF71D050059E8A7 /* lukaoImage */ = {
+			isa = PBXGroup;
+			children = (
+				C2BAEAF31BF71D050059E8A7 /* 合格标准.png */,
+				C2BAEAF41BF71D050059E8A7 /* 小贴士.png */,
+				C2BAEAF51BF71D050059E8A7 /* 秘籍指导.png */,
+				C2BAEAF61BF71D050059E8A7 /* 考前准备.png */,
+				C2BAEAF71BF71D050059E8A7 /* 考试经验.png */,
+			);
+			path = lukaoImage;
+			sourceTree = "<group>";
+		};
+		C2BAEB0B1BF721220059E8A7 /* lukaotupian */ = {
+			isa = PBXGroup;
+			children = (
+				C2BAEB0C1BF721220059E8A7 /* 评判标准.png */,
+				C2BAEB0D1BF721220059E8A7 /* 路考秘诀.png */,
+			);
+			path = lukaotupian;
 			sourceTree = "<group>";
 		};
 		C2E340271BF34C75006B2AF0 /* 驾校VC */ = {
@@ -1496,7 +1533,6 @@
 				C266236A1BF4DF98005DF5C6 /* pppddd.png in Resources */,
 				C2272E001BF1EF33004D5EFA /* lukaomijue.png in Resources */,
 				959EE7721BF47D2A0073B92B /* loading42.tiff in Resources */,
-				C2272DED1BF1D452004D5EFA /* RoadTwoTestCell.xib in Resources */,
 				959EE76A1BF47D2A0073B92B /* loading35.tiff in Resources */,
 				C2AC44E01BF0988E006AB483 /* nvshen@2x.jpg in Resources */,
 				959EE6C31BF46B420073B92B /* lauch.png in Resources */,
@@ -1527,6 +1563,7 @@
 				C2F80FA41BF5A0170006E789 /* 27.png in Resources */,
 				C26623471BF4881F005DF5C6 /* JiaYouTaoLunCell.xib in Resources */,
 				C26623601BF4D4F0005DF5C6 /* dianzan.png in Resources */,
+				C2BAEAF91BF71D050059E8A7 /* 合格标准.png in Resources */,
 				79245D151BF438CA00F9BE32 /* LoginViewController.xib in Resources */,
 				C2AC44AB1BF083DF006AB483 /* naben.png in Resources */,
 				C2F80FC21BF5AFFB0006E789 /* a1.png in Resources */,
@@ -1598,8 +1635,8 @@
 				95493BC41BF1CE77006C2323 /* QuestionCell.xib in Resources */,
 				C2F80F651BF5827A0006E789 /* XueYuanCell.xib in Resources */,
 				C2AC44EE1BF0EA1E006AB483 /* suijilianxiOn@2x.png in Resources */,
-				C2272DF21BF1D474004D5EFA /* RoadThreeTestCell.xib in Resources */,
 				C26623641BF4D4F0005DF5C6 /* phone.png in Resources */,
+				C2BAEB0F1BF721220059E8A7 /* 路考秘诀.png in Resources */,
 				C2F80FB31BF5A0170006E789 /* 8.png in Resources */,
 				959EE7701BF47D2A0073B92B /* loading40.tiff in Resources */,
 				959EE7871BF47D2A0073B92B /* loading7.tiff in Resources */,
@@ -1620,7 +1657,9 @@
 				C2F80FA31BF5A0170006E789 /* 26.png in Resources */,
 				C2F80FAB1BF5A0170006E789 /* 33.png in Resources */,
 				C2272E061BF1EFFD004D5EFA /* zhizhi.png in Resources */,
+				C2BAEB1E1BF72F8E0059E8A7 /* ThRreeCell.xib in Resources */,
 				959EE75C1BF47D2A0073B92B /* loading22.tiff in Resources */,
+				C2BAEAF01BF714530059E8A7 /* ClassTwoXCell.xib in Resources */,
 				C2272E081BF1F039004D5EFA /* daodao.png in Resources */,
 				C2E340381BF361C0006B2AF0 /* JiaoLianPeiLianVC.xib in Resources */,
 				959EE77C1BF47D2A0073B92B /* loading51.tiff in Resources */,
@@ -1646,6 +1685,7 @@
 				959EE7731BF47D2A0073B92B /* loading43.tiff in Resources */,
 				C2F80FA71BF5A0170006E789 /* 3.png in Resources */,
 				C2272DFA1BF1D83F004D5EFA /* hegebiaozhun.png in Resources */,
+				C2BAEB0E1BF721220059E8A7 /* 评判标准.png in Resources */,
 				C2AC44AD1BF083DF006AB483 /* tikao.png in Resources */,
 				95493BD31BF1D055006C2323 /* cuoti.png in Resources */,
 				95493BD71BF1D05C006C2323 /* xuanzhong.png in Resources */,
@@ -1653,10 +1693,12 @@
 				C2F80FAE1BF5A0170006E789 /* 36.png in Resources */,
 				959EE7681BF47D2A0073B92B /* loading33.tiff in Resources */,
 				959EE7671BF47D2A0073B92B /* loading32.tiff in Resources */,
+				C2BAEAFA1BF71D050059E8A7 /* 小贴士.png in Resources */,
 				959EE7551BF47D2A0073B92B /* loading16.tiff in Resources */,
 				C2AC44A91BF083DF006AB483 /* jiaxiao.png in Resources */,
 				959EE7741BF47D2A0073B92B /* loading44.tiff in Resources */,
 				C2AC44AA1BF083DF006AB483 /* lukao.png in Resources */,
+				C2BAEAFB1BF71D050059E8A7 /* 秘籍指导.png in Resources */,
 				79EC030A1BF18014002C568F /* lianxi_collect@2x.png in Resources */,
 				959EE76E1BF47D2A0073B92B /* loading39.tiff in Resources */,
 				95493BD61BF1D05C006C2323 /* weixuanzhong.png in Resources */,
@@ -1669,8 +1711,10 @@
 				79EC030D1BF18014002C568F /* lianxi_numlist@2x.png in Resources */,
 				C2F80FB21BF5A0170006E789 /* 7.png in Resources */,
 				959EE6C11BF4597E0073B92B /* Images.xcassets in Resources */,
+				C2BAEAFC1BF71D050059E8A7 /* 考前准备.png in Resources */,
 				C2F80F931BF5A0170006E789 /* 11.png in Resources */,
 				C2F80FAA1BF5A0170006E789 /* 32.png in Resources */,
+				C2BAEAFD1BF71D050059E8A7 /* 考试经验.png in Resources */,
 				C2AC44AC1BF083DF006AB483 /* sheqv.png in Resources */,
 				C2F80F9F1BF5A0170006E789 /* 22.png in Resources */,
 				959EE7561BF47D2A0073B92B /* loading17.tiff in Resources */,
@@ -1736,11 +1780,11 @@
 			files = (
 				95493BF41BF2EC4C006C2323 /* TestMethodVC.m in Sources */,
 				959EE6701BF324A20073B92B /* WYHStarRateView.m in Sources */,
+				C2BAEAEF1BF714530059E8A7 /* ClassTwoXCell.m in Sources */,
 				C210234B1BF4348C000B605D /* Commentarea.m in Sources */,
 				C2AC44CB1BF0853A006AB483 /* test2.m in Sources */,
 				C2AC44A31BF083C0006AB483 /* AppDelegate.m in Sources */,
 				C2AC44D51BF085E8006AB483 /* (null) in Sources */,
-				C2272DF11BF1D474004D5EFA /* RoadThreeTestCell.m in Sources */,
 				C210234F1BF4348C000B605D /* Titlearea.m in Sources */,
 				C2E3403D1BF37076006B2AF0 /* JLPLCell.m in Sources */,
 				95493BCC1BF1CF25006C2323 /* TestResult.m in Sources */,
@@ -1769,6 +1813,7 @@
 				79BA8CD41BF5FC8800CC604D /* communityCell.m in Sources */,
 				C29C11261BF0BAB1001030F2 /* School.m in Sources */,
 				C21023491BF4348C000B605D /* Baseinfoarea.m in Sources */,
+				C2BAEB1D1BF72F8E0059E8A7 /* ThRreeCell.m in Sources */,
 				C2AC44B31BF08402006AB483 /* DrivingLicenseTVC.m in Sources */,
 				C2F80F6A1BF585830006E789 /* XueYuanDPTVC.m in Sources */,
 				C2272E141BF21047004D5EFA /* naBenCell.m in Sources */,
@@ -1788,7 +1833,6 @@
 				C26623571BF4A3F9005DF5C6 /* TaoLunCell.m in Sources */,
 				79245D161BF438CA00F9BE32 /* RegisterViewController.m in Sources */,
 				C2272DCE1BF182CB004D5EFA /* ClassOneFourVC.m in Sources */,
-				C2272DEC1BF1D452004D5EFA /* RoadTwoTestCell.m in Sources */,
 				95493BC31BF1CE77006C2323 /* QuestionCell.m in Sources */,
 				95493BBE1BF1CE6B006C2323 /* PanduanCell.m in Sources */,
 				95493BEE1BF1F523006C2323 /* ImagePDCell.m in Sources */,
