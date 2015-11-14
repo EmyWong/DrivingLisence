@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+@class ListHelper;
 @interface ThRreeCell : UITableViewCell
 
 @property (weak, nonatomic) IBOutlet UIButton *pingpanbiaozhun;
@@ -33,7 +33,7 @@
 @property (weak, nonatomic) IBOutlet UIImageView *img6;
 @property (weak, nonatomic) IBOutlet UIImageView *img7;
 
-
+@property (nonatomic,strong)ListHelper * listHelper;
 
 
 

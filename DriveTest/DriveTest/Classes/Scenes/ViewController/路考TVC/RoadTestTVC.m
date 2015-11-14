@@ -77,7 +77,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
 
     ClassTwoXCell *cell = [tableView dequeueReusableCellWithIdentifier:@"XiuGaiCellTwo" forIndexPath:indexPath];
-    
+    cell.listHelper = listHelper;
 
  
 

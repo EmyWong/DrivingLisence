@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+@class ListHelper;
 @interface ClassTwoXCell : UITableViewCell
 
 @property (weak, nonatomic) IBOutlet UIButton *kaoqianzhunbei;
@@ -35,5 +35,6 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *number;
 
+@property (nonatomic,strong)ListHelper * listHelper;
 
 @end

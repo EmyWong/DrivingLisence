@@ -80,7 +80,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
 
     ThRreeCell *cell = [tableView dequeueReusableCellWithIdentifier:@"threecellid" forIndexPath:indexPath];
-    
+    cell.listHelper = listHelper;
 
   
 
