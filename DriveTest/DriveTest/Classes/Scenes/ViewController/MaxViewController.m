@@ -24,6 +24,8 @@
     self.scrollView.backgroundColor = [UIColor whiteColor];
     self.scrollView.contentSize =CGSizeMake(self.view.frame.size.width*self.drive.imageurl.count, self.view.frame.size.height);
     self.scrollView.pagingEnabled = YES;
+    self.scrollView.minimumZoomScale = 0.5;
+    self.scrollView.maximumZoomScale = 2;
     [self.view addSubview:self.scrollView];
     
     for (int i= 0; i < self.drive.imageurl.count; i++) {
