@@ -188,7 +188,12 @@
 //评论方法
 - (void)commentButtonAction
 {
-    NSLog(@"拿本  评价 。。。。。。");
+    TaoLunTVC * VC = [TaoLunTVC new];
+    UINavigationController *NC = [[UINavigationController alloc] initWithRootViewController:VC];
+    VC.infoid = @"209";
+    VC.articletip = -1;
+    VC.title = @"拿本";
+    [self presentViewController:NC animated:YES completion:nil];
 }
 
 

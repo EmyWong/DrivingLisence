@@ -148,7 +148,7 @@ static NSString *const classFourCellId = @"ClassFourID";
     UINavigationController *NC = [[UINavigationController alloc] initWithRootViewController:VC];
     VC.infoid = @"204";
     VC.articletip = -1;
-    VC.title = @"驾友讨论";
+    VC.title = @"科目四";
     [self presentViewController:NC animated:YES completion:nil];
 }
 

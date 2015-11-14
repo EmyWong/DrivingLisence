@@ -32,7 +32,7 @@
 
 - (void)awakeFromNib {
     
-    NSURL *url = [NSURL URLWithString:@"http://bbs.api.jxedt.com/listcate/201/?&pageindex=1"];
+    NSURL *url = [NSURL URLWithString:@"http://bbs.api.jxedt.com/listcate/201/?createtime=0&pageindex=1"];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     
     //测试是否有网络连接

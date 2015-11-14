@@ -132,7 +132,7 @@
     UINavigationController *NC = [[UINavigationController alloc] initWithRootViewController:VC];
     VC.infoid = @"202";
     VC.articletip = -1;
-    VC.title = @"驾友讨论";
+    VC.title = @"科目二";
     [self presentViewController:NC animated:YES completion:nil];
 }
 
