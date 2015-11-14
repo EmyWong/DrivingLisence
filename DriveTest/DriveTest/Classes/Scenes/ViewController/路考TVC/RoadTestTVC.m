@@ -188,7 +188,12 @@
 
 - (void)xiaoTieShiAction
 {
-    NSLog(@"新增小贴士功能");
+    TestMethodVC *testMethod = [TestMethodVC new];
+    testMethod.title =  @"新手易错";
+    testMethod.url = @"http://bbs.api.jxedt.com/news/h5/211/index";
+    [testMethod setHidesBottomBarWhenPushed:YES];
+    [self.navigationController pushViewController:testMethod animated:YES];
+
 }
 
 
