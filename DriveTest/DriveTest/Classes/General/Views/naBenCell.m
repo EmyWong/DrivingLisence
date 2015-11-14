@@ -26,42 +26,31 @@
 
 @implementation naBenCell
 
-- (void)awakeFromNib {
-    NSURL *url = [NSURL URLWithString:@"http://bbs.api.jxedt.com/listcate/209/?createtime=0&pageindex=1"];
-    NSURLRequest *request = [NSURLRequest requestWithURL:url];
-    //测试是否有网络连接
-    if ([[NetWorkManager sharedWithManager] isConnectionAvailable]== NO) {
+- (void)setListHelper:(ListHelper *)listHelper {
+    self.haveNum.text = [NSString stringWithFormat:@"有%ld",listHelper.totalusercount];
+    self.allPicArr = [NSMutableArray array];
+    for (NSDictionary * dic  in listHelper.infolist) {
+        DriveDiscussion * driveDiscussion = [DriveDiscussion new];
+        [driveDiscussion setValuesForKeysWithDictionary:dic];
+        [self.allPicArr addObject:driveDiscussion.face];
+    }
+    if (self.allPicArr.count > 8) {
+        [self.allPicArr removeObjectAtIndex:0];
+        [self.allPicArr removeObjectAtIndex:0];
+        [self.img1 sd_setImageWithURL:[NSURL URLWithString:self.allPicArr[0]]];
+        [self.img2 sd_setImageWithURL:[NSURL URLWithString:self.allPicArr[1]]];
+        [self.img3 sd_setImageWithURL:[NSURL URLWithString:self.allPicArr[2]]];
+        [self.img4 sd_setImageWithURL:[NSURL URLWithString:self.allPicArr[3]]];
+        [self.img5 sd_setImageWithURL:[NSURL URLWithString:self.allPicArr[4]]];
+        [self.img6 sd_setImageWithURL:[NSURL URLWithString:self.allPicArr[5]]];
+        [self.img7 sd_setImageWithURL:[NSURL URLWithString:self.allPicArr[6]]];
         
     }
-    else
-    {
-        [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse * _Nullable response, NSData * _Nullable data, NSError * _Nullable connectionError) {
-            
-            NSMutableDictionary *dic = [NSJSONSerialization JSONObjectWithData:data options:(NSJSONReadingAllowFragments) error:nil];
-            NSMutableDictionary *dic1 = dic[@"result"];
-            NSMutableDictionary *dic2 = dic1[@"list"];
-            self.haveNum.text = [NSString stringWithFormat:@"有%@",dic2[@"totalusercount"]];
-            self.allPicArr = [NSMutableArray array];
-            for (NSDictionary * dic  in dic2[@"infolist"]) {
-                DriveDiscussion * driveDiscussion = [DriveDiscussion new];
-                [driveDiscussion setValuesForKeysWithDictionary:dic];
-                [self.allPicArr addObject:driveDiscussion.face];
-            }
-            if (self.allPicArr.count > 8) {
-                [self.allPicArr removeObjectAtIndex:0];
-                [self.img1 sd_setImageWithURL:[NSURL URLWithString:self.allPicArr[0]]];
-                [self.img2 sd_setImageWithURL:[NSURL URLWithString:self.allPicArr[1]]];
-                [self.img3 sd_setImageWithURL:[NSURL URLWithString:self.allPicArr[2]]];
-                [self.img4 sd_setImageWithURL:[NSURL URLWithString:self.allPicArr[3]]];
-                [self.img5 sd_setImageWithURL:[NSURL URLWithString:self.allPicArr[4]]];
-                [self.img6 sd_setImageWithURL:[NSURL URLWithString:self.allPicArr[5]]];
-                [self.img7 sd_setImageWithURL:[NSURL URLWithString:self.allPicArr[6]]];
-                
-            }
-            
-        }];
-    }
+    
+    
 }
+
+
 
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

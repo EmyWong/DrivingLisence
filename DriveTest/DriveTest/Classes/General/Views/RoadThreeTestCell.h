@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+@class ListHelper;
 @interface RoadThreeTestCell : UITableViewCell
 
 @property (weak, nonatomic) IBOutlet UIButton *pingPanButton;
@@ -17,5 +17,5 @@
 
 @property (weak, nonatomic) IBOutlet UIButton *miJiButton;
 @property (weak, nonatomic) IBOutlet UIButton *CommentButton;
-
+@property (nonatomic,strong)ListHelper * listHelper;
 @end

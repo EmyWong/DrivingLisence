@@ -9,6 +9,10 @@
 #import "ClassFourTestTVC.h"
 
 @interface ClassFourTestTVC ()
+{
+    ListHelper * listHelper;
+}
+
 
 @property (nonatomic, strong) UIImageView *imgVIew;
 
@@ -35,7 +39,32 @@ static NSString *const classFourCellId = @"ClassFourID";
     //cell根据内容自适应高度
     self.tableView.rowHeight = UITableViewAutomaticDimension;
     self.tableView.estimatedRowHeight = 100;
+    
+    [self loadData];
 }
+
+- (void)loadData {
+    NSURL *url = [NSURL URLWithString:@"http://bbs.api.jxedt.com/listcate/204/?createtime=0&pageindex=1"];
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    
+    //测试是否有网络连接
+    if ([[NetWorkManager sharedWithManager] isConnectionAvailable]== NO) {
+        
+    }
+    else
+    {
+        [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse * _Nullable response, NSData * _Nullable data, NSError * _Nullable connectionError) {
+            
+            NSMutableDictionary *dic = [NSJSONSerialization JSONObjectWithData:data options:(NSJSONReadingAllowFragments) error:nil];
+            NSMutableDictionary *resultDic = dic[@"result"];
+            listHelper = [ListHelper new];
+            [listHelper setValuesForKeysWithDictionary:resultDic[@"list"]];
+            [self.tableView reloadData];
+        }];
+    }
+}
+
+
 
 
 - (void)loadHeaderImage
@@ -69,7 +98,8 @@ static NSString *const classFourCellId = @"ClassFourID";
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     ClassFourCell *cell = [tableView dequeueReusableCellWithIdentifier:classFourCellId forIndexPath:indexPath];
-    
+    cell.listHelper = listHelper;
+
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     
     if (indexPath.row != 0) {
@@ -147,7 +177,7 @@ static NSString *const classFourCellId = @"ClassFourID";
     TaoLunTVC * VC = [TaoLunTVC new];
     UINavigationController *NC = [[UINavigationController alloc] initWithRootViewController:VC];
     VC.infoid = @"204";
-    VC.articletip = -1;
+    VC.articletip = listHelper.totalusercount;
     VC.title = @"科目四";
     [self presentViewController:NC animated:YES completion:nil];
 }

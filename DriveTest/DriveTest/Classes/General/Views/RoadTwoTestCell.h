@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+@class ListHelper;
 @interface RoadTwoTestCell : UITableViewCell
 
 @property (weak, nonatomic) IBOutlet UIButton *kaoQianButton;
@@ -18,6 +18,6 @@
 @property (weak, nonatomic) IBOutlet UIButton *miJiButton;
 @property (weak, nonatomic) IBOutlet UIButton *commentButton;
 
-
+@property (nonatomic,strong)ListHelper * listHelper;
 
 @end
