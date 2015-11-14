@@ -27,13 +27,20 @@
 - (void)loadData:(void (^)(void))completeHandle webURL:(NSString *)weburl {
     NSURLSessionDataTask *task = [[NSURLSession sharedSession] dataTaskWithRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:weburl]] completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
        
+        
         NSMutableDictionary *test_dict = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:nil];
+        if (test_dict == nil) {
+            return ;
+        }
         NSMutableArray *test_arr = test_dict[@"result"];
         self.allTestResultArray = [NSMutableArray arrayWithCapacity:100];
         for (NSDictionary  *dic in test_arr) {
             TestResult *result = [TestResult new];
             [result setValuesForKeysWithDictionary:dic];
             [self.allTestResultArray addObject:result];
+        }
+        for (TestResult * result in self.allTestResultArray) {
+            NSLog(@"%@",result.question);
         }
         //回到主线程
         dispatch_async(dispatch_get_main_queue(), ^{

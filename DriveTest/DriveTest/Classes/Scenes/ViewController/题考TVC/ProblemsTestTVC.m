@@ -221,7 +221,7 @@ static NSString *const classOneCellId = @"ClassOneID";
     UINavigationController *NC = [[UINavigationController alloc] initWithRootViewController:VC];
     VC.infoid = @"201";
     VC.articletip = -1;
-    VC.title = @"驾友讨论";
+    VC.title = @"科目一";
     [self presentViewController:NC animated:YES completion:nil];
 }
 
