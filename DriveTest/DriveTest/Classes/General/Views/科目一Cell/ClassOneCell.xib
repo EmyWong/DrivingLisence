@@ -311,16 +311,19 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="omr-Ku-dz7">
                                         <rect key="frame" x="0.0" y="100" width="360" height="40"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="xihuan.png" translatesAutoresizingMaskIntoConstraints="NO" id="8aM-Fa-6cz">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="xihuan.png" translatesAutoresizingMaskIntoConstraints="NO" id="8aM-Fa-6cz">
                                                 <rect key="frame" x="10" y="10" width="19" height="19"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="8aM-Fa-6cz" secondAttribute="height" multiplier="1:1" id="rfy-uU-qaw"/>
+                                                </constraints>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="在这里许过愿的人都过了哦！＞   " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="epP-Jl-mND">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="在这里许过愿的人都过了哦！＞   " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="epP-Jl-mND">
                                                 <rect key="frame" x="157" y="12" width="193" height="16"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.39000000000000001" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="考前许愿" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Gi-I7-44m">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="考前许愿" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Gi-I7-44m">
                                                 <rect key="frame" x="31" y="11" width="56" height="17"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
@@ -329,7 +332,14 @@
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
+                                            <constraint firstItem="0Gi-I7-44m" firstAttribute="leading" secondItem="8aM-Fa-6cz" secondAttribute="trailing" constant="2" id="EV7-PT-Ua8"/>
+                                            <constraint firstItem="8aM-Fa-6cz" firstAttribute="leading" secondItem="omr-Ku-dz7" secondAttribute="leading" constant="10" id="K1p-Ld-epj"/>
+                                            <constraint firstItem="epP-Jl-mND" firstAttribute="centerY" secondItem="omr-Ku-dz7" secondAttribute="centerY" id="Mt0-ps-dmc"/>
+                                            <constraint firstAttribute="bottom" secondItem="8aM-Fa-6cz" secondAttribute="bottom" constant="11" id="S4Q-dz-tw8"/>
+                                            <constraint firstItem="0Gi-I7-44m" firstAttribute="centerY" secondItem="omr-Ku-dz7" secondAttribute="centerY" id="WdQ-su-Xcr"/>
+                                            <constraint firstItem="8aM-Fa-6cz" firstAttribute="top" secondItem="omr-Ku-dz7" secondAttribute="top" constant="10" id="cuQ-6R-GNq"/>
                                             <constraint firstAttribute="height" constant="40" id="fno-Kw-puk"/>
+                                            <constraint firstAttribute="trailing" secondItem="epP-Jl-mND" secondAttribute="trailing" constant="10" id="hDf-nK-a7u"/>
                                         </constraints>
                                     </view>
                                 </subviews>
