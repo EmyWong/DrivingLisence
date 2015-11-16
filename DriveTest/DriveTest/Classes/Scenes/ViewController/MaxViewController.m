@@ -89,7 +89,11 @@
     
     UIAlertAction *cancel  = [UIAlertAction actionWithTitle:@"取消" style:(UIAlertActionStyleCancel) handler:nil];
     UIAlertAction *save = [UIAlertAction actionWithTitle:@"保存至相册" style:(UIAlertActionStyleDefault) handler:^(UIAlertAction * _Nonnull action) {
-        UIImageWriteToSavedPhotosAlbum(self.imgView.image, self, @selector(image:didFinishSavingWithError:contextInfo:), nil);
+        NSInteger index;
+        index = self.pageControl.currentPage;
+        UIImageView *imageView = [UIImageView new];
+        [imageView sd_setImageWithURL:[NSURL URLWithString:self.drive.imageurl[index][@"imgUrl"]]];
+        UIImageWriteToSavedPhotosAlbum(imageView.image, self, @selector(image:didFinishSavingWithError:contextInfo:), nil);
     }];
     [alertController addAction:cancel];
     [alertController addAction:save];
