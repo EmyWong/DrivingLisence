@@ -49,30 +49,89 @@
     self.detailLabel.hidden = YES;
     //判断是否选中
     
-        if ([test.checkStr isEqualToString:@"1"]) {
-            [self.item1Btn setImage:[UIImage imageNamed:@"xuanzhong"] forState:(UIControlStateNormal)];
-            self.item2Btn.userInteractionEnabled = NO;
-            self.item3Btn.userInteractionEnabled = NO;
-            self.item4Btn.userInteractionEnabled = NO;
+    
+    if (test.checkStr) {
+        if ([test.checkStr isEqualToString:test.answer]) {
+            if ([test.checkStr isEqualToString:@"1"]) {
+                [self.item1Btn setImage:[UIImage imageNamed:@"xuanzhong"] forState:(UIControlStateNormal)];
+                self.item2Btn.userInteractionEnabled = NO;
+                self.item3Btn.userInteractionEnabled = NO;
+                self.item4Btn.userInteractionEnabled = NO;
+            }
+            if ([test.checkStr isEqualToString:@"2"]) {
+                [self.item2Btn setImage:[UIImage imageNamed:@"xuanzhong"] forState:(UIControlStateNormal)];
+                self.item1Btn.userInteractionEnabled = NO;
+                self.item3Btn.userInteractionEnabled = NO;
+                self.item4Btn.userInteractionEnabled = NO;
+            }
+            if ([test.checkStr isEqualToString:@"3"]) {
+                [self.item3Btn setImage:[UIImage imageNamed:@"xuanzhong"] forState:(UIControlStateNormal)];
+                self.item1Btn.userInteractionEnabled = NO;
+                self.item2Btn.userInteractionEnabled = NO;
+                self.item4Btn.userInteractionEnabled = NO;
+            }
+            if ([test.checkStr isEqualToString:@"4"]) {
+                [self.item4Btn setImage:[UIImage imageNamed:@"xuanzhong"] forState:(UIControlStateNormal)];
+                self.item1Btn.userInteractionEnabled = NO;
+                self.item2Btn.userInteractionEnabled = NO;
+                self.item3Btn.userInteractionEnabled = NO;
+            }
         }
-        if ([test.checkStr isEqualToString:@"2"]) {
-            [self.item2Btn setImage:[UIImage imageNamed:@"xuanzhong"] forState:(UIControlStateNormal)];
-            self.item1Btn.userInteractionEnabled = NO;
-            self.item3Btn.userInteractionEnabled = NO;
-            self.item4Btn.userInteractionEnabled = NO;
+        else
+        {
+            if ([test.checkStr isEqualToString:@"1"]) {
+                [self.item1Btn setImage:[UIImage imageNamed:@"cuoti"] forState:(UIControlStateNormal)];
+                self.item2Btn.userInteractionEnabled = NO;
+                self.item3Btn.userInteractionEnabled = NO;
+                self.item4Btn.userInteractionEnabled = NO;
+            }
+            if ([test.checkStr isEqualToString:@"2"]) {
+                [self.item2Btn setImage:[UIImage imageNamed:@"cuoti"] forState:(UIControlStateNormal)];
+                self.item1Btn.userInteractionEnabled = NO;
+                self.item3Btn.userInteractionEnabled = NO;
+                self.item4Btn.userInteractionEnabled = NO;
+            }
+            if ([test.checkStr isEqualToString:@"3"]) {
+                [self.item3Btn setImage:[UIImage imageNamed:@"cuoti"] forState:(UIControlStateNormal)];
+                self.item1Btn.userInteractionEnabled = NO;
+                self.item2Btn.userInteractionEnabled = NO;
+                self.item4Btn.userInteractionEnabled = NO;
+            }
+            if ([test.checkStr isEqualToString:@"4"]) {
+                [self.item4Btn setImage:[UIImage imageNamed:@"cuoti"] forState:(UIControlStateNormal)];
+                self.item1Btn.userInteractionEnabled = NO;
+                self.item2Btn.userInteractionEnabled = NO;
+                self.item3Btn.userInteractionEnabled = NO;
+            }
+            if ([test.answer isEqualToString:@"1"]) {
+                [self.item1Btn setImage:[UIImage imageNamed:@"xuanzhong"] forState:(UIControlStateNormal)];
+                self.item2Btn.userInteractionEnabled = NO;
+                self.item3Btn.userInteractionEnabled = NO;
+                self.item4Btn.userInteractionEnabled = NO;
+            }
+            if ([test.answer isEqualToString:@"2"]) {
+                [self.item2Btn setImage:[UIImage imageNamed:@"xuanzhong"] forState:(UIControlStateNormal)];
+                self.item1Btn.userInteractionEnabled = NO;
+                self.item3Btn.userInteractionEnabled = NO;
+                self.item4Btn.userInteractionEnabled = NO;
+            }
+            if ([test.answer isEqualToString:@"3"]) {
+                [self.item3Btn setImage:[UIImage imageNamed:@"xuanzhong"] forState:(UIControlStateNormal)];
+                self.item1Btn.userInteractionEnabled = NO;
+                self.item2Btn.userInteractionEnabled = NO;
+                self.item4Btn.userInteractionEnabled = NO;
+            }
+            if ([test.answer isEqualToString:@"4"]) {
+                [self.item4Btn setImage:[UIImage imageNamed:@"xuanzhong"] forState:(UIControlStateNormal)];
+                self.item1Btn.userInteractionEnabled = NO;
+                self.item2Btn.userInteractionEnabled = NO;
+                self.item3Btn.userInteractionEnabled = NO;
+            }
+
+            
+            
         }
-        if ([test.checkStr isEqualToString:@"3"]) {
-            [self.item3Btn setImage:[UIImage imageNamed:@"xuanzhong"] forState:(UIControlStateNormal)];
-            self.item1Btn.userInteractionEnabled = NO;
-            self.item2Btn.userInteractionEnabled = NO;
-            self.item4Btn.userInteractionEnabled = NO;
-        }
-        if ([test.checkStr isEqualToString:@"4"]) {
-            [self.item4Btn setImage:[UIImage imageNamed:@"xuanzhong"] forState:(UIControlStateNormal)];
-            self.item1Btn.userInteractionEnabled = NO;
-            self.item2Btn.userInteractionEnabled = NO;
-            self.item3Btn.userInteractionEnabled = NO;
-        }
+    }
    
 }
 - (IBAction)ChooseAAction:(UIButton *)sender {
