@@ -9,6 +9,7 @@
 #import "CommunityViewController.h"
 #import "communityCell.h"
 #import "communityTwoCell.h"
+#import "SheQuVC.h"
 
 @interface CommunityViewController () <UITableViewDataSource,UITableViewDelegate>
 
@@ -58,6 +59,10 @@ static NSString *const communityTwoCellID = @"communityTwoCell";
 - (void) editAction
 {
     NSLog(@"弹出编辑控制器");
+    
+    UINavigationController *NC = [[UINavigationController alloc] initWithRootViewController:[SheQuVC new]];
+    [self presentViewController:NC animated:YES completion:nil];
+    
 }
 #pragma mark - UITableViewDelegate & UITableViewDataSource
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -98,5 +103,8 @@ static NSString *const communityTwoCellID = @"communityTwoCell";
         return [[UITableViewCell alloc] init];
     }
 }
+
+
+
 
 @end

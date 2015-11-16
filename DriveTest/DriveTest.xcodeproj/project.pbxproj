@@ -220,6 +220,9 @@
 		C2BAEB0F1BF721220059E8A7 /* 路考秘诀.png in Resources */ = {isa = PBXBuildFile; fileRef = C2BAEB0D1BF721220059E8A7 /* 路考秘诀.png */; };
 		C2BAEB1D1BF72F8E0059E8A7 /* ThRreeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C2BAEB1B1BF72F8E0059E8A7 /* ThRreeCell.m */; };
 		C2BAEB1E1BF72F8E0059E8A7 /* ThRreeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C2BAEB1C1BF72F8E0059E8A7 /* ThRreeCell.xib */; };
+		C2BF87A61BF9B59700E1F791 /* SheQuVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C2BF87A41BF9B59700E1F791 /* SheQuVC.m */; settings = {ASSET_TAGS = (); }; };
+		C2BF87A71BF9B59700E1F791 /* SheQuVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C2BF87A51BF9B59700E1F791 /* SheQuVC.xib */; settings = {ASSET_TAGS = (); }; };
+		C2BF87A91BF9D06000E1F791 /* addImage.png in Resources */ = {isa = PBXBuildFile; fileRef = C2BF87A81BF9D06000E1F791 /* addImage.png */; settings = {ASSET_TAGS = (); }; };
 		C2E3402B1BF34C75006B2AF0 /* SchoolVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C2E340291BF34C75006B2AF0 /* SchoolVC.m */; };
 		C2E3402C1BF34C75006B2AF0 /* SchoolVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C2E3402A1BF34C75006B2AF0 /* SchoolVC.xib */; };
 		C2E340311BF34CE5006B2AF0 /* SchoolInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C2E3402F1BF34CE5006B2AF0 /* SchoolInfoCell.m */; };
@@ -549,6 +552,10 @@
 		C2BAEB1A1BF72F8E0059E8A7 /* ThRreeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThRreeCell.h; sourceTree = "<group>"; };
 		C2BAEB1B1BF72F8E0059E8A7 /* ThRreeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThRreeCell.m; sourceTree = "<group>"; };
 		C2BAEB1C1BF72F8E0059E8A7 /* ThRreeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThRreeCell.xib; sourceTree = "<group>"; };
+		C2BF87A31BF9B59700E1F791 /* SheQuVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SheQuVC.h; sourceTree = "<group>"; };
+		C2BF87A41BF9B59700E1F791 /* SheQuVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SheQuVC.m; sourceTree = "<group>"; };
+		C2BF87A51BF9B59700E1F791 /* SheQuVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SheQuVC.xib; sourceTree = "<group>"; };
+		C2BF87A81BF9D06000E1F791 /* addImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = addImage.png; sourceTree = "<group>"; };
 		C2E340281BF34C75006B2AF0 /* SchoolVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SchoolVC.h; sourceTree = "<group>"; };
 		C2E340291BF34C75006B2AF0 /* SchoolVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SchoolVC.m; sourceTree = "<group>"; };
 		C2E3402A1BF34C75006B2AF0 /* SchoolVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SchoolVC.xib; sourceTree = "<group>"; };
@@ -1190,6 +1197,7 @@
 				79EC03041BF17FFE002C568F /* 侧栏图片 */,
 				C2AC447A1BF08357006AB483 /* 图标 */,
 				C2AC44DF1BF0988E006AB483 /* nvshen@2x.jpg */,
+				C2BF87A81BF9D06000E1F791 /* addImage.png */,
 				C2272DD71BF19360004D5EFA /* image090.png */,
 				C2AC44E11BF09899006AB483 /* image.jpg */,
 				79D297B71BF97A00002C2BB7 /* iconfont-jiahao.png */,
@@ -1261,6 +1269,7 @@
 			children = (
 				C2AC44AE1BF083F2006AB483 /* RootViewController.h */,
 				C2AC44AF1BF083F2006AB483 /* RootViewController.m */,
+				C2BF87A21BF9B56B00E1F791 /* 社区VC */,
 				C2AC44851BF08357006AB483 /* 拿本TVC */,
 				9556B4851BF61586008CB614 /* 放大VC */,
 				C2AC44881BF08357006AB483 /* 社区TVC */,
@@ -1363,6 +1372,16 @@
 				C2BAEB0D1BF721220059E8A7 /* 路考秘诀.png */,
 			);
 			path = lukaotupian;
+			sourceTree = "<group>";
+		};
+		C2BF87A21BF9B56B00E1F791 /* 社区VC */ = {
+			isa = PBXGroup;
+			children = (
+				C2BF87A31BF9B59700E1F791 /* SheQuVC.h */,
+				C2BF87A41BF9B59700E1F791 /* SheQuVC.m */,
+				C2BF87A51BF9B59700E1F791 /* SheQuVC.xib */,
+			);
+			path = "社区VC";
 			sourceTree = "<group>";
 		};
 		C2E340271BF34C75006B2AF0 /* 驾校VC */ = {
@@ -1588,6 +1607,7 @@
 				C2272DDF1BF1B4C0004D5EFA /* f9.jpg in Resources */,
 				959EE7861BF47D2A0073B92B /* loading60.tiff in Resources */,
 				C2272DF41BF1D6F0004D5EFA /* mijizhidao@2x.png in Resources */,
+				C2BF87A91BF9D06000E1F791 /* addImage.png in Resources */,
 				959EE7601BF47D2A0073B92B /* loading26.tiff in Resources */,
 				C20C89C21BF21F96003B691D /* DriveSchoolCell.xib in Resources */,
 				959EE7841BF47D2A0073B92B /* loading59.tiff in Resources */,
@@ -1688,6 +1708,7 @@
 				C2F80FC41BF5AFFB0006E789 /* a3.png in Resources */,
 				959EE7761BF47D2A0073B92B /* loading46.tiff in Resources */,
 				C2F80FA61BF5A0170006E789 /* 29.png in Resources */,
+				C2BF87A71BF9B59700E1F791 /* SheQuVC.xib in Resources */,
 				959EE7541BF47D2A0073B92B /* loading15.tiff in Resources */,
 				C2E3403E1BF37076006B2AF0 /* JLPLCell.xib in Resources */,
 				C2AC44F21BF0EADE006AB483 /* kaoshijiqiao.png in Resources */,
@@ -1811,6 +1832,7 @@
 				C2272DCB1BF17FFB004D5EFA /* ClassFourTestTVC.m in Sources */,
 				C2AC44DB1BF085FC006AB483 /* test7.m in Sources */,
 				C2F80F641BF5827A0006E789 /* XueYuanCell.m in Sources */,
+				C2BF87A61BF9B59700E1F791 /* SheQuVC.m in Sources */,
 				959EE67A1BF38D370073B92B /* RuleViewController.m in Sources */,
 				C2E340311BF34CE5006B2AF0 /* SchoolInfoCell.m in Sources */,
 				C285F8F11BF58ED2000EB89A /* Commentlist.m in Sources */,
