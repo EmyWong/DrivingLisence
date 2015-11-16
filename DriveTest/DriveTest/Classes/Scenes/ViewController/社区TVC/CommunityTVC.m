@@ -8,11 +8,13 @@
 
 #import "CommunityTVC.h"
 #import "communityCell.h"
+#import "communityTwoCell.h"
 @interface CommunityTVC ()
 
 @end
 
 static NSString *const communityCellID = @"communityCell";
+static NSString *const communityTwoCellID = @"communityTwoCell";
 
 @implementation CommunityTVC
 
@@ -20,6 +22,10 @@ static NSString *const communityCellID = @"communityCell";
     [super viewDidLoad];
     
     [self.tableView registerNib:[UINib nibWithNibName:@"communityCell" bundle:nil] forCellReuseIdentifier:communityCellID];
+    [self.tableView registerNib:[UINib nibWithNibName:@"communityTwoCell" bundle:nil] forCellReuseIdentifier:communityTwoCellID];
+    
+    self.tableView.rowHeight = UITableViewAutomaticDimension;
+    self.tableView.estimatedRowHeight = 200;
     
 }
 
@@ -38,20 +44,24 @@ static NSString *const communityCellID = @"communityCell";
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 
-    return 15;
+    return 10;
     
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     communityCell *cell = [tableView dequeueReusableCellWithIdentifier:communityCellID forIndexPath:indexPath];
+    communityTwoCell *Tcell = [tableView dequeueReusableCellWithIdentifier:communityTwoCellID forIndexPath:indexPath];
     
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    Tcell.selectionStyle = UITableViewCellSelectionStyleNone;
+    
+    if (indexPath.row % 2 == 0) {
+        return Tcell;
+    }else
+    {
         return cell;
     }
-- (CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    
-        return 330;
     
 }
 
