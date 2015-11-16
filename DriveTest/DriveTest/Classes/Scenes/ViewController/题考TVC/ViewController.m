@@ -12,6 +12,11 @@
 @property (nonatomic,strong) UITableView *tableView;
 @property (nonatomic,assign) NSInteger number;
 @property (nonatomic,strong) TestResult *test;
+
+@property (nonatomic,strong) QuestionCell *cell;
+@property (nonatomic,strong) PanduanCell *cell1;
+@property (nonatomic,strong) ImageQuestionCell *cell2;
+@property (nonatomic,strong) ImagePDCell *cell3;
 @end
 
 @implementation ViewController
@@ -81,58 +86,58 @@
     if ([_test.item3 isEqualToString:@""]) {
         
         if (![self.test.url isEqualToString:@""]) {
-            ImagePDCell *cell = [tableView dequeueReusableCellWithIdentifier:@"imagepdcell" forIndexPath:indexPath];
+            self.cell3= [tableView dequeueReusableCellWithIdentifier:@"imagepdcell" forIndexPath:indexPath];
             
-            cell.selectionStyle = UITableViewCellSelectionStyleNone;
-            cell.test = _test;
-            cell.questionLabel.text = [NSString stringWithFormat:@"%ld.%@",self.number+1,self.test.question];
-            [cell.lastOne addTarget:self action:@selector(lastOneAction:) forControlEvents:(UIControlEventTouchUpInside)];
-            [cell.nextOne addTarget:self action:@selector(nextOneAction:) forControlEvents:(UIControlEventTouchUpInside)];
-            [cell.Save addTarget:self action:@selector(saveAction:) forControlEvents:(UIControlEventTouchUpInside)];
+            _cell3.selectionStyle = UITableViewCellSelectionStyleNone;
+            _cell3.test = _test;
+            _cell3.questionLabel.text = [NSString stringWithFormat:@"%ld.%@",self.number+1,self.test.question];
+            [_cell3.lastOne addTarget:self action:@selector(lastOneAction:) forControlEvents:(UIControlEventTouchUpInside)];
+            [_cell3.nextOne addTarget:self action:@selector(nextOneAction:) forControlEvents:(UIControlEventTouchUpInside)];
+            [_cell3.Save addTarget:self action:@selector(saveAction:) forControlEvents:(UIControlEventTouchUpInside)];
             
-            return cell;
+            return _cell3;
 
         }
         
         else
         {
-        PanduanCell *cell = [tableView dequeueReusableCellWithIdentifier:@"panduancell" forIndexPath:indexPath];
+        self.cell1 = [tableView dequeueReusableCellWithIdentifier:@"panduancell" forIndexPath:indexPath];
         
-        cell.selectionStyle = UITableViewCellSelectionStyleNone;
-        cell.test = _test;
-        cell.questionLabel.text = [NSString stringWithFormat:@"%ld.%@",self.number+1,self.test.question];
-        [cell.lastOne addTarget:self action:@selector(lastOneAction:) forControlEvents:(UIControlEventTouchUpInside)];
-        [cell.nextOne addTarget:self action:@selector(nextOneAction:) forControlEvents:(UIControlEventTouchUpInside)];
-        [cell.Save addTarget:self action:@selector(saveAction:) forControlEvents:(UIControlEventTouchUpInside)];
+        _cell1.selectionStyle = UITableViewCellSelectionStyleNone;
+        _cell1.test = _test;
+        _cell1.questionLabel.text = [NSString stringWithFormat:@"%ld.%@",self.number+1,self.test.question];
+        [_cell1.lastOne addTarget:self action:@selector(lastOneAction:) forControlEvents:(UIControlEventTouchUpInside)];
+        [_cell1.nextOne addTarget:self action:@selector(nextOneAction:) forControlEvents:(UIControlEventTouchUpInside)];
+        [_cell1.Save addTarget:self action:@selector(saveAction:) forControlEvents:(UIControlEventTouchUpInside)];
         
-        return cell;
+        return _cell1;
         }
     }
     else
     {
         if (![self.test.url isEqualToString:@""]) {
-            ImageQuestionCell *cell = [tableView dequeueReusableCellWithIdentifier:@"imagecell" forIndexPath:indexPath];
-            cell.selectionStyle = UITableViewCellSelectionStyleNone;
-            cell.test = _test;
-            cell.questionLabel.text = [NSString stringWithFormat:@"%ld.%@",self.number+1,self.test.question];
-            [cell.lastOne addTarget:self action:@selector(lastOneAction:) forControlEvents:(UIControlEventTouchUpInside)];
-            [cell.nextOne addTarget:self action:@selector(nextOneAction:) forControlEvents:(UIControlEventTouchUpInside)];
-            [cell.Save addTarget:self action:@selector(saveAction:) forControlEvents:(UIControlEventTouchUpInside)];
-            return cell;
+            self.cell2 = [tableView dequeueReusableCellWithIdentifier:@"imagecell" forIndexPath:indexPath];
+            _cell2.selectionStyle = UITableViewCellSelectionStyleNone;
+            _cell2.test = _test;
+            _cell2.questionLabel.text = [NSString stringWithFormat:@"%ld.%@",self.number+1,self.test.question];
+            [_cell2.lastOne addTarget:self action:@selector(lastOneAction:) forControlEvents:(UIControlEventTouchUpInside)];
+            [_cell2.nextOne addTarget:self action:@selector(nextOneAction:) forControlEvents:(UIControlEventTouchUpInside)];
+            [_cell2.Save addTarget:self action:@selector(saveAction:) forControlEvents:(UIControlEventTouchUpInside)];
+            return _cell2;
         }
         
         else
         {
-        QuestionCell *cell = [tableView dequeueReusableCellWithIdentifier:@"qcell" forIndexPath:indexPath];
+        self.cell = [tableView dequeueReusableCellWithIdentifier:@"qcell" forIndexPath:indexPath];
        
-        cell.selectionStyle = UITableViewCellSelectionStyleNone;
-        cell.test = _test;
-        cell.questionLabel.text = [NSString stringWithFormat:@"%ld.%@",self.number+1,self.test.question];
-        [cell.lastOne addTarget:self action:@selector(lastOneAction:) forControlEvents:(UIControlEventTouchUpInside)];
-        [cell.nextOne addTarget:self action:@selector(nextOneAction:) forControlEvents:(UIControlEventTouchUpInside)];
-        [cell.Save addTarget:self action:@selector(saveAction:) forControlEvents:(UIControlEventTouchUpInside)];
+        _cell.selectionStyle = UITableViewCellSelectionStyleNone;
+        _cell.test = _test;
+        _cell.questionLabel.text = [NSString stringWithFormat:@"%ld.%@",self.number+1,self.test.question];
+        [_cell.lastOne addTarget:self action:@selector(lastOneAction:) forControlEvents:(UIControlEventTouchUpInside)];
+        [_cell.nextOne addTarget:self action:@selector(nextOneAction:) forControlEvents:(UIControlEventTouchUpInside)];
+        [_cell.Save addTarget:self action:@selector(saveAction:) forControlEvents:(UIControlEventTouchUpInside)];
         
-        return cell;
+        return _cell;
     }
     }
   }
@@ -184,6 +189,8 @@
     for (TestResult *test in [TestHelper sharedHelper].CuoTiArr) {
         if ([self.test isEqual:test]) {
             flag = YES;
+            TimerDisappearAlertView *alert = [[TimerDisappearAlertView alloc]initWithTitle:@"该题已存在！"];
+            [alert show];
         }
     }
         if (flag == NO) {

@@ -33,7 +33,9 @@
     self.detailLabel.hidden = YES;
    
         //判断是否选中
-    
+    //如果存在
+    if (test.checkStr) {
+        if ([test.checkStr isEqualToString:test.answer]) {
     if ([test.checkStr isEqualToString:@"1"]) {
         [self.item1Btn setImage:[UIImage imageNamed:@"xuanzhong"] forState:(UIControlStateNormal)];
         self.item2Btn.userInteractionEnabled = NO;
@@ -42,7 +44,27 @@
         [self.item2Btn setImage:[UIImage imageNamed:@"xuanzhong"] forState:(UIControlStateNormal)];
         self.item1Btn.userInteractionEnabled = NO;
     }
-    
+        }
+        else
+        {
+            if ([test.checkStr isEqualToString:@"1"]) {
+                [self.item1Btn setImage:[UIImage imageNamed:@"cuoti"] forState:(UIControlStateNormal)];
+                self.item2Btn.userInteractionEnabled = NO;
+            }
+            if ([test.checkStr isEqualToString:@"2"]) {
+                [self.item2Btn setImage:[UIImage imageNamed:@"cuoti"] forState:(UIControlStateNormal)];
+                self.item1Btn.userInteractionEnabled = NO;
+            }
+            if ([test.answer isEqualToString:@"1"]) {
+                [self.item1Btn setImage:[UIImage imageNamed:@"xuanzhong"] forState:(UIControlStateNormal)];
+            }
+            if ([test.answer isEqualToString:@"2"]) {
+                [self.item2Btn setImage:[UIImage imageNamed:@"xuanzhong"] forState:(UIControlStateNormal)];
+            }
+            
+        }
+        
+    }
 }
 - (IBAction)ChooseAAction:(UIButton *)sender {
     if([sender.imageView.image isEqual:[UIImage imageNamed:@"weixuanzhong"]])
