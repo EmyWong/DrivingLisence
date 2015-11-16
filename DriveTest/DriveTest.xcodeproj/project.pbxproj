@@ -15,6 +15,8 @@
 		7967F40B1BF966F100A48B05 /* communityTwoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7967F4091BF966F000A48B05 /* communityTwoCell.xib */; settings = {ASSET_TAGS = (); }; };
 		79BA8CD41BF5FC8800CC604D /* communityCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 79BA8CD21BF5FC8800CC604D /* communityCell.m */; };
 		79BA8CD51BF5FC8800CC604D /* communityCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79BA8CD31BF5FC8800CC604D /* communityCell.xib */; };
+		79D297B81BF97A00002C2BB7 /* iconfont-jiahao.png in Resources */ = {isa = PBXBuildFile; fileRef = 79D297B71BF97A00002C2BB7 /* iconfont-jiahao.png */; settings = {ASSET_TAGS = (); }; };
+		79D297BB1BF97BD9002C2BB7 /* CommunityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79D297BA1BF97BD9002C2BB7 /* CommunityViewController.m */; settings = {ASSET_TAGS = (); }; };
 		79EC030A1BF18014002C568F /* lianxi_collect@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 79EC03051BF18014002C568F /* lianxi_collect@2x.png */; };
 		79EC030B1BF18014002C568F /* lianxi_del@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 79EC03061BF18014002C568F /* lianxi_del@2x.png */; };
 		79EC030C1BF18014002C568F /* lianxi_exption@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 79EC03071BF18014002C568F /* lianxi_exption@2x.png */; };
@@ -189,7 +191,6 @@
 		C2AC44AD1BF083DF006AB483 /* tikao.png in Resources */ = {isa = PBXBuildFile; fileRef = C2AC44A81BF083DF006AB483 /* tikao.png */; };
 		C2AC44B01BF083F2006AB483 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2AC44AF1BF083F2006AB483 /* RootViewController.m */; };
 		C2AC44B31BF08402006AB483 /* DrivingLicenseTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C2AC44B21BF08402006AB483 /* DrivingLicenseTVC.m */; };
-		C2AC44B61BF08410006AB483 /* CommunityTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C2AC44B51BF08410006AB483 /* CommunityTVC.m */; };
 		C2AC44B91BF0841F006AB483 /* RoadTestTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C2AC44B81BF0841F006AB483 /* RoadTestTVC.m */; };
 		C2AC44BC1BF0842C006AB483 /* ProblemsTestTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C2AC44BB1BF0842C006AB483 /* ProblemsTestTVC.m */; };
 		C2AC44C41BF0851C006AB483 /* ClassOneCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C2AC44C21BF0851C006AB483 /* ClassOneCell.m */; };
@@ -286,6 +287,9 @@
 		79BA8CD11BF5FC8800CC604D /* communityCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = communityCell.h; sourceTree = "<group>"; };
 		79BA8CD21BF5FC8800CC604D /* communityCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = communityCell.m; sourceTree = "<group>"; };
 		79BA8CD31BF5FC8800CC604D /* communityCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = communityCell.xib; sourceTree = "<group>"; };
+		79D297B71BF97A00002C2BB7 /* iconfont-jiahao.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconfont-jiahao.png"; sourceTree = "<group>"; };
+		79D297B91BF97BD9002C2BB7 /* CommunityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommunityViewController.h; sourceTree = "<group>"; };
+		79D297BA1BF97BD9002C2BB7 /* CommunityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommunityViewController.m; sourceTree = "<group>"; };
 		79EC03051BF18014002C568F /* lianxi_collect@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lianxi_collect@2x.png"; sourceTree = "<group>"; };
 		79EC03061BF18014002C568F /* lianxi_del@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lianxi_del@2x.png"; sourceTree = "<group>"; };
 		79EC03071BF18014002C568F /* lianxi_exption@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lianxi_exption@2x.png"; sourceTree = "<group>"; };
@@ -507,8 +511,6 @@
 		C2AC44AF1BF083F2006AB483 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		C2AC44B11BF08402006AB483 /* DrivingLicenseTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrivingLicenseTVC.h; sourceTree = "<group>"; };
 		C2AC44B21BF08402006AB483 /* DrivingLicenseTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrivingLicenseTVC.m; sourceTree = "<group>"; };
-		C2AC44B41BF08410006AB483 /* CommunityTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommunityTVC.h; sourceTree = "<group>"; };
-		C2AC44B51BF08410006AB483 /* CommunityTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommunityTVC.m; sourceTree = "<group>"; };
 		C2AC44B71BF0841F006AB483 /* RoadTestTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoadTestTVC.h; sourceTree = "<group>"; };
 		C2AC44B81BF0841F006AB483 /* RoadTestTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoadTestTVC.m; sourceTree = "<group>"; };
 		C2AC44BA1BF0842C006AB483 /* ProblemsTestTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProblemsTestTVC.h; sourceTree = "<group>"; };
@@ -1190,6 +1192,7 @@
 				C2AC44DF1BF0988E006AB483 /* nvshen@2x.jpg */,
 				C2272DD71BF19360004D5EFA /* image090.png */,
 				C2AC44E11BF09899006AB483 /* image.jpg */,
+				79D297B71BF97A00002C2BB7 /* iconfont-jiahao.png */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -1258,8 +1261,8 @@
 			children = (
 				C2AC44AE1BF083F2006AB483 /* RootViewController.h */,
 				C2AC44AF1BF083F2006AB483 /* RootViewController.m */,
-				9556B4851BF61586008CB614 /* 放大VC */,
 				C2AC44851BF08357006AB483 /* 拿本TVC */,
+				9556B4851BF61586008CB614 /* 放大VC */,
 				C2AC44881BF08357006AB483 /* 社区TVC */,
 				C2AC448B1BF08357006AB483 /* 路考TVC */,
 				C2AC448E1BF08357006AB483 /* 题考TVC */,
@@ -1282,8 +1285,8 @@
 		C2AC44881BF08357006AB483 /* 社区TVC */ = {
 			isa = PBXGroup;
 			children = (
-				C2AC44B41BF08410006AB483 /* CommunityTVC.h */,
-				C2AC44B51BF08410006AB483 /* CommunityTVC.m */,
+				79D297B91BF97BD9002C2BB7 /* CommunityViewController.h */,
+				79D297BA1BF97BD9002C2BB7 /* CommunityViewController.m */,
 			);
 			path = "社区TVC";
 			sourceTree = "<group>";
@@ -1593,6 +1596,7 @@
 				79EC031A1BF19362002C568F /* menu_icon.png in Resources */,
 				C2272DDE1BF1B4C0004D5EFA /* f5.jpg in Resources */,
 				C2F80FB11BF5A0170006E789 /* 6.png in Resources */,
+				79D297B81BF97A00002C2BB7 /* iconfont-jiahao.png in Resources */,
 				C26623631BF4D4F0005DF5C6 /* dianzaned.png in Resources */,
 				959EE7801BF47D2A0073B92B /* loading55.tiff in Resources */,
 				959EE7851BF47D2A0073B92B /* loading6.tiff in Resources */,
@@ -1799,6 +1803,7 @@
 				C210234B1BF4348C000B605D /* Commentarea.m in Sources */,
 				C2AC44CB1BF0853A006AB483 /* test2.m in Sources */,
 				C2AC44A31BF083C0006AB483 /* AppDelegate.m in Sources */,
+				79D297BB1BF97BD9002C2BB7 /* CommunityViewController.m in Sources */,
 				C2AC44D51BF085E8006AB483 /* (null) in Sources */,
 				C210234F1BF4348C000B605D /* Titlearea.m in Sources */,
 				C2E3403D1BF37076006B2AF0 /* JLPLCell.m in Sources */,
@@ -1836,7 +1841,6 @@
 				95493BE51BF1DDD3006C2323 /* ViewController.m in Sources */,
 				C26623521BF49752005DF5C6 /* TaoLunTVC.m in Sources */,
 				C2918C3D1BF490C7005E21AE /* DriveDiscussion.m in Sources */,
-				C2AC44B61BF08410006AB483 /* CommunityTVC.m in Sources */,
 				C210234C1BF4348C000B605D /* Descarea.m in Sources */,
 				959EE6871BF41E9C0073B92B /* DrivingLisenceVC.m in Sources */,
 				C26623461BF4881F005DF5C6 /* JiaYouTaoLunCell.m in Sources */,
