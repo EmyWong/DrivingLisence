@@ -7,10 +7,15 @@
 //
 
 #import "TaoLunCell.h"
+#import "TieZi.h"
+
+
 @interface TaoLunCell ()
 @property (nonatomic,strong) UITapGestureRecognizer *tap1;
 @property (nonatomic,strong) UITapGestureRecognizer *tap2;
 @property (nonatomic,strong) UITapGestureRecognizer *tap3;
+@property (nonatomic, strong) NSMutableArray *allArray;
+
 @end
 @implementation TaoLunCell
 
@@ -60,10 +65,74 @@
 
     }
     
-            
-       
+}
+
+
+- (void)setTiezi:(TieZi *)tiezi
+{
+    [self.allArray removeAllObjects];
+    [self.img1 removeGestureRecognizer:self.tap1];
+    [self.img2 removeGestureRecognizer:self.tap2];
+    [self.img3 removeGestureRecognizer:self.tap3];
+    [self.img1 setImage:nil];
+    [self.img2 setImage:nil];
+    [self.img3 setImage:nil];
+    self.connent.text = tiezi.content;
+    
+    self.name.text = @"王大锤%#@&(  *";
+    NSDate *data = tiezi.createdAt;
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateFormat:@"yyyy-MM-dd HH:mm"];
+    NSString *string = [formatter stringFromDate:data];
+    self.time.text = string;
+    self.address.text = @"北京市";
+    self.dianzan.text = @"0";
+    self.pinglun.text = @"0";
+    
+    [self.touXiangImg setImage:[UIImage imageNamed:[NSString stringWithFormat:@"%u", arc4random()%37]]];
+    
+    
+    for (AVFile *obj in tiezi.imgArr) {
+        NSData *data = [obj getData];
+        NSLog(@"%@", data);
+        UIImage *image = [UIImage imageWithData:data];
+        [self.allArray addObject:image];
+    }
+    
+    
+    if (1 == self.allArray.count) {
+        [self.img1 setImage:self.allArray[0]];
+        self.img1.userInteractionEnabled = YES;
+        self.tap1 = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(Max1Action:)];
+        [self.img1 addGestureRecognizer:self.tap1];
+    }else if(2 == self.allArray.count) {
+        [self.img1 setImage:self.allArray[0]];
+        [self.img2 setImage:self.allArray[1]];
+        self.img1.userInteractionEnabled = YES;
+        self.tap1 = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(Max1Action:)];
+        [self.img1 addGestureRecognizer:self.tap1];
+        self.img2.userInteractionEnabled = YES;
+        self.tap2 = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(Max2Action:)];
+        [self.img2 addGestureRecognizer:self.tap2];
+        
+    }else {
+        [self.img1 setImage:self.allArray[0]];
+        [self.img2 setImage:self.allArray[1]];
+        [self.img3 setImage:self.allArray[2]];
+        self.img1.userInteractionEnabled = YES;
+        self.tap1 = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(Max1Action:)];
+        [self.img1 addGestureRecognizer:self.tap1];
+        self.img2.userInteractionEnabled = YES;
+        self.tap2 = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(Max2Action:)];
+        [self.img2 addGestureRecognizer:self.tap2];
+        self.img3.userInteractionEnabled = YES;
+        self.tap3 = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(Max3Action:)];
+        [self.img3 addGestureRecognizer:self.tap3];
+        
+    }  
     
 }
+
 
 
 - (void)awakeFromNib {
@@ -90,5 +159,16 @@
 
     // Configure the view for the selected state
 }
+
+
+
+- (NSMutableArray *)allArray
+{
+    if (!_allArray) {
+        self.allArray = [[NSMutableArray alloc] initWithCapacity:3];
+    }
+    return _allArray;
+}
+
 
 @end

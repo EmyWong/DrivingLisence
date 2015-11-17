@@ -9,6 +9,10 @@
 #import "MaxViewController.h"
 
 @interface MaxViewController ()<UIScrollViewDelegate,UIAlertViewDelegate>
+{
+    NSInteger _index;
+}
+
 @property (nonatomic,retain) UIScrollView *scrollView;
 @property (nonatomic,strong) UIPageControl *pageControl;
 @property (nonatomic,strong) UIImageView *imgView;
@@ -20,18 +24,33 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     
+    NSInteger count;
+    
+    if (self.drive == nil) {
+        count = self.imageArr.count;
+        _index = -1;
+    }else{
+         count = self.drive.imageurl.count;
+        _index = -2;
+    }
+    
+    
     self.scrollView = [[UIScrollView alloc]initWithFrame:self.view.frame];
     self.scrollView.backgroundColor = [UIColor whiteColor];
-    self.scrollView.contentSize =CGSizeMake(self.view.frame.size.width*self.drive.imageurl.count, self.view.frame.size.height);
+    self.scrollView.contentSize =CGSizeMake(self.view.frame.size.width*count, self.view.frame.size.height);
     self.scrollView.pagingEnabled = YES;
     self.scrollView.minimumZoomScale = 0.5;
     self.scrollView.maximumZoomScale = 2;
     [self.view addSubview:self.scrollView];
     
-    for (int i= 0; i < self.drive.imageurl.count; i++) {
+    for (int i= 0; i < count; i++) {
         self.imgView = [[UIImageView alloc]initWithFrame:CGRectMake(self.view.frame.size.width*i, 20, self.view.frame.size.width, self.view.frame.size.height-40)];
         
-        [_imgView sd_setImageWithURL:[NSURL URLWithString:self.drive.imageurl[i][@"imgUrl"]] placeholderImage:[UIImage imageNamed:@"fail"]];
+        if (_index == -2) {
+            [_imgView sd_setImageWithURL:[NSURL URLWithString:self.drive.imageurl[i][@"imgUrl"]] placeholderImage:[UIImage imageNamed:@"fail"]];
+        }else{
+            [_imgView setImage:self.imageArr[i]];
+        }
         UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tapAction:)];
         [_imgView addGestureRecognizer:tap];
         
@@ -47,7 +66,7 @@
     self.scrollView.delegate = self;
     self.scrollView.delegate = self;
     self.pageControl = [[UIPageControl alloc]initWithFrame:CGRectMake(0, self.view.frame.size.height - 50, self.view.frame.size.width, 30)];
-    self.pageControl.numberOfPages = self.drive.imageurl.count;
+    self.pageControl.numberOfPages = count;
     [self.pageControl addTarget:self action:@selector(PageAction:) forControlEvents:(UIControlEventValueChanged)];
     [self.view addSubview:self.pageControl];
     
@@ -92,7 +111,11 @@
         NSInteger index;
         index = self.pageControl.currentPage;
         UIImageView *imageView = [UIImageView new];
-        [imageView sd_setImageWithURL:[NSURL URLWithString:self.drive.imageurl[index][@"imgUrl"]]];
+        if (_index == -2) {
+            [imageView sd_setImageWithURL:[NSURL URLWithString:self.drive.imageurl[index][@"imgUrl"]]];
+        }else{
+            [imageView setImage:self.imageArr[index]];
+        }
         UIImageWriteToSavedPhotosAlbum(imageView.image, self, @selector(image:didFinishSavingWithError:contextInfo:), nil);
     }];
     [alertController addAction:cancel];

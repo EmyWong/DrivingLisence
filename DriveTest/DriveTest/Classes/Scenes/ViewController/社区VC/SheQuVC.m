@@ -7,6 +7,8 @@
 //
 
 #import "SheQuVC.h"
+#import "TieZi.h"
+
 
 @interface SheQuVC ()
 
@@ -17,13 +19,23 @@
 @property (weak, nonatomic) IBOutlet UIImageView *img5;
 @property (weak, nonatomic) IBOutlet UIImageView *img6;
 
+@property (weak, nonatomic) IBOutlet UIButton *btn1;
+
+@property (weak, nonatomic) IBOutlet UIButton *btn2;
+@property (weak, nonatomic) IBOutlet UIButton *btn3;
+@property (weak, nonatomic) IBOutlet UIButton *btn4;
+@property (weak, nonatomic) IBOutlet UIButton *btn5;
+@property (weak, nonatomic) IBOutlet UIButton *btn6;
+
+
+
 
 @end
 
 @interface SheQuVC ()<UITextViewDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 @property (weak, nonatomic) IBOutlet UITextView *myTtextView;
 @property (nonatomic, strong) NSMutableArray *imageArray;
-
+@property (nonatomic, strong) NSMutableArray *fileArr;
 @end
 
 @implementation SheQuVC
@@ -46,7 +58,7 @@
     
     
     
-    [self loadImage];
+    [self loadButtonAction];
     
     
     
@@ -57,30 +69,57 @@
     
 }
 
-
-- (void)loadImage
+- (void)loadButtonAction
 {
+    [self.btn1 addTarget:self action:@selector(addImage) forControlEvents:UIControlEventTouchUpInside];
     self.img1.image = [UIImage imageNamed:@"addImage"];
+//    [self.btn1 setImage:[UIImage imageNamed:@"addImage"] forState:UIControlStateNormal];
     
-    self.img1.userInteractionEnabled = YES;
     
-    UITapGestureRecognizer *tap1 = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(addImage)];
-    [self.img1 addGestureRecognizer:tap1];
+    [self.btn2 addTarget:self action:@selector(addImage) forControlEvents:UIControlEventTouchUpInside];
+//    [self.btn2 setImage:[UIImage imageNamed:@"addImage"] forState:UIControlStateNormal];
+    
+    
+    [self.btn3 addTarget:self action:@selector(addImage) forControlEvents:UIControlEventTouchUpInside];
+//    [self.btn3 setImage:[UIImage imageNamed:@"addImage"] forState:UIControlStateNormal];
+    
+    
+    [self.btn4 addTarget:self action:@selector(addImage) forControlEvents:UIControlEventTouchUpInside];
+//    [self.btn4 setImage:[UIImage imageNamed:@"addImage"] forState:UIControlStateNormal];
+    
+    
+    [self.btn5 addTarget:self action:@selector(addImage) forControlEvents:UIControlEventTouchUpInside];
+//    [self.btn5 setImage:[UIImage imageNamed:@"addImage"] forState:UIControlStateNormal];
+    
+    
+    [self.btn6 addTarget:self action:@selector(addImage) forControlEvents:UIControlEventTouchUpInside];
+//    [self.btn6 setImage:[UIImage imageNamed:@"addImage"] forState:UIControlStateNormal];
+    
+    
+    self.btn2.userInteractionEnabled = NO;
+    self.btn3.userInteractionEnabled = NO;
+    self.btn4.userInteractionEnabled = NO;
+    self.btn5.userInteractionEnabled = NO;
+    self.btn6.userInteractionEnabled = NO;
 }
+
+
+
+
 
 
 - (void)addImage
 {
     NSLog(@"添加了手势");
     
-    UIImagePickerControllerSourceType sourceType=UIImagePickerControllerSourceTypeSavedPhotosAlbum;
+    UIImagePickerControllerSourceType sourceType = UIImagePickerControllerSourceTypeSavedPhotosAlbum;
     if (![UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
-        sourceType=UIImagePickerControllerSourceTypePhotoLibrary;
+        sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
     }
     UIImagePickerController * picker = [[UIImagePickerController alloc]init];
     picker.delegate = self;
-    picker.allowsEditing=YES;
-    picker.sourceType=sourceType;
+    picker.allowsEditing = YES;
+    picker.sourceType = sourceType;
     [self presentViewController:picker animated:YES completion:nil];
 }
 
@@ -99,31 +138,110 @@
 {
     UIImage * image=[info1 objectForKey:UIImagePickerControllerEditedImage];
     
-    self.img1.image = image;
-    
-    self.img2.image = [UIImage imageNamed:@"addImage"];
     
     
-//    MDMUserInfo *info = [MDMUserHelper sharedMDMUserHelper].currentUser.info;
-//    [info fetchIfNeededInBackgroundWithBlock:^(AVObject *object, NSError *error) {
-//        AVFile *avfile = info.image;
-//        NSData *data = UIImageJPEGRepresentation(image, 0.1);
-//        AVFile *newAvfile = [AVFile fileWithData:data];
-//        [newAvfile save];
-//        info.image = newAvfile;
-//        [info save];
-//        [avfile deleteInBackground];
-//        [self viewWillAppear:YES];
-//    }];
+    
+    if (self.btn1.userInteractionEnabled == YES) {
+        self.img1.image = image;
+        self.btn1.userInteractionEnabled = NO;
+        [self.imageArray addObject:image];
+        
+        
+        self.btn2.userInteractionEnabled = YES;
+        self.img2.image = [UIImage imageNamed:@"addImage"];
+        return;
+
+    }
+    
+    if (self.btn2.userInteractionEnabled == YES) {
+        self.img2.image = image;
+        self.btn2.userInteractionEnabled = NO;
+        [self.imageArray addObject:image];
+        
+        self.btn3.userInteractionEnabled = YES;
+        self.img3.image = [UIImage imageNamed:@"addImage"];
+        return;
+    }
+    
+    if (self.btn3.userInteractionEnabled == YES) {
+        self.img3.image = image;
+        self.btn3.userInteractionEnabled = NO;
+        [self.imageArray addObject:image];
+        
+        
+        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"提示" message:@"最多只能添加3张照片" preferredStyle:UIAlertControllerStyleAlert];
+        [alert addAction:[UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            //
+        }]];
+        
+        [self presentViewController:alert animated:YES completion:nil];
+//
+    }
+    
+//
 }
+
+
+- (void)preformDis:(NSTimer *)time
+{
+    
+}
+
 
 
 
 - (void)faBiaoConnent
 {
-    NSLog(@"sadsadasd");
+    
+//    self.imageArray = nil;
+    TieZi *tiezi = [TieZi object];
+    
+    if (self.imageArray.count != 0) {
+        for (UIImage *img in self.imageArray) {
+            UIGraphicsBeginImageContext(CGSizeMake(100, 100));
+            [img drawInRect:CGRectMake(0, 0, 100, 100)];
+            UIImage *resImg = UIGraphicsGetImageFromCurrentImageContext();
+            
+            NSData *data = UIImageJPEGRepresentation(resImg, 1);
+            
+            AVFile *imgFile = [AVFile fileWithData:data];
+            [imgFile save];
+            
+            [self.fileArr addObject:imgFile];
+            
+        }
+        tiezi.imgArr = self.fileArr;
+    }else{
+        tiezi.imgArr = nil;
+    }
+    
+    
+    
+    
     NSLog(@"%@", self.myTtextView.text);
-}
+    
+    tiezi.content = self.myTtextView.text;
+    
+    
+    
+    tiezi.whereAdd = @"北京市";
+    
+    NSError *error = nil;
+    
+    [tiezi save:&error];
+    if (error) {
+        
+    }else{
+        
+        [self dismissViewControllerAnimated:YES completion:nil];
+    }
+    
+    
+
+    
+
+    
+    }
 
 - (void)returnAction
 {
@@ -143,6 +261,7 @@
 {
     if ([self.myTtextView.text isEqualToString:@"来说点什么吧.."]) {
         self.myTtextView.text = @"";
+        self.myTtextView.textColor = [UIColor blackColor];
     }
 
     NSRange range;
@@ -189,6 +308,14 @@
     return _imageArray;
 }
 
+
+- (NSMutableArray *)fileArr
+{
+    if (!_fileArr) {
+        self.fileArr = [[NSMutableArray alloc] initWithCapacity:3];
+    }
+    return _fileArr;
+}
 /*
 #pragma mark - Navigation
 

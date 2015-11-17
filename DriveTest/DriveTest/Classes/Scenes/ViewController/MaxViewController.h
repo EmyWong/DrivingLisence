@@ -10,4 +10,6 @@
 
 @interface MaxViewController : UIViewController
 @property (nonatomic,strong) DriveDiscussion *drive;
+@property (nonatomic, strong) NSMutableArray *imageArr;
+
 @end

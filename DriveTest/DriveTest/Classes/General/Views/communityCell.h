@@ -7,7 +7,24 @@
 //
 
 #import <UIKit/UIKit.h>
+@class TieZi;
+
 
 @interface communityCell : UITableViewCell
+
+@property (weak, nonatomic) IBOutlet UILabel *content;
+
+@property (weak, nonatomic) IBOutlet UILabel *creatTime;
+
+@property (weak, nonatomic) IBOutlet UIImageView *img1;
+@property (weak, nonatomic) IBOutlet UIImageView *img2;
+@property (weak, nonatomic) IBOutlet UIImageView *img3;
+
+
+
+@property (nonatomic, strong) TieZi *tiezi;
+
+
+
 
 @end

@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "TieZi.h"
+
 
 @interface AppDelegate ()
 @property (nonatomic,strong) UIView *lunchView;
@@ -17,14 +19,20 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    [AVOSCloud setApplicationId:@"TwuMIAGJXBD3mxUED8Xi2g4C"
-                      clientKey:@"Pau2j9r5qOCUMv4DckmCX3mP"];
+    
+    [TieZi registerSubclass];
+    
+    [AVOSCloud setApplicationId:@"S8MJTv51QUexyXPjY8jA9N5b"
+                      clientKey:@"LEx7dQOs125tQ9EM8c0xKiYl"];
 
     [SMSSDK registerApp:@"b83c288ab97a" withSecret:@"89beb433fc39e42d7df4dd55c8614411"];
     
     
     //[NSThread sleepForTimeInterval:3.0];//设置启动页面时间
     
+    
+    
+    //
     [self.window makeKeyAndVisible];
     self.lunchView = [[UIView alloc]init];
     _lunchView.frame = CGRectMake(0, 0, self.window.screen.bounds.size.width, self.window.screen.bounds.size.height);
@@ -33,8 +41,7 @@
     
     UIImageView *imageV = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 200, 200)];
     imageV.center = self.lunchView.center;
-//    NSString *str = @"http://www.ittribalwo.com/upfiles/image/20140506181328.gif";
-//    [imageV sd_setImageWithURL:[NSURL URLWithString:str] placeholderImage:[UIImage imageNamed:@""]];
+
     
     NSMutableArray *arr = [NSMutableArray arrayWithCapacity:20];
     for (int i = 1; i< 61; i++) {

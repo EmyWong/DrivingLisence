@@ -177,6 +177,7 @@
 		C26623661BF4D4F0005DF5C6 /* mygongjiao.png in Resources */ = {isa = PBXBuildFile; fileRef = C266235F1BF4D4F0005DF5C6 /* mygongjiao.png */; };
 		C26623691BF4DF98005DF5C6 /* ppp.png in Resources */ = {isa = PBXBuildFile; fileRef = C26623671BF4DF98005DF5C6 /* ppp.png */; };
 		C266236A1BF4DF98005DF5C6 /* pppddd.png in Resources */ = {isa = PBXBuildFile; fileRef = C26623681BF4DF98005DF5C6 /* pppddd.png */; };
+		C27982831BFACB6C008B4770 /* TieZi.m in Sources */ = {isa = PBXBuildFile; fileRef = C27982821BFACB6C008B4770 /* TieZi.m */; settings = {ASSET_TAGS = (); }; };
 		C285F8F11BF58ED2000EB89A /* Commentlist.m in Sources */ = {isa = PBXBuildFile; fileRef = C285F8F01BF58ED2000EB89A /* Commentlist.m */; };
 		C2918C3D1BF490C7005E21AE /* DriveDiscussion.m in Sources */ = {isa = PBXBuildFile; fileRef = C2918C3C1BF490C7005E21AE /* DriveDiscussion.m */; };
 		C29C11261BF0BAB1001030F2 /* School.m in Sources */ = {isa = PBXBuildFile; fileRef = C29C11211BF0BAB1001030F2 /* School.m */; };
@@ -491,6 +492,8 @@
 		C266235F1BF4D4F0005DF5C6 /* mygongjiao.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mygongjiao.png; sourceTree = "<group>"; };
 		C26623671BF4DF98005DF5C6 /* ppp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ppp.png; sourceTree = "<group>"; };
 		C26623681BF4DF98005DF5C6 /* pppddd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pppddd.png; sourceTree = "<group>"; };
+		C27982811BFACB6C008B4770 /* TieZi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TieZi.h; sourceTree = "<group>"; };
+		C27982821BFACB6C008B4770 /* TieZi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TieZi.m; sourceTree = "<group>"; };
 		C285F8EF1BF58ED2000EB89A /* Commentlist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Commentlist.h; sourceTree = "<group>"; };
 		C285F8F01BF58ED2000EB89A /* Commentlist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Commentlist.m; sourceTree = "<group>"; };
 		C2918C3B1BF490C7005E21AE /* DriveDiscussion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DriveDiscussion.h; sourceTree = "<group>"; };
@@ -1051,6 +1054,15 @@
 			path = "驾友讨论TVC";
 			sourceTree = "<group>";
 		};
+		C27982801BFACB3B008B4770 /* LCDModels */ = {
+			isa = PBXGroup;
+			children = (
+				C27982811BFACB6C008B4770 /* TieZi.h */,
+				C27982821BFACB6C008B4770 /* TieZi.m */,
+			);
+			path = LCDModels;
+			sourceTree = "<group>";
+		};
 		C285F8F21BF58EDB000EB89A /* 学员点评数据模型 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1175,6 +1187,7 @@
 		C2AC44781BF08357006AB483 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				C27982801BFACB3B008B4770 /* LCDModels */,
 				C285F8F21BF58EDB000EB89A /* 学员点评数据模型 */,
 				95493BC91BF1CF18006C2323 /* 练习模型 */,
 				C21023391BF43409000B605D /* 驾校基本信息模型 */,
@@ -1840,6 +1853,7 @@
 				C210234D1BF4348C000B605D /* Questionarea.m in Sources */,
 				95493AC91BF045D2006C2323 /* DriveTest.xcdatamodeld in Sources */,
 				9556B4881BF615A1008CB614 /* MaxViewController.m in Sources */,
+				C27982831BFACB6C008B4770 /* TieZi.m in Sources */,
 				C2272DE31BF1CF70004D5EFA /* RoadTestThreeTVC.m in Sources */,
 				C2AC44C41BF0851C006AB483 /* ClassOneCell.m in Sources */,
 				C29C11281BF0BAB1001030F2 /* ClickJxInfo.m in Sources */,

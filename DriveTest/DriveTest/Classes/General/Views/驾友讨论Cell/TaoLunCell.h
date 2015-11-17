@@ -7,6 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+@class TieZi;
+
+
+
 typedef void(^TransportBlock)();
 @interface TaoLunCell : UITableViewCell
 
@@ -29,7 +33,7 @@ typedef void(^TransportBlock)();
 @property (nonatomic,strong) DriveDiscussion * drive;
 @property (nonatomic,strong) TransportBlock transportBlock;
 
-
+@property (nonatomic, strong) TieZi *tiezi;
 
 
 

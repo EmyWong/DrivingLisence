@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
@@ -51,21 +51,21 @@
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nvshen.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="nH6-NL-0Qz">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nH6-NL-0Qz">
                         <rect key="frame" x="13" y="139" width="143" height="143"/>
                         <animations/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="nH6-NL-0Qz" secondAttribute="height" multiplier="1:1" id="oGb-Iq-5Op"/>
                         </constraints>
                     </imageView>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="f9.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Vn9-3Z-AMR">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Vn9-3Z-AMR">
                         <rect key="frame" x="161" y="139" width="143" height="143"/>
                         <animations/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="Vn9-3Z-AMR" secondAttribute="height" multiplier="1:1" id="JzE-8o-bIi"/>
                         </constraints>
                     </imageView>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="36.png" translatesAutoresizingMaskIntoConstraints="NO" id="gZ5-tA-L8y">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gZ5-tA-L8y">
                         <rect key="frame" x="309" y="139" width="143" height="143"/>
                         <animations/>
                         <constraints>
@@ -115,6 +115,13 @@
                             <constraint firstAttribute="width" constant="25" id="fao-BB-VeR"/>
                         </constraints>
                     </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cmy-Dn-nl7">
+                        <rect key="frame" x="0.0" y="334" width="475" height="4"/>
+                        <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="0.47999999999999998" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="4" id="Ls1-0L-eXt"/>
+                        </constraints>
+                    </view>
                 </subviews>
                 <animations/>
                 <constraints>
@@ -127,7 +134,9 @@
                     <constraint firstAttribute="trailingMargin" secondItem="rTp-L8-IZI" secondAttribute="trailing" constant="10" id="CZ0-hM-ltj"/>
                     <constraint firstItem="Y81-G7-oc9" firstAttribute="leading" secondItem="4mp-eX-l3c" secondAttribute="trailing" constant="10" id="Gxi-Cn-BVH"/>
                     <constraint firstItem="nH6-NL-0Qz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="5" id="HlB-XQ-4bR"/>
+                    <constraint firstAttribute="trailing" secondItem="cmy-Dn-nl7" secondAttribute="trailing" id="Ka4-T3-cJT"/>
                     <constraint firstItem="Vn9-3Z-AMR" firstAttribute="leading" secondItem="nH6-NL-0Qz" secondAttribute="trailing" constant="5" id="MHV-7v-eLv"/>
+                    <constraint firstItem="cmy-Dn-nl7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Os5-Rh-iuK"/>
                     <constraint firstItem="4mp-eX-l3c" firstAttribute="top" secondItem="m7e-bl-wZa" secondAttribute="top" id="QDv-fZ-zs1"/>
                     <constraint firstItem="rTp-L8-IZI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="WZh-yv-jMJ"/>
                     <constraint firstItem="m7e-bl-wZa" firstAttribute="top" secondItem="gZ5-tA-L8y" secondAttribute="bottom" constant="20" id="bzq-14-RPZ"/>
@@ -136,6 +145,7 @@
                     <constraint firstItem="Vn9-3Z-AMR" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.3" id="dya-Jl-GEp"/>
                     <constraint firstItem="Sbz-Zq-e3K" firstAttribute="bottom" secondItem="hzh-bA-Uev" secondAttribute="bottom" id="ecZ-7a-uZd"/>
                     <constraint firstAttribute="bottomMargin" secondItem="Vn9-3Z-AMR" secondAttribute="bottom" constant="48" id="f8J-yF-ryA"/>
+                    <constraint firstAttribute="bottom" secondItem="cmy-Dn-nl7" secondAttribute="bottom" id="gPW-1t-xEQ"/>
                     <constraint firstItem="gZ5-tA-L8y" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.3" id="hcR-PB-DyP"/>
                     <constraint firstItem="Sbz-Zq-e3K" firstAttribute="leading" secondItem="hzh-bA-Uev" secondAttribute="trailing" constant="10" id="ik4-4g-OFX"/>
                     <constraint firstItem="Hgf-D9-7yx" firstAttribute="leading" secondItem="hzh-bA-Uev" secondAttribute="trailing" constant="10" id="jf5-jK-LAg"/>
@@ -150,14 +160,18 @@
                 </constraints>
             </tableViewCellContentView>
             <animations/>
-            <point key="canvasLocation" x="325.5" y="263.5"/>
+            <connections>
+                <outlet property="content" destination="rTp-L8-IZI" id="j9F-EP-6cl"/>
+                <outlet property="creatTime" destination="Sbz-Zq-e3K" id="gcR-SL-QFo"/>
+                <outlet property="img1" destination="nH6-NL-0Qz" id="8yl-CH-rB0"/>
+                <outlet property="img2" destination="Vn9-3Z-AMR" id="e1c-UI-UjC"/>
+                <outlet property="img3" destination="gZ5-tA-L8y" id="BZF-Zw-HVf"/>
+            </connections>
+            <point key="canvasLocation" x="116.5" y="268.5"/>
         </tableViewCell>
     </objects>
     <resources>
         <image name="33.png" width="100" height="100"/>
-        <image name="36.png" width="100" height="100"/>
-        <image name="f9.jpg" width="100" height="100"/>
-        <image name="nvshen.jpg" width="209" height="269"/>
         <image name="ppp.png" width="1024" height="1024"/>
         <image name="xihuanSelected.png" width="26" height="26"/>
     </resources>
