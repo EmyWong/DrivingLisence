@@ -29,6 +29,12 @@
 		79EC03161BF19070002C568F /* setting@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 79EC03151BF19070002C568F /* setting@2x.png */; };
 		79EC031A1BF19362002C568F /* menu_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 79EC03191BF19362002C568F /* menu_icon.png */; };
 		79EC03491BF232C6002C568F /* f19.png in Resources */ = {isa = PBXBuildFile; fileRef = 79EC03481BF232C6002C568F /* f19.png */; };
+		952D19FB1BFB1EC10087805C /* SettingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 952D19FA1BFB1EC10087805C /* SettingCell.m */; settings = {ASSET_TAGS = (); }; };
+		952D19FF1BFB49F80087805C /* InfoTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 952D19FE1BFB49F80087805C /* InfoTVC.m */; settings = {ASSET_TAGS = (); }; };
+		952D1A031BFB4F5C0087805C /* InfoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 952D1A011BFB4F5C0087805C /* InfoTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
+		952D1A041BFB4F5C0087805C /* InfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 952D1A021BFB4F5C0087805C /* InfoTableViewCell.xib */; settings = {ASSET_TAGS = (); }; };
+		952D1A081BFB54180087805C /* Info2TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 952D1A061BFB54180087805C /* Info2TableViewCell.m */; settings = {ASSET_TAGS = (); }; };
+		952D1A091BFB54180087805C /* Info2TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 952D1A071BFB54180087805C /* Info2TableViewCell.xib */; settings = {ASSET_TAGS = (); }; };
 		95493ABD1BF045D2006C2323 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 95493ABC1BF045D2006C2323 /* main.m */; };
 		95493AC61BF045D2006C2323 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95493AC41BF045D2006C2323 /* Main.storyboard */; };
 		95493AC91BF045D2006C2323 /* DriveTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 95493AC71BF045D2006C2323 /* DriveTest.xcdatamodeld */; };
@@ -52,6 +58,7 @@
 		95493BEF1BF1F523006C2323 /* ImagePDCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95493BED1BF1F523006C2323 /* ImagePDCell.xib */; };
 		95493BF41BF2EC4C006C2323 /* TestMethodVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 95493BF31BF2EC4C006C2323 /* TestMethodVC.m */; };
 		95493C4E1BF31F84006C2323 /* fail.png in Resources */ = {isa = PBXBuildFile; fileRef = 95493C4D1BF31F84006C2323 /* fail.png */; };
+		954FDBF51BFB5EC700CDB99F /* PrintViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 954FDBF41BFB5EC700CDB99F /* PrintViewController.m */; settings = {ASSET_TAGS = (); }; };
 		9556B4811BF58577008CB614 /* FileService.m in Sources */ = {isa = PBXBuildFile; fileRef = 9556B4801BF58577008CB614 /* FileService.m */; };
 		9556B4841BF5B756008CB614 /* touxiang1.png in Resources */ = {isa = PBXBuildFile; fileRef = 9556B4831BF5B756008CB614 /* touxiang1.png */; };
 		9556B4881BF615A1008CB614 /* MaxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9556B4871BF615A1008CB614 /* MaxViewController.m */; };
@@ -308,6 +315,16 @@
 		79EC03191BF19362002C568F /* menu_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu_icon.png; sourceTree = "<group>"; };
 		79EC03481BF232C6002C568F /* f19.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = f19.png; sourceTree = "<group>"; };
 		88B72A16F3CBD58CAC18426F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		952D19F91BFB1EC10087805C /* SettingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingCell.h; sourceTree = "<group>"; };
+		952D19FA1BFB1EC10087805C /* SettingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingCell.m; sourceTree = "<group>"; };
+		952D19FD1BFB49F80087805C /* InfoTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoTVC.h; sourceTree = "<group>"; };
+		952D19FE1BFB49F80087805C /* InfoTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoTVC.m; sourceTree = "<group>"; };
+		952D1A001BFB4F5C0087805C /* InfoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoTableViewCell.h; sourceTree = "<group>"; };
+		952D1A011BFB4F5C0087805C /* InfoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoTableViewCell.m; sourceTree = "<group>"; };
+		952D1A021BFB4F5C0087805C /* InfoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InfoTableViewCell.xib; sourceTree = "<group>"; };
+		952D1A051BFB54180087805C /* Info2TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Info2TableViewCell.h; sourceTree = "<group>"; };
+		952D1A061BFB54180087805C /* Info2TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Info2TableViewCell.m; sourceTree = "<group>"; };
+		952D1A071BFB54180087805C /* Info2TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Info2TableViewCell.xib; sourceTree = "<group>"; };
 		95493AB81BF045D2006C2323 /* DriveTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DriveTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95493ABC1BF045D2006C2323 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		95493AC51BF045D2006C2323 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -343,6 +360,8 @@
 		95493BF21BF2EC4C006C2323 /* TestMethodVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestMethodVC.h; sourceTree = "<group>"; };
 		95493BF31BF2EC4C006C2323 /* TestMethodVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestMethodVC.m; sourceTree = "<group>"; };
 		95493C4D1BF31F84006C2323 /* fail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fail.png; sourceTree = "<group>"; };
+		954FDBF31BFB5EC700CDB99F /* PrintViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrintViewController.h; sourceTree = "<group>"; };
+		954FDBF41BFB5EC700CDB99F /* PrintViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrintViewController.m; sourceTree = "<group>"; };
 		9556B47F1BF58577008CB614 /* FileService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileService.h; sourceTree = "<group>"; };
 		9556B4801BF58577008CB614 /* FileService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileService.m; sourceTree = "<group>"; };
 		9556B4831BF5B756008CB614 /* touxiang1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = touxiang1.png; sourceTree = "<group>"; };
@@ -642,6 +661,7 @@
 		792036F41BFB16A2005695B1 /* 设置控制器 */ = {
 			isa = PBXGroup;
 			children = (
+				952D19FC1BFB49CF0087805C /* 个人信息控制器 */,
 				792036F51BFB16DC005695B1 /* SettingTableViewController.h */,
 				792036F61BFB16DC005695B1 /* SettingTableViewController.m */,
 			);
@@ -692,6 +712,32 @@
 				79EC03481BF232C6002C568F /* f19.png */,
 			);
 			name = "侧栏图片";
+			sourceTree = "<group>";
+		};
+		952D19F81BFB1E900087805C /* 设置cell */ = {
+			isa = PBXGroup;
+			children = (
+				952D19F91BFB1EC10087805C /* SettingCell.h */,
+				952D19FA1BFB1EC10087805C /* SettingCell.m */,
+				952D1A001BFB4F5C0087805C /* InfoTableViewCell.h */,
+				952D1A011BFB4F5C0087805C /* InfoTableViewCell.m */,
+				952D1A021BFB4F5C0087805C /* InfoTableViewCell.xib */,
+				952D1A051BFB54180087805C /* Info2TableViewCell.h */,
+				952D1A061BFB54180087805C /* Info2TableViewCell.m */,
+				952D1A071BFB54180087805C /* Info2TableViewCell.xib */,
+			);
+			name = "设置cell";
+			sourceTree = "<group>";
+		};
+		952D19FC1BFB49CF0087805C /* 个人信息控制器 */ = {
+			isa = PBXGroup;
+			children = (
+				952D19FD1BFB49F80087805C /* InfoTVC.h */,
+				952D19FE1BFB49F80087805C /* InfoTVC.m */,
+				954FDBF31BFB5EC700CDB99F /* PrintViewController.h */,
+				954FDBF41BFB5EC700CDB99F /* PrintViewController.m */,
+			);
+			name = "个人信息控制器";
 			sourceTree = "<group>";
 		};
 		95493AAF1BF045D2006C2323 = {
@@ -1139,6 +1185,7 @@
 		C2AC44741BF08357006AB483 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				952D19F81BFB1E900087805C /* 设置cell */,
 				79BA8CD01BF5FC4700CC604D /* 社区cell */,
 				C2F80F601BF582610006E789 /* 学员点评cell */,
 				C26623421BF48538005DF5C6 /* 驾友讨论Cell */,
@@ -1584,6 +1631,7 @@
 				959EE76A1BF47D2A0073B92B /* loading35.tiff in Resources */,
 				C2AC44E01BF0988E006AB483 /* nvshen@2x.jpg in Resources */,
 				959EE6C31BF46B420073B92B /* lauch.png in Resources */,
+				952D1A091BFB54180087805C /* Info2TableViewCell.xib in Resources */,
 				C2F80F9E1BF5A0170006E789 /* 21.png in Resources */,
 				C2F80FA81BF5A0170006E789 /* 30.png in Resources */,
 				79245D171BF438CA00F9BE32 /* RegisterViewController.xib in Resources */,
@@ -1738,6 +1786,7 @@
 				C2F80FA71BF5A0170006E789 /* 3.png in Resources */,
 				C2272DFA1BF1D83F004D5EFA /* hegebiaozhun.png in Resources */,
 				C2BAEB0E1BF721220059E8A7 /* 评判标准.png in Resources */,
+				952D1A041BFB4F5C0087805C /* InfoTableViewCell.xib in Resources */,
 				C2AC44AD1BF083DF006AB483 /* tikao.png in Resources */,
 				95493BD31BF1D055006C2323 /* cuoti.png in Resources */,
 				95493BD71BF1D05C006C2323 /* xuanzhong.png in Resources */,
@@ -1830,6 +1879,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				952D1A081BFB54180087805C /* Info2TableViewCell.m in Sources */,
 				95493BF41BF2EC4C006C2323 /* TestMethodVC.m in Sources */,
 				C21B97CA1BF6DB42008150E8 /* ListHelper.m in Sources */,
 				959EE6701BF324A20073B92B /* WYHStarRateView.m in Sources */,
@@ -1853,6 +1903,7 @@
 				C2AC44B91BF0841F006AB483 /* RoadTestTVC.m in Sources */,
 				C210234D1BF4348C000B605D /* Questionarea.m in Sources */,
 				95493AC91BF045D2006C2323 /* DriveTest.xcdatamodeld in Sources */,
+				952D1A031BFB4F5C0087805C /* InfoTableViewCell.m in Sources */,
 				9556B4881BF615A1008CB614 /* MaxViewController.m in Sources */,
 				C2272DE31BF1CF70004D5EFA /* RoadTestThreeTVC.m in Sources */,
 				C2AC44C41BF0851C006AB483 /* ClassOneCell.m in Sources */,
@@ -1865,6 +1916,7 @@
 				95493BE21BF1D279006C2323 /* CuoTiViewController.m in Sources */,
 				95493BE91BF1E9A1006C2323 /* ImageQuestionCell.m in Sources */,
 				95493BC81BF1CF08006C2323 /* TestHelper.m in Sources */,
+				954FDBF51BFB5EC700CDB99F /* PrintViewController.m in Sources */,
 				C21B1FB61BF2DC640020018A /* NetWorkManager.m in Sources */,
 				79245D141BF438CA00F9BE32 /* LoginViewController.m in Sources */,
 				79BA8CD41BF5FC8800CC604D /* communityCell.m in Sources */,
@@ -1879,6 +1931,7 @@
 				C2918C3D1BF490C7005E21AE /* DriveDiscussion.m in Sources */,
 				C210234C1BF4348C000B605D /* Descarea.m in Sources */,
 				959EE6871BF41E9C0073B92B /* DrivingLisenceVC.m in Sources */,
+				952D19FF1BFB49F80087805C /* InfoTVC.m in Sources */,
 				C26623461BF4881F005DF5C6 /* JiaYouTaoLunCell.m in Sources */,
 				C2272DE61BF1CFA8004D5EFA /* ClassTwoThreeVC.m in Sources */,
 				C20C89C11BF21F96003B691D /* DriveSchoolCell.m in Sources */,
@@ -1898,6 +1951,7 @@
 				95493ABD1BF045D2006C2323 /* main.m in Sources */,
 				C2AC44BC1BF0842C006AB483 /* ProblemsTestTVC.m in Sources */,
 				C29C112B1BF0DE13001030F2 /* AnalyticalData.m in Sources */,
+				952D19FB1BFB1EC10087805C /* SettingCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
