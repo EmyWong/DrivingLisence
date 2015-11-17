@@ -77,7 +77,7 @@ static NSString *const communityTwoCellID = @"communityTwoCell";
         return 15;
     }else
     {
-        return 3;
+        return 3; //3个系统cell为了填充下面的bug
     }
     
 }

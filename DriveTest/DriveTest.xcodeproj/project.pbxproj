@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		792036F71BFB16DC005695B1 /* SettingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 792036F61BFB16DC005695B1 /* SettingTableViewController.m */; settings = {ASSET_TAGS = (); }; };
 		79245D141BF438CA00F9BE32 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79245D0F1BF438C900F9BE32 /* LoginViewController.m */; };
 		79245D151BF438CA00F9BE32 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79245D101BF438C900F9BE32 /* LoginViewController.xib */; };
 		79245D161BF438CA00F9BE32 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79245D121BF438C900F9BE32 /* RegisterViewController.m */; };
@@ -278,6 +279,8 @@
 
 /* Begin PBXFileReference section */
 		77E8A038CE30F753CA9DE4A8 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		792036F51BFB16DC005695B1 /* SettingTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingTableViewController.h; sourceTree = "<group>"; };
+		792036F61BFB16DC005695B1 /* SettingTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingTableViewController.m; sourceTree = "<group>"; };
 		79245D0E1BF438C900F9BE32 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		79245D0F1BF438C900F9BE32 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		79245D101BF438C900F9BE32 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
@@ -636,9 +639,19 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		792036F41BFB16A2005695B1 /* 设置控制器 */ = {
+			isa = PBXGroup;
+			children = (
+				792036F51BFB16DC005695B1 /* SettingTableViewController.h */,
+				792036F61BFB16DC005695B1 /* SettingTableViewController.m */,
+			);
+			name = "设置控制器";
+			sourceTree = "<group>";
+		};
 		7944A12E1BF32C2300CA7D3D /* Login/Register */ = {
 			isa = PBXGroup;
 			children = (
+				792036F41BFB16A2005695B1 /* 设置控制器 */,
 				79245D0E1BF438C900F9BE32 /* LoginViewController.h */,
 				79245D0F1BF438C900F9BE32 /* LoginViewController.m */,
 				79245D101BF438C900F9BE32 /* LoginViewController.xib */,
@@ -1821,6 +1834,7 @@
 				C21B97CA1BF6DB42008150E8 /* ListHelper.m in Sources */,
 				959EE6701BF324A20073B92B /* WYHStarRateView.m in Sources */,
 				C2BAEAEF1BF714530059E8A7 /* ClassTwoXCell.m in Sources */,
+				792036F71BFB16DC005695B1 /* SettingTableViewController.m in Sources */,
 				C210234B1BF4348C000B605D /* Commentarea.m in Sources */,
 				C2AC44CB1BF0853A006AB483 /* test2.m in Sources */,
 				C2AC44A31BF083C0006AB483 /* AppDelegate.m in Sources */,
