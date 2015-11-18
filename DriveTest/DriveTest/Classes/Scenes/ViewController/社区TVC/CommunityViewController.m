@@ -15,6 +15,9 @@
 #import "LoginViewController.h"
 
 @interface CommunityViewController () <UITableViewDataSource,UITableViewDelegate>
+{
+    NSInteger _index;
+}
 @property (nonatomic,strong) UITableView *myTableView;
 
 @property (nonatomic, strong) NSMutableArray *allTieZiArray;
@@ -49,8 +52,79 @@
     self.myTableView.estimatedRowHeight = 200;
     
     self.myTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    
+    
+    
+    //下拉刷新
+    self.myTableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
+        
+        
+        _index = 0;
+        [self.allTieZiArray removeAllObjects];
+        AVQuery *query = [TieZi query];
+        [query includeKey:@"imgArr"];
+        [query orderByDescending:@"createdAt"];
+        query.limit = 10;
+        [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+            //
+            for (TieZi *tie in objects) {
+                [self.allTieZiArray addObject:tie];
+            }
+            [self.myTableView reloadData];
+            [self.myTableView.mj_header endRefreshing];
+            _index = 1;
+        }];
+        
+        
+        
+        if (_index) {
+            NSLog(@"indexPath");
+        }
+    }];
 
+    
+    
+
+    
+    
+    self.myTableView.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingBlock:^{
+        //
+
+        if (_index < 1) {
+            _index = 0;
+        }
+        
+        
+        AVQuery *query = [TieZi query];
+        [query includeKey:@"imgArr"];
+        [query orderByDescending:@"createdAt"];
+        query.limit = 10;
+        
+        query.skip = 10 * _index;
+        NSLog(@"%ld", query.skip);
+        [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+            //
+            for (TieZi *tie in objects) {
+                [self.allTieZiArray addObject:tie];
+            }
+            [self.myTableView reloadData];
+            [self.myTableView.mj_footer endRefreshing];
+            _index ++;
+        }];
+
+        
+    } ];
+    
 }
+
+- (void)xiaLaShuaXin
+{
+    }
+
+
+
+
+
 - (void) addSubViews
 {
 
@@ -99,23 +173,10 @@
 - (void)freshAction
 {
     
-    [self.allTieZiArray removeAllObjects];
-    AVQuery *query = [TieZi query];
-    [query includeKey:@"imgArr"];
-    [query orderByDescending:@"createdAt"];
-//    query.limit = 10;
-//    query.skip = 10;
-    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
-        //
-        for (TieZi *tie in objects) {
-            NSLog(@"%@", objects);
-            [self.allTieZiArray addObject:tie];
-        }
-        [self.myTableView reloadData];
-    }];
+//    self.myTableView.contentOffset = CGPointMake(0, 0);
     
     
-    
+    [self.myTableView setContentOffset:CGPointMake(0, 0) animated:YES];
     
 }
 

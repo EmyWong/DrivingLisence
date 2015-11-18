@@ -94,7 +94,7 @@
     
     for (AVFile *obj in tiezi.imgArr) {
         NSData *data = [obj getData];
-        NSLog(@"%@", data);
+//        NSLog(@"%@", data);
         UIImage *image = [UIImage imageWithData:data];
         [self.allArray addObject:image];
     }
