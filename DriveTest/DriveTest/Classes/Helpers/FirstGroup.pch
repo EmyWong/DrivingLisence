@@ -8,6 +8,12 @@
 
 #ifndef FirstGroup_pch
 #define FirstGroup_pch
+//debug 模式下NSlog输出
+#ifndef __OPTIMIZE__
+#define NSLog(...) NSLog(__VA_ARGS__)
+#else
+#define NSLog(...) {}
+#endif
 // Include any system framework and library headers here that should be included in all compilation units.
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 
