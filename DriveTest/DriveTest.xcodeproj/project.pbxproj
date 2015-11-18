@@ -27,7 +27,6 @@
 		79EC03121BF19032002C568F /* kemusan@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 79EC03111BF19032002C568F /* kemusan@2x.png */; };
 		79EC03141BF1905B002C568F /* remenpp@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 79EC03131BF1905B002C568F /* remenpp@2x.png */; };
 		79EC03161BF19070002C568F /* setting@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 79EC03151BF19070002C568F /* setting@2x.png */; };
-		79EC031A1BF19362002C568F /* menu_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 79EC03191BF19362002C568F /* menu_icon.png */; };
 		79EC03491BF232C6002C568F /* f19.png in Resources */ = {isa = PBXBuildFile; fileRef = 79EC03481BF232C6002C568F /* f19.png */; };
 		952D19FB1BFB1EC10087805C /* SettingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 952D19FA1BFB1EC10087805C /* SettingCell.m */; settings = {ASSET_TAGS = (); }; };
 		952D19FF1BFB49F80087805C /* InfoTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 952D19FE1BFB49F80087805C /* InfoTVC.m */; settings = {ASSET_TAGS = (); }; };
@@ -130,6 +129,7 @@
 		959EE7871BF47D2A0073B92B /* loading7.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 959EE74B1BF47D2A0073B92B /* loading7.tiff */; };
 		959EE7881BF47D2A0073B92B /* loading8.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 959EE74C1BF47D2A0073B92B /* loading8.tiff */; };
 		959EE7891BF47D2A0073B92B /* loading9.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 959EE74D1BF47D2A0073B92B /* loading9.tiff */; };
+		95A4F8121BFC4B69008AB695 /* menu_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 95A4F8111BFC4B69008AB695 /* menu_icon.png */; settings = {ASSET_TAGS = (); }; };
 		A07767BCBD2E2AC57F55E1BA /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 88B72A16F3CBD58CAC18426F /* libPods.a */; };
 		C20C89C11BF21F96003B691D /* DriveSchoolCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C20C89BF1BF21F96003B691D /* DriveSchoolCell.m */; };
 		C20C89C21BF21F96003B691D /* DriveSchoolCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C20C89C01BF21F96003B691D /* DriveSchoolCell.xib */; };
@@ -314,7 +314,6 @@
 		79EC03111BF19032002C568F /* kemusan@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "kemusan@2x.png"; sourceTree = "<group>"; };
 		79EC03131BF1905B002C568F /* remenpp@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "remenpp@2x.png"; sourceTree = "<group>"; };
 		79EC03151BF19070002C568F /* setting@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "setting@2x.png"; sourceTree = "<group>"; };
-		79EC03191BF19362002C568F /* menu_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu_icon.png; sourceTree = "<group>"; };
 		79EC03481BF232C6002C568F /* f19.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = f19.png; sourceTree = "<group>"; };
 		88B72A16F3CBD58CAC18426F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		952D19F91BFB1EC10087805C /* SettingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingCell.h; sourceTree = "<group>"; };
@@ -440,6 +439,7 @@
 		959EE74B1BF47D2A0073B92B /* loading7.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = loading7.tiff; sourceTree = "<group>"; };
 		959EE74C1BF47D2A0073B92B /* loading8.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = loading8.tiff; sourceTree = "<group>"; };
 		959EE74D1BF47D2A0073B92B /* loading9.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = loading9.tiff; sourceTree = "<group>"; };
+		95A4F8111BFC4B69008AB695 /* menu_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu_icon.png; sourceTree = "<group>"; };
 		A6A8BCEC75674F4586356377 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		C20C89BE1BF21F96003B691D /* DriveSchoolCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DriveSchoolCell.h; path = ../DriveSchoolCell.h; sourceTree = "<group>"; };
 		C20C89BF1BF21F96003B691D /* DriveSchoolCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DriveSchoolCell.m; path = ../DriveSchoolCell.m; sourceTree = "<group>"; };
@@ -1302,7 +1302,7 @@
 				C2272DDA1BF1B4C0004D5EFA /* f5.jpg */,
 				C2272DDB1BF1B4C0004D5EFA /* f9.jpg */,
 				C2272DDC1BF1B4C0004D5EFA /* f12@3x.png */,
-				79EC03191BF19362002C568F /* menu_icon.png */,
+				95A4F8111BFC4B69008AB695 /* menu_icon.png */,
 				C2AC44EF1BF0EADE006AB483 /* jiakaofagui.png */,
 				C2AC44F01BF0EADE006AB483 /* kaoshijiqiao.png */,
 				C2AC44ED1BF0EA1E006AB483 /* suijilianxiOn@2x.png */,
@@ -1650,6 +1650,7 @@
 				952D1A091BFB54180087805C /* Info2TableViewCell.xib in Resources */,
 				C2F80F9E1BF5A0170006E789 /* 21.png in Resources */,
 				C2F80FA81BF5A0170006E789 /* 30.png in Resources */,
+				95A4F8121BFC4B69008AB695 /* menu_icon.png in Resources */,
 				79245D171BF438CA00F9BE32 /* RegisterViewController.xib in Resources */,
 				959EE7831BF47D2A0073B92B /* loading58.tiff in Resources */,
 				959EE7781BF47D2A0073B92B /* loading48.tiff in Resources */,
@@ -1690,7 +1691,6 @@
 				959EE7841BF47D2A0073B92B /* loading59.tiff in Resources */,
 				C2F80F921BF5A0170006E789 /* 10.png in Resources */,
 				C2F80FC51BF5AFFB0006E789 /* a4.png in Resources */,
-				79EC031A1BF19362002C568F /* menu_icon.png in Resources */,
 				C2272DDE1BF1B4C0004D5EFA /* f5.jpg in Resources */,
 				C2F80FB11BF5A0170006E789 /* 6.png in Resources */,
 				79D297B81BF97A00002C2BB7 /* iconfont-jiahao.png in Resources */,
