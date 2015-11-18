@@ -16,35 +16,37 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SW1-w7-WB6">
-                        <rect key="frame" x="172" y="13" width="140" height="21"/>
+                        <rect key="frame" x="76" y="13" width="236" height="21"/>
                         <constraints>
-                            <constraint firstAttribute="width" secondItem="SW1-w7-WB6" secondAttribute="height" multiplier="20:3" id="U3n-ZO-hYG"/>
-                            <constraint firstAttribute="width" constant="140" id="X99-3t-zB4"/>
+                            <constraint firstAttribute="width" constant="236" id="I1g-JM-5Ft"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ch8-wC-5Je">
-                        <rect key="frame" x="8" y="13" width="140" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="昵称" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ch8-wC-5Je">
+                        <rect key="frame" x="8" y="13" width="46" height="21"/>
                         <constraints>
-                            <constraint firstAttribute="width" secondItem="ch8-wC-5Je" secondAttribute="height" multiplier="20:3" id="5L5-of-n6S"/>
-                            <constraint firstAttribute="width" constant="140" id="FuC-KR-dfj"/>
+                            <constraint firstAttribute="width" secondItem="ch8-wC-5Je" secondAttribute="height" multiplier="46:21" id="Eti-0F-22a"/>
+                            <constraint firstAttribute="width" constant="46" id="NAE-iq-g8l"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Eti-0F-22a"/>
+                            </mask>
+                        </variation>
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="trailingMargin" secondItem="SW1-w7-WB6" secondAttribute="trailing" id="0Ju-0J-hO9"/>
-                    <constraint firstAttribute="leadingMargin" secondItem="ch8-wC-5Je" secondAttribute="leading" id="5Az-C6-6qB"/>
-                    <constraint firstItem="SW1-w7-WB6" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="p4f-GO-Y0z"/>
+                    <constraint firstItem="SW1-w7-WB6" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="8gc-Wx-AR4"/>
+                    <constraint firstAttribute="leadingMargin" secondItem="ch8-wC-5Je" secondAttribute="leading" id="cnX-Ji-il4"/>
+                    <constraint firstItem="ch8-wC-5Je" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="eXh-t5-vQP"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="SW1-w7-WB6" secondAttribute="trailing" id="zwl-mD-Tv2"/>
                 </constraints>
             </tableViewCellContentView>
-            <constraints>
-                <constraint firstItem="ch8-wC-5Je" firstAttribute="centerY" secondItem="KGk-i7-Jjw" secondAttribute="centerY" id="Vsb-2E-0JC"/>
-            </constraints>
             <connections>
                 <outlet property="detailLabel2" destination="SW1-w7-WB6" id="Zz0-pV-Ski"/>
                 <outlet property="textLabel2" destination="ch8-wC-5Je" id="dsG-oa-RGq"/>

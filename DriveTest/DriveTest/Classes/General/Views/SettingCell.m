@@ -25,17 +25,18 @@
     view.backgroundColor = [UIColor colorWithRed:117/255.0 green:197/255.0  blue:3/255.0 alpha:1];
     [self.contentView addSubview:view];
     
-    self.HeadImage = [[UIImageView alloc]initWithFrame:CGRectMake(kScreenWidth/2-(kScreenHight*50/667), kScreenHight*50/667, kScreenHight*100/667, kScreenHight*100/667 )];
+    self.HeadImage = [[UIImageView alloc]initWithFrame:CGRectMake(kScreenWidth/2-(kScreenHight*50/667), kScreenHight*50/667, 100, 100 )];
     self.HeadImage.layer.cornerRadius = self.HeadImage.frame.size.width/2;
     self.HeadImage.layer.masksToBounds = YES;
     self.HeadImage.backgroundColor = [UIColor whiteColor];
+    self.HeadImage.image = [UIImage imageNamed:@"touxiang.jpg"];
     [view addSubview:self.HeadImage];
     
     self.accountName = [UIButton buttonWithType:(UIButtonTypeCustom)];
-    self.accountName.frame = CGRectMake(0, kScreenHight*170/667, kScreenWidth, 20);
+    self.accountName.frame = CGRectMake(0, kScreenHight*70/667+100, kScreenWidth, 20);
     self.accountName.tintColor = [UIColor whiteColor];
     self.accountName.titleLabel.textAlignment = NSTextAlignmentCenter;
-    [self.accountName setTitle:@"游客" forState:(UIControlStateNormal)];
+    [self.accountName setTitle:@"未设置昵称" forState:(UIControlStateNormal)];
     [view addSubview:self.accountName];
 
 }
