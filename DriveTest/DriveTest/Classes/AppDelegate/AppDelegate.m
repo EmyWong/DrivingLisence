@@ -61,8 +61,26 @@
     
     [NSTimer scheduledTimerWithTimeInterval:3 target:self selector:@selector(removeLun) userInfo:nil repeats:NO];
     
+    
+    [self removeUserData];
+    
+    
     return YES;
 }
+
+- (void)removeUserData
+{
+    AppDelegate *app = [UIApplication sharedApplication].delegate;
+    if (app.loginType) {
+        
+    }else{
+        [[NSUserDefaults standardUserDefaults] setObject:@"未设置昵称" forKey:@"nickname"];
+        [[NSUserDefaults standardUserDefaults] setObject:UIImageJPEGRepresentation([UIImage imageNamed:@"touxiang.jpg"], 100) forKey:@"iconimage"];
+        [[NSUserDefaults standardUserDefaults] removeObjectForKey:@"sex"];
+        [[NSUserDefaults standardUserDefaults] removeObjectForKey:@"sign"];
+    }
+}
+
 
 -(void)removeLun
 {

@@ -229,7 +229,8 @@
             }else
             {
                 [self.callout dismiss];
-                [self.navigationController pushViewController:[SettingTableViewController new] animated:YES];
+                [self.navigationController pushViewController:self.settingVC animated:YES];
+                [self.settingVC viewWillAppear:YES];
             }
         }
             break;

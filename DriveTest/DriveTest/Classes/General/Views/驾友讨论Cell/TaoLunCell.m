@@ -77,19 +77,22 @@
     [self.img1 setImage:nil];
     [self.img2 setImage:nil];
     [self.img3 setImage:nil];
+    
     self.connent.text = tiezi.content;
     
-    self.name.text = @"王大锤%#@&(  *";
+    self.name.text = tiezi.name;
     NSDate *data = tiezi.createdAt;
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
     [formatter setDateFormat:@"yyyy-MM-dd HH:mm"];
     NSString *string = [formatter stringFromDate:data];
     self.time.text = string;
-    self.address.text = @"北京市";
+    self.address.text = tiezi.whereAdd;
     self.dianzan.text = @"0";
     self.pinglun.text = @"0";
     
-    [self.touXiangImg setImage:[UIImage imageNamed:[NSString stringWithFormat:@"%u", arc4random()%37]]];
+    
+    
+    [self.touXiangImg setImage:[UIImage imageWithData:tiezi.image]];
     
     
     for (AVFile *obj in tiezi.imgArr) {

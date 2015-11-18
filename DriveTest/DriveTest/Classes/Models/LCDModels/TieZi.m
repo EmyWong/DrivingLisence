@@ -13,7 +13,8 @@
 @dynamic content;
 @dynamic imgArr;
 @dynamic whereAdd;
-
+@dynamic name;
+@dynamic image;
 
 
 

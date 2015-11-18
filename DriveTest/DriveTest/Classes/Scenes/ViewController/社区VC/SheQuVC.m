@@ -222,7 +222,9 @@
     
     tiezi.content = self.myTtextView.text;
     
+    tiezi.name = [[NSUserDefaults standardUserDefaults] valueForKey:@"nickname"];
     
+    tiezi.image = [[NSUserDefaults standardUserDefaults] valueForKey:@"iconimage"];
     
     tiezi.whereAdd = @"北京市";
     

@@ -44,17 +44,17 @@
 {
     self.connent.text = tiezi.content;
     
-    self.name.text = @"南山南";
+    self.name.text = tiezi.name;
     NSDate *data = tiezi.createdAt;
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
     [formatter setDateFormat:@"yyyy-MM-dd HH:mm"];
     NSString *string = [formatter stringFromDate:data];
     self.time.text = string;
-    self.address.text = @"北京市";
+    self.address.text = tiezi.whereAdd;
     self.dianZan.text = @"2";
     self.pinglunNumber.text = @"0";
     
-    [self.imgView setImage:[UIImage imageNamed:[NSString stringWithFormat:@"%u", arc4random()%37]]];
+    [self.imgView setImage:[UIImage imageWithData:tiezi.image]];
     
 }
 

@@ -13,5 +13,7 @@
 @property (nonatomic, copy) NSString *content;
 @property (nonatomic, strong) NSArray *imgArr;
 @property (nonatomic, copy) NSString *whereAdd;
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic, strong) NSData *image;
 
 @end

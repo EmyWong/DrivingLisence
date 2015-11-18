@@ -8,6 +8,9 @@
 
 #import "LoginViewController.h"
 #import "AppDelegate.h"
+#import "InfoTVC.h"
+#import "SettingTableViewController.h"
+
 @interface LoginViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *loginNameTextField;
 @property (weak, nonatomic) IBOutlet UITextField *loginPwdTextField;
@@ -59,6 +62,8 @@
             [[NSUserDefaults standardUserDefaults]setValue:self.loginNameTextField.text forKey:@"accountnumber"];
             AppDelegate *app = [UIApplication sharedApplication].delegate;
             app.loginType = YES;
+            
+            
             [self.navigationController popViewControllerAnimated:YES];
         }
     }];
