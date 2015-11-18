@@ -59,6 +59,7 @@
 		95493BF41BF2EC4C006C2323 /* TestMethodVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 95493BF31BF2EC4C006C2323 /* TestMethodVC.m */; };
 		95493C4E1BF31F84006C2323 /* fail.png in Resources */ = {isa = PBXBuildFile; fileRef = 95493C4D1BF31F84006C2323 /* fail.png */; };
 		954FDBF51BFB5EC700CDB99F /* PrintViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 954FDBF41BFB5EC700CDB99F /* PrintViewController.m */; settings = {ASSET_TAGS = (); }; };
+		954FDC1A1BFC17AD00CDB99F /* touxiang.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 954FDC191BFC17AD00CDB99F /* touxiang.jpg */; settings = {ASSET_TAGS = (); }; };
 		9556B4811BF58577008CB614 /* FileService.m in Sources */ = {isa = PBXBuildFile; fileRef = 9556B4801BF58577008CB614 /* FileService.m */; };
 		9556B4841BF5B756008CB614 /* touxiang1.png in Resources */ = {isa = PBXBuildFile; fileRef = 9556B4831BF5B756008CB614 /* touxiang1.png */; };
 		9556B4881BF615A1008CB614 /* MaxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9556B4871BF615A1008CB614 /* MaxViewController.m */; };
@@ -363,6 +364,7 @@
 		95493C4D1BF31F84006C2323 /* fail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fail.png; sourceTree = "<group>"; };
 		954FDBF31BFB5EC700CDB99F /* PrintViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrintViewController.h; sourceTree = "<group>"; };
 		954FDBF41BFB5EC700CDB99F /* PrintViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrintViewController.m; sourceTree = "<group>"; };
+		954FDC191BFC17AD00CDB99F /* touxiang.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = touxiang.jpg; sourceTree = "<group>"; };
 		9556B47F1BF58577008CB614 /* FileService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileService.h; sourceTree = "<group>"; };
 		9556B4801BF58577008CB614 /* FileService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileService.m; sourceTree = "<group>"; };
 		9556B4831BF5B756008CB614 /* touxiang1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = touxiang1.png; sourceTree = "<group>"; };
@@ -1260,6 +1262,7 @@
 		C2AC44791BF08357006AB483 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				954FDC191BFC17AD00CDB99F /* touxiang.jpg */,
 				C2BAEB0B1BF721220059E8A7 /* lukaotupian */,
 				C2BAEAF11BF71D050059E8A7 /* lukaoImage */,
 				C2F80FB51BF5AF6E0006E789 /* 法规1 */,
@@ -1765,6 +1768,7 @@
 				79EC03121BF19032002C568F /* kemusan@2x.png in Resources */,
 				C26623691BF4DF98005DF5C6 /* ppp.png in Resources */,
 				959EE7531BF47D2A0073B92B /* loading14.tiff in Resources */,
+				954FDC1A1BFC17AD00CDB99F /* touxiang.jpg in Resources */,
 				79EC030C1BF18014002C568F /* lianxi_exption@2x.png in Resources */,
 				C2F80FA31BF5A0170006E789 /* 26.png in Resources */,
 				C2F80FAB1BF5A0170006E789 /* 33.png in Resources */,

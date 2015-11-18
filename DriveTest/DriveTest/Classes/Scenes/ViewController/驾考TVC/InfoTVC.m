@@ -11,14 +11,44 @@
 #import "Info2TableViewCell.h"
 #import "PrintViewController.h"
 @interface InfoTVC ()<UIImagePickerControllerDelegate,UIActionSheetDelegate,UINavigationControllerDelegate>
-@property (nonatomic,strong) Info2TableViewCell *cell1;
-@property (nonatomic,strong) Info2TableViewCell *cell2;
-@property (nonatomic,strong) Info2TableViewCell *cell3;
-@property (nonatomic,strong) InfoTableViewCell *cell;
+
 @end
 
 @implementation InfoTVC
+- (void)viewWillAppear:(BOOL)animated
+{
+    if ([[NSUserDefaults standardUserDefaults]objectForKey:@"iconimage"]) {
+        self.cell.IconImage.image = [UIImage imageWithData:[[NSUserDefaults standardUserDefaults]objectForKey:@"iconimage"]];
+    }
+    else
+    {
+        self.cell.IconImage.image = [UIImage imageNamed:@"touxiang.jpg"];
+    }
+    if ([[NSUserDefaults standardUserDefaults]valueForKey:@"nickname"]) {
+        self.cell.userName.text = [[NSUserDefaults standardUserDefaults]valueForKey:@"nickname"];
+        self.cell1.detailLabel2.text = [[NSUserDefaults standardUserDefaults]valueForKey:@"nickname"];
+    }
+    else
+    {
+        self.cell.userName.text = @"未设置昵称";
+        self.cell1.detailLabel2.text = @"未设置";
+    }
+    if ([[NSUserDefaults standardUserDefaults]valueForKey:@"sex"]) {
+        self.cell2.detailLabel2.text = [[NSUserDefaults standardUserDefaults]valueForKey:@"sex"];
+    }
+    else
+    {
+        self.cell2.detailLabel2.text = @"未设置";
+    }
+    if ([[NSUserDefaults standardUserDefaults]valueForKey:@"sign"]) {
+        self.cell3.detailLabel2.text = [[NSUserDefaults standardUserDefaults]valueForKey:@"sign"];
+    }
+    else
+    {
+        self.cell3.detailLabel2.text = @"未设置";
+    }
 
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -86,7 +116,7 @@
         if (indexPath.row == 0) {
             self.cell1 = [tableView dequeueReusableCellWithIdentifier:@"info2cell" forIndexPath:indexPath];
             _cell1.textLabel2.text = @"昵称";
-            _cell1.detailLabel2.text = @"汤";
+            _cell1.detailLabel2.text = @"未设置";
             _cell1.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
             return _cell1;
         }
@@ -121,10 +151,13 @@
         if (indexPath.row == 0) {
             PrintViewController *printVC = [[PrintViewController alloc]init];
             printVC.title = @"昵称";
+            
             printVC.passvalue = ^(NSString * value)
             {
                 self.cell1.detailLabel2.text = value;
+                [[NSUserDefaults standardUserDefaults]setValue:value forKey:@"nickname"];
             };
+            
             [self.navigationController pushViewController:printVC animated:YES];
         }
         else if (indexPath.row == 1)
@@ -134,14 +167,17 @@
             UIAlertAction * a1 = [UIAlertAction actionWithTitle:@"男" style:(UIAlertActionStyleDefault) handler:^(UIAlertAction * _Nonnull action) {
                
                 self.cell2.detailLabel2.text = @"男";
+                [[NSUserDefaults standardUserDefaults]setValue:@"男" forKey:@"sex"];
             }];
             UIAlertAction * a2 = [UIAlertAction actionWithTitle:@"女" style:(UIAlertActionStyleDefault) handler:^(UIAlertAction * _Nonnull action) {
                 
                 self.cell2.detailLabel2.text = @"女";
+                [[NSUserDefaults standardUserDefaults]setValue:@"女" forKey:@"sex"];
             }];
             UIAlertAction * a3 = [UIAlertAction actionWithTitle:@"其他" style:(UIAlertActionStyleDefault) handler:^(UIAlertAction * _Nonnull action) {
                 
                 self.cell2.detailLabel2.text = @"未知";
+                [[NSUserDefaults standardUserDefaults]setValue:@"未知" forKey:@"sex"];
             }];
             UIAlertAction *a4 = [UIAlertAction actionWithTitle:@"取消" style:(UIAlertActionStyleCancel) handler:nil];
             
@@ -160,6 +196,7 @@
             printVC.passvalue = ^(NSString * value)
             {
                 self.cell3.detailLabel2.text = value;
+                [[NSUserDefaults standardUserDefaults]setValue:value forKey:@"sign"];
             };
             [self.navigationController pushViewController:printVC animated:YES];
         }
@@ -173,6 +210,11 @@
     UIImage *image = [info objectForKey:UIImagePickerControllerEditedImage];
     self.cell.IconImage.image = image;
     self.passimage(image);
+    
+    //保存头像
+    NSData *imageData = UIImageJPEGRepresentation(image, 100);
+    [[NSUserDefaults standardUserDefaults]setObject:imageData forKey:@"iconimage"];
+    
     [picker dismissViewControllerAnimated:YES completion:nil];
 }
 

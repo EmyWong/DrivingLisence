@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "SettingCell.h"
 @interface SettingTableViewController : UITableViewController
-
+@property (nonatomic,strong) SettingCell *cell1;
 @end

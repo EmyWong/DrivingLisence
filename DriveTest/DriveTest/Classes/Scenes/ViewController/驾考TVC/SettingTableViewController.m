@@ -13,7 +13,7 @@
 @interface SettingTableViewController ()<UIAlertViewDelegate>
 @property (nonatomic,retain) NSString *cachePath;
 @property (nonatomic,strong) UIAlertView *hcAlertView;
-@property (nonatomic,strong) SettingCell *cell1;
+
 @end
 
 @implementation SettingTableViewController
@@ -24,6 +24,26 @@
         self.title = @"设置";
     }
     return self;
+}
+- (void)viewWillAppear:(BOOL)animated
+{
+    if ([[NSUserDefaults standardUserDefaults]objectForKey:@"iconimage"]) {
+        self.cell1.HeadImage.image = [UIImage imageWithData:[[NSUserDefaults standardUserDefaults]objectForKey:@"iconimage"]];
+        
+    }
+    else
+    {
+        self.cell1.HeadImage.image = [UIImage imageNamed:@"touxiang.jpg"];
+    }
+    if ([[NSUserDefaults standardUserDefaults]valueForKey:@"nickname"]) {
+        self.cell1.userName.text = [[NSUserDefaults standardUserDefaults]valueForKey:@"nickname"];
+    }
+    else
+    {
+        self.cell1.userName.text = @"未设置昵称";
+    
+    }
+
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -101,6 +121,10 @@
         infoTvc.passimage = ^(UIImage *image)
         {
             self.cell1.HeadImage.image = image;
+        };
+        infoTvc.passvalue = ^(NSString *value)
+        {
+            self.cell1.userName.text = value;
         };
         [self.navigationController pushViewController:infoTvc animated:YES];
     }
