@@ -15,7 +15,7 @@
 @property (nonatomic,strong) UIAlertView *hcAlertView;
 
 @property (nonatomic,strong) InfoTVC *infoTvc;
-
+@property (nonatomic,strong) UIAlertView *zxalertView;
 @end
 
 @implementation SettingTableViewController
@@ -78,7 +78,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 
-    return 3;
+    return 4;
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -104,12 +104,19 @@
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
         return cell;
     }
-    else
+    else if (indexPath.row == 2)
     {
     cell.imageView.image = [UIImage imageNamed:@"a2"];
     cell.textLabel.text = @"清除缓存";
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return cell;
+    }
+    else
+    {
+        cell.imageView.image = [UIImage imageNamed:@"a3"];
+        cell.textLabel.text = @"注销账号";
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
+        return cell;
     }
    
 }
@@ -132,9 +139,20 @@
         {
             temp.cell1.userName.text = value;
         };
+        AppDelegate *app = [UIApplication sharedApplication].delegate;
+        
+        if (app.loginType == YES) {
+
         [self.navigationController pushViewController:self.infoTvc animated:YES];
+        [self.infoTvc viewWillAppear:YES];
+        }
+        else
+        {
+            TimerDisappearAlertView *alertView = [[TimerDisappearAlertView alloc]initWithTitle:@"你还没有登录哦"];
+            [alertView show];
+        }
     }
-    else
+    else if (indexPath.row == 2)
     {
         CGFloat size = [FileService folderSizeAtPath:self.cachePath];
         if (size > .01f )
@@ -150,6 +168,22 @@
         }
 
     }
+    else
+    {
+        AppDelegate *app = [UIApplication sharedApplication].delegate;
+        
+     if (app.loginType == YES) {
+       
+        self.zxalertView = [[UIAlertView alloc]initWithTitle:@"提示" message:@"确定要注销吗" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"确定", nil];
+        [self.zxalertView show];
+     }
+    else
+    {
+        TimerDisappearAlertView *alertView = [[TimerDisappearAlertView alloc]initWithTitle:@"你还没有登录哦"];
+        [alertView show];
+    }
+
+    }
 }
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
 {
@@ -157,6 +191,18 @@
         [FileService clearCache:self.cachePath];
         UIAlertView *alertView1 = [[UIAlertView alloc]initWithTitle:@"提示" message:@"清除缓存成功" delegate:self cancelButtonTitle:@"好的" otherButtonTitles:nil, nil];
         [alertView1 show];
+    }
+    if (alertView == self.zxalertView && buttonIndex == 1) {
+        
+        AppDelegate *app = [UIApplication sharedApplication].delegate;
+        app.loginType = NO;
+        [[NSUserDefaults standardUserDefaults]removeObjectForKey:@"iconimage"];
+        [[NSUserDefaults standardUserDefaults]removeObjectForKey:@"nickname"];
+        [[NSUserDefaults standardUserDefaults]removeObjectForKey:@"sex"];
+        [[NSUserDefaults standardUserDefaults]removeObjectForKey:@"sign"];
+        [self viewWillAppear:YES];
+        TimerDisappearAlertView *alertView = [[TimerDisappearAlertView alloc]initWithTitle:@"注销成功"];
+        [alertView show];
     }
 }
 
