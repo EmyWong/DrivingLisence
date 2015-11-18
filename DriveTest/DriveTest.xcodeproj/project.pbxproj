@@ -129,7 +129,7 @@
 		959EE7871BF47D2A0073B92B /* loading7.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 959EE74B1BF47D2A0073B92B /* loading7.tiff */; };
 		959EE7881BF47D2A0073B92B /* loading8.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 959EE74C1BF47D2A0073B92B /* loading8.tiff */; };
 		959EE7891BF47D2A0073B92B /* loading9.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 959EE74D1BF47D2A0073B92B /* loading9.tiff */; };
-		95A4F8121BFC4B69008AB695 /* menu_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 95A4F8111BFC4B69008AB695 /* menu_icon.png */; settings = {ASSET_TAGS = (); }; };
+		95A4F8141BFC6FFE008AB695 /* menu_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 95A4F8131BFC6FFE008AB695 /* menu_icon.png */; settings = {ASSET_TAGS = (); }; };
 		A07767BCBD2E2AC57F55E1BA /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 88B72A16F3CBD58CAC18426F /* libPods.a */; };
 		C20C89C11BF21F96003B691D /* DriveSchoolCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C20C89BF1BF21F96003B691D /* DriveSchoolCell.m */; };
 		C20C89C21BF21F96003B691D /* DriveSchoolCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C20C89C01BF21F96003B691D /* DriveSchoolCell.xib */; };
@@ -439,7 +439,7 @@
 		959EE74B1BF47D2A0073B92B /* loading7.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = loading7.tiff; sourceTree = "<group>"; };
 		959EE74C1BF47D2A0073B92B /* loading8.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = loading8.tiff; sourceTree = "<group>"; };
 		959EE74D1BF47D2A0073B92B /* loading9.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = loading9.tiff; sourceTree = "<group>"; };
-		95A4F8111BFC4B69008AB695 /* menu_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu_icon.png; sourceTree = "<group>"; };
+		95A4F8131BFC6FFE008AB695 /* menu_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu_icon.png; sourceTree = "<group>"; };
 		A6A8BCEC75674F4586356377 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		C20C89BE1BF21F96003B691D /* DriveSchoolCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DriveSchoolCell.h; path = ../DriveSchoolCell.h; sourceTree = "<group>"; };
 		C20C89BF1BF21F96003B691D /* DriveSchoolCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DriveSchoolCell.m; path = ../DriveSchoolCell.m; sourceTree = "<group>"; };
@@ -1277,6 +1277,7 @@
 				C2272DD71BF19360004D5EFA /* image090.png */,
 				C2AC44E11BF09899006AB483 /* image.jpg */,
 				79D297B71BF97A00002C2BB7 /* iconfont-jiahao.png */,
+				95A4F8131BFC6FFE008AB695 /* menu_icon.png */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -1302,7 +1303,6 @@
 				C2272DDA1BF1B4C0004D5EFA /* f5.jpg */,
 				C2272DDB1BF1B4C0004D5EFA /* f9.jpg */,
 				C2272DDC1BF1B4C0004D5EFA /* f12@3x.png */,
-				95A4F8111BFC4B69008AB695 /* menu_icon.png */,
 				C2AC44EF1BF0EADE006AB483 /* jiakaofagui.png */,
 				C2AC44F01BF0EADE006AB483 /* kaoshijiqiao.png */,
 				C2AC44ED1BF0EA1E006AB483 /* suijilianxiOn@2x.png */,
@@ -1644,13 +1644,13 @@
 				C266236A1BF4DF98005DF5C6 /* pppddd.png in Resources */,
 				C2272E001BF1EF33004D5EFA /* lukaomijue.png in Resources */,
 				959EE7721BF47D2A0073B92B /* loading42.tiff in Resources */,
+				95A4F8141BFC6FFE008AB695 /* menu_icon.png in Resources */,
 				959EE76A1BF47D2A0073B92B /* loading35.tiff in Resources */,
 				C2AC44E01BF0988E006AB483 /* nvshen@2x.jpg in Resources */,
 				959EE6C31BF46B420073B92B /* lauch.png in Resources */,
 				952D1A091BFB54180087805C /* Info2TableViewCell.xib in Resources */,
 				C2F80F9E1BF5A0170006E789 /* 21.png in Resources */,
 				C2F80FA81BF5A0170006E789 /* 30.png in Resources */,
-				95A4F8121BFC4B69008AB695 /* menu_icon.png in Resources */,
 				79245D171BF438CA00F9BE32 /* RegisterViewController.xib in Resources */,
 				959EE7831BF47D2A0073B92B /* loading58.tiff in Resources */,
 				959EE7781BF47D2A0073B92B /* loading48.tiff in Resources */,

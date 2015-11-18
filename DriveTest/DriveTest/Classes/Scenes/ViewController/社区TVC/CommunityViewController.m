@@ -174,7 +174,7 @@
     UIImage *image = [UIImage imageNamed:@"iconfont-jiahao"];
     image = [image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     [talkButton setImage:image forState:UIControlStateNormal];
-    talkButton.frame = CGRectMake(kScreenWidth * 0.888,kScreenHight * 0.75, 32, 32);
+    talkButton.frame = CGRectMake(kScreenWidth * 0.888,kScreenHight * 0.68, 32, 32);
     [talkButton addTarget:self action:@selector(editAction) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:talkButton];
     
@@ -184,7 +184,7 @@
     UIImage *image1 = [UIImage imageNamed:@"menu_icon"];
     image1 = [image1 imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     [freshButton setImage:image1 forState:UIControlStateNormal];
-    freshButton.frame = CGRectMake(kScreenWidth * 0.888,kScreenHight * 0.75 - 60, 32, 32);
+    freshButton.frame = CGRectMake(kScreenWidth * 0.888,kScreenHight * 0.68 - 40, 32, 32);
     [freshButton addTarget:self action:@selector(freshAction) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:freshButton];
     
