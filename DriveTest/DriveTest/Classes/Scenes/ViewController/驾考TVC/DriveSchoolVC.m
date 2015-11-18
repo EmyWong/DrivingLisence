@@ -8,7 +8,7 @@
 
 #import "DriveSchoolVC.h"
 #import "FileService.h"
-
+#import "SettingTableViewController.h"
 
 @interface DriveSchoolVC ()<UITableViewDataSource,UITableViewDelegate,RNFrostedSidebarDelegate,UIAlertViewDelegate>
 //声明方法
@@ -28,8 +28,7 @@
 
 @property (nonatomic,strong) RNFrostedSidebar *callout;
 
-@property (nonatomic,retain) NSString *cachePath;
-@property (nonatomic,strong) UIAlertView *hcAlertView;
+
 @end
 
 @implementation DriveSchoolVC
@@ -69,11 +68,7 @@
     image = [image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:image style:UIBarButtonItemStyleDone target:self action:@selector(menuAction)];
     
-    //缓存路径
-    NSArray * paths = NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES);
-    self.cachePath = [[paths objectAtIndex:0] stringByAppendingFormat:@"/Caches"];
-
-    
+       
 }
 
 //加载数据
@@ -265,31 +260,12 @@
         case 4:
         {
             [self.callout dismiss];
-            CGFloat size = [FileService folderSizeAtPath:self.cachePath];
-            if (size > .01f )
-            {
-                self.hcAlertView = [[UIAlertView alloc]initWithTitle:@"提示" message:[NSString stringWithFormat:@"缓存大小为%.2fM，确定要清除缓存吗",size]delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"确定", nil];
-                [self.hcAlertView show];
-                
-            }
-            else
-            {
-                UIAlertView *alertView = [[UIAlertView alloc]initWithTitle:@"提示" message:@"暂时没有缓存" delegate:self cancelButtonTitle:@"好的" otherButtonTitles:nil, nil];
-                [alertView show];
-            }
+            [self.navigationController pushViewController:[SettingTableViewController new] animated:YES];
         }
             break;
             
         default:
             break;
-    }
-}
-- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
-{
-    if (alertView == self.hcAlertView   && buttonIndex == 1) {
-    [FileService clearCache:self.cachePath];
-    UIAlertView *alertView1 = [[UIAlertView alloc]initWithTitle:@"提示" message:@"清除缓存成功" delegate:self cancelButtonTitle:@"好的" otherButtonTitles:nil, nil];
-    [alertView1 show];
     }
 }
 

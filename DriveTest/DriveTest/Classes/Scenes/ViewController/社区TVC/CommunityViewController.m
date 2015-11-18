@@ -123,7 +123,7 @@
         return self.allTieZiArray.count;
     }else
     {
-        return 3;
+        return 3; //3个系统cell为了填充下面的bug
     }
     
 }
