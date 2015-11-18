@@ -218,11 +218,17 @@
     switch (index) {
         case 0:
         {
-            LoginViewController *loginVC = [LoginViewController new];
-            [loginVC setHidesBottomBarWhenPushed:YES];
-            [self.navigationController pushViewController:loginVC animated:YES];
-            [self.callout dismiss];
-
+            AppDelegate *app = [UIApplication sharedApplication].delegate;
+            if (app.loginType == NO) {
+                LoginViewController *loginVC = [LoginViewController new];
+                [loginVC setHidesBottomBarWhenPushed:YES];
+                [self.navigationController pushViewController:loginVC animated:YES];
+                [self.callout dismiss];
+            }else
+            {
+                [self.callout dismiss];
+                [self.navigationController pushViewController:[SettingTableViewController new] animated:YES];
+            }
         }
             break;
         case 1:
