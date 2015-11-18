@@ -166,13 +166,12 @@
             JiaYouTaoLunCell *cell = [tableView dequeueReusableCellWithIdentifier:@"jiayoucell" forIndexPath:indexPath];
             cell.selectionStyle = UITableViewCellSelectionStyleNone;
             
+            cell.tiezi = tieZi;
+            
             [self loadAction:cell];
             
             return cell;
         }
-        
-        
-
     }else
     {
         return [[UITableViewCell alloc] init];

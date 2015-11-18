@@ -20,6 +20,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     
+    
     [TieZi registerSubclass];
     
     [AVOSCloud setApplicationId:@"S8MJTv51QUexyXPjY8jA9N5b"
