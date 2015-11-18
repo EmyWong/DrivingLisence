@@ -21,7 +21,7 @@
 @property (nonatomic,strong) UITableView *myTableView;
 
 @property (nonatomic, strong) NSMutableArray *allTieZiArray;
-
+@property (nonatomic, strong) UIAlertController *alert;
 
 @end
 
@@ -60,26 +60,45 @@
         
         
         _index = 0;
-        [self.allTieZiArray removeAllObjects];
+        
         AVQuery *query = [TieZi query];
         [query includeKey:@"imgArr"];
         [query orderByDescending:@"createdAt"];
         query.limit = 10;
         [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
             //
-            for (TieZi *tie in objects) {
-                [self.allTieZiArray addObject:tie];
+            if (!error) {
+                
+                [self.allTieZiArray removeAllObjects];
+                
+                for (TieZi *tie in objects) {
+                    [self.allTieZiArray addObject:tie];
+                }
+                [self.myTableView reloadData];
+                [self.myTableView.mj_header endRefreshing];
+                _index = 1;
+            }else{
+                NSLog(@"网络出错");
+                
+                self.alert = [UIAlertController alertControllerWithTitle:@"提示" message:@"网络不给力" preferredStyle:UIAlertControllerStyleAlert];
+
+                
+                [self presentViewController:self.alert animated:YES completion:nil];
+                
+                [self.myTableView.mj_header endRefreshing];
+                
+                
+                sleep(1.0f);
+                
+                [self.alert dismissViewControllerAnimated:YES completion:nil];
+                
+                
             }
-            [self.myTableView reloadData];
-            [self.myTableView.mj_header endRefreshing];
-            _index = 1;
         }];
         
         
         
-        if (_index) {
-            NSLog(@"indexPath");
-        }
+        
     }];
 
     
@@ -101,20 +120,39 @@
         query.limit = 10;
         
         query.skip = 10 * _index;
-        NSLog(@"%ld", query.skip);
         [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
             //
-            for (TieZi *tie in objects) {
-                [self.allTieZiArray addObject:tie];
+            if (!error) {
+                for (TieZi *tie in objects) {
+                    [self.allTieZiArray addObject:tie];
+                }
+                [self.myTableView reloadData];
+                [self.myTableView.mj_footer endRefreshing];
+                _index ++;
+            }else{
+                NSLog(@"网络出错");
+                self.alert = [UIAlertController alertControllerWithTitle:@"提示" message:@"网络不给力" preferredStyle:UIAlertControllerStyleAlert];
+                
+                
+                [self presentViewController:self.alert animated:YES completion:nil];
+                
+                [self.myTableView.mj_footer endRefreshing];
+                
+                
+                sleep(1.0f);
+                
+                [self.alert dismissViewControllerAnimated:YES completion:nil];
             }
-            [self.myTableView reloadData];
-            [self.myTableView.mj_footer endRefreshing];
-            _index ++;
         }];
 
         
     } ];
     
+}
+
+-(void) performDismiss:(NSTimer *)timer
+{
+    [self.alert dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (void)xiaLaShuaXin

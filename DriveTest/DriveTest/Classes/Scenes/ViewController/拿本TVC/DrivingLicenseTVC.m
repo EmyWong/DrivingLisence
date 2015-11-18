@@ -25,6 +25,14 @@
     return self;
     
 }
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [self loadData];
+}
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -33,7 +41,7 @@
     
     self.tableView.rowHeight = UITableViewAutomaticDimension;
     self.tableView.estimatedRowHeight = 100;
-    [self loadData];
+    
 }
 
 

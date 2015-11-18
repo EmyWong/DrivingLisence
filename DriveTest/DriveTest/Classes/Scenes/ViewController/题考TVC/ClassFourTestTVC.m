@@ -23,6 +23,12 @@
 static NSString *const classFourCellId = @"ClassFourID";
 
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [self loadData];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -40,7 +46,7 @@ static NSString *const classFourCellId = @"ClassFourID";
     self.tableView.rowHeight = UITableViewAutomaticDimension;
     self.tableView.estimatedRowHeight = 100;
     
-    [self loadData];
+    
 }
 
 - (void)loadData {

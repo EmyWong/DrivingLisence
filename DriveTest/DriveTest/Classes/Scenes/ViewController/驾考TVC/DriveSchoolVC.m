@@ -33,6 +33,13 @@
 
 @implementation DriveSchoolVC
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    //实现加载数据的方法
+    [self loadData];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -45,8 +52,7 @@
     self.tableView.delegate = self;
     //注册cell
     [self.tableView registerNib:[UINib nibWithNibName:@"DriveSchoolCell" bundle:nil] forCellReuseIdentifier:@"driveSchoolCellID"];
-    //实现加载数据的方法
-    [self loadData];
+    
     
     
     self.tableView.tableFooterView = [[UIView alloc] init];

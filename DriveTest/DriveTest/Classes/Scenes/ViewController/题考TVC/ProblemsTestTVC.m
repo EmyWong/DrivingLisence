@@ -19,7 +19,11 @@
 
 static NSString *const classOneCellId = @"ClassOneID";
 
-
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [self loadData];
+}
 
 
 - (void)viewDidLoad {
@@ -40,7 +44,7 @@ static NSString *const classOneCellId = @"ClassOneID";
     self.tableView.estimatedRowHeight = 100;
     
     
-    [self loadData];
+    
     
     
 }
