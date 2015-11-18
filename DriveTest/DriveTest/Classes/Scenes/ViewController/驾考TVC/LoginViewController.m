@@ -56,6 +56,7 @@
         }else
         {
             NSLog(@"登录成功");
+            [[NSUserDefaults standardUserDefaults]setValue:self.loginNameTextField.text forKey:@"accountnumber"];
             AppDelegate *app = [UIApplication sharedApplication].delegate;
             app.loginType = YES;
             [self.navigationController popViewControllerAnimated:YES];

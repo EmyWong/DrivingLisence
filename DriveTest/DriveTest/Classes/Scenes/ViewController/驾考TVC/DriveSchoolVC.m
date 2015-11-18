@@ -28,13 +28,15 @@
 
 @property (nonatomic,strong) RNFrostedSidebar *callout;
 
-
+@property (nonatomic,strong) SettingTableViewController *settingVC;
 @end
 
 @implementation DriveSchoolVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.settingVC = [[SettingTableViewController alloc]init];
     
     //给type设置初始值
     self.type = @"jx";
@@ -266,7 +268,7 @@
         case 4:
         {
             [self.callout dismiss];
-            [self.navigationController pushViewController:[SettingTableViewController new] animated:YES];
+            [self.navigationController pushViewController:self.settingVC animated:YES];
         }
             break;
             

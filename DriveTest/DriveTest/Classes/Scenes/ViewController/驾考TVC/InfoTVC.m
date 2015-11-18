@@ -33,6 +33,14 @@
         self.cell.userName.text = @"未设置昵称";
         self.cell1.detailLabel2.text = @"未设置";
     }
+    
+    if ([[NSUserDefaults standardUserDefaults]valueForKey:@"accountnumber"]) {
+        self.cell.accountNumber.text = [[NSUserDefaults standardUserDefaults]valueForKey:@"accountnumber"];
+    }
+    else
+    {
+        self.cell.accountNumber.text = @"xiaochezhushou";
+    }
     if ([[NSUserDefaults standardUserDefaults]valueForKey:@"sex"]) {
         self.cell2.detailLabel2.text = [[NSUserDefaults standardUserDefaults]valueForKey:@"sex"];
     }

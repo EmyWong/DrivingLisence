@@ -14,6 +14,8 @@
 @property (nonatomic,retain) NSString *cachePath;
 @property (nonatomic,strong) UIAlertView *hcAlertView;
 
+@property (nonatomic,strong) InfoTVC *infoTvc;
+
 @end
 
 @implementation SettingTableViewController
@@ -36,17 +38,20 @@
         self.cell1.HeadImage.image = [UIImage imageNamed:@"touxiang.jpg"];
     }
     if ([[NSUserDefaults standardUserDefaults]valueForKey:@"nickname"]) {
-        self.cell1.userName.text = [[NSUserDefaults standardUserDefaults]valueForKey:@"nickname"];
+    
+        [self.cell1.accountName setTitle:[[NSUserDefaults standardUserDefaults]valueForKey:@"nickname"] forState:(UIControlStateNormal)];
     }
     else
     {
-        self.cell1.userName.text = @"未设置昵称";
+        [self.cell1.accountName setTitle:@"未设置昵称" forState:(UIControlStateNormal)];
     
     }
 
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.infoTvc = [InfoTVC new];
     //缓存路径
     NSArray * paths = NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES);
     self.cachePath = [[paths objectAtIndex:0] stringByAppendingFormat:@"/Caches"];
@@ -116,17 +121,18 @@
     }
     else if (indexPath.row == 1)
     {
-        InfoTVC *infoTvc = [InfoTVC new];
-        infoTvc.title = @"个人信息";
-        infoTvc.passimage = ^(UIImage *image)
+        self.infoTvc.title = @"个人信息";
+        
+        __weak typeof(self)temp = self;
+        self.infoTvc.passimage = ^(UIImage *image)
         {
-            self.cell1.HeadImage.image = image;
+            temp.cell1.HeadImage.image = image;
         };
-        infoTvc.passvalue = ^(NSString *value)
+        self.infoTvc.passvalue = ^(NSString *value)
         {
-            self.cell1.userName.text = value;
+            temp.cell1.userName.text = value;
         };
-        [self.navigationController pushViewController:infoTvc animated:YES];
+        [self.navigationController pushViewController:self.infoTvc animated:YES];
     }
     else
     {
