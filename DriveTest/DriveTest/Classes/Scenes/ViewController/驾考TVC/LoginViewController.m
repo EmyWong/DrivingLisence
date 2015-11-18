@@ -7,7 +7,7 @@
 //
 
 #import "LoginViewController.h"
-
+#import "AppDelegate.h"
 @interface LoginViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *loginNameTextField;
 @property (weak, nonatomic) IBOutlet UITextField *loginPwdTextField;
@@ -56,6 +56,8 @@
         }else
         {
             NSLog(@"登录成功");
+            AppDelegate *app = [UIApplication sharedApplication].delegate;
+            app.loginType = YES;
             [self.navigationController popViewControllerAnimated:YES];
         }
     }];

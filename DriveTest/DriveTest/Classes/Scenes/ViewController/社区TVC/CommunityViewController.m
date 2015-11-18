@@ -12,6 +12,7 @@
 #import "SheQuVC.h"
 #import "TieZi.h"
 #import "MaxViewController.h"
+#import "LoginViewController.h"
 
 @interface CommunityViewController () <UITableViewDataSource,UITableViewDelegate>
 @property (nonatomic,strong) UITableView *myTableView;
@@ -82,8 +83,16 @@
 {
     NSLog(@"弹出编辑控制器");
     
-    UINavigationController *NC = [[UINavigationController alloc] initWithRootViewController:[SheQuVC new]];
-    [self presentViewController:NC animated:YES completion:nil];
+    AppDelegate *app = [UIApplication sharedApplication].delegate;
+    if (app.loginType == YES) {
+        UINavigationController *NC = [[UINavigationController alloc] initWithRootViewController:[SheQuVC new]];
+        [self presentViewController:NC animated:YES completion:nil];
+    }else
+    {
+        LoginViewController *loginVC = [LoginViewController new];
+        [loginVC setHidesBottomBarWhenPushed:YES];
+        [self.navigationController pushViewController:loginVC animated:YES];
+    }
     
 }
 
