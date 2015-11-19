@@ -327,29 +327,10 @@
 
 - (void)DZAction:(UIButton *)sender
 {
-    
-    
-    
-    
-    
-    
-    if ([sender.imageView.image isEqual:[UIImage imageNamed:@"dianzaned"]]) {
-        
-//        cell.dianzan.text = likeTip;
-        
-        [sender setImage:[UIImage imageNamed:@"dianzan"] forState:UIControlStateNormal];
-    }else{
-        
-        
-        
-        [sender setImage:[UIImage imageNamed:@"dianzaned"] forState:UIControlStateNormal];
-    }
-    NSLog(@"img dz");
+       NSLog(@"img dz");
 }
 - (void)PLAction
 {
-    
-    
     NSLog(@"img pl");
 }
 
