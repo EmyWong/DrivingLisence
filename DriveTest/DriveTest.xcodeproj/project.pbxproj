@@ -38,7 +38,6 @@
 		95493AC61BF045D2006C2323 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95493AC41BF045D2006C2323 /* Main.storyboard */; };
 		95493AC91BF045D2006C2323 /* DriveTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 95493AC71BF045D2006C2323 /* DriveTest.xcdatamodeld */; };
 		95493ACB1BF045D2006C2323 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95493ACA1BF045D2006C2323 /* Assets.xcassets */; };
-		95493ACE1BF045D2006C2323 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95493ACC1BF045D2006C2323 /* LaunchScreen.storyboard */; };
 		95493BBE1BF1CE6B006C2323 /* PanduanCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 95493BBC1BF1CE6B006C2323 /* PanduanCell.m */; };
 		95493BBF1BF1CE6B006C2323 /* PanduanCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95493BBD1BF1CE6B006C2323 /* PanduanCell.xib */; };
 		95493BC31BF1CE77006C2323 /* QuestionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 95493BC11BF1CE77006C2323 /* QuestionCell.m */; };
@@ -69,7 +68,6 @@
 		959EE6871BF41E9C0073B92B /* DrivingLisenceVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 959EE6861BF41E9C0073B92B /* DrivingLisenceVC.m */; };
 		959EE6BE1BF457200073B92B /* b27_icon_star_gray@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 959EE6BC1BF457200073B92B /* b27_icon_star_gray@2x.png */; };
 		959EE6BF1BF457200073B92B /* b27_icon_star_yellow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 959EE6BD1BF457200073B92B /* b27_icon_star_yellow@2x.png */; };
-		959EE6C11BF4597E0073B92B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 959EE6C01BF4597E0073B92B /* Images.xcassets */; };
 		959EE74E1BF47D2A0073B92B /* loading1.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 959EE7121BF47D290073B92B /* loading1.tiff */; };
 		959EE74F1BF47D2A0073B92B /* loading10.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 959EE7131BF47D290073B92B /* loading10.tiff */; };
 		959EE7501BF47D2A0073B92B /* loading11.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 959EE7141BF47D290073B92B /* loading11.tiff */; };
@@ -325,7 +323,6 @@
 		95493AC51BF045D2006C2323 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		95493AC81BF045D2006C2323 /* DriveTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DriveTest.xcdatamodel; sourceTree = "<group>"; };
 		95493ACA1BF045D2006C2323 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		95493ACD1BF045D2006C2323 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		95493ACF1BF045D2006C2323 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		95493BBB1BF1CE6B006C2323 /* PanduanCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PanduanCell.h; sourceTree = "<group>"; };
 		95493BBC1BF1CE6B006C2323 /* PanduanCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PanduanCell.m; sourceTree = "<group>"; };
@@ -373,7 +370,6 @@
 		959EE6861BF41E9C0073B92B /* DrivingLisenceVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrivingLisenceVC.m; sourceTree = "<group>"; };
 		959EE6BC1BF457200073B92B /* b27_icon_star_gray@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "b27_icon_star_gray@2x.png"; path = "侧栏图片/b27_icon_star_gray@2x.png"; sourceTree = "<group>"; };
 		959EE6BD1BF457200073B92B /* b27_icon_star_yellow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "b27_icon_star_yellow@2x.png"; path = "侧栏图片/b27_icon_star_yellow@2x.png"; sourceTree = "<group>"; };
-		959EE6C01BF4597E0073B92B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		959EE7121BF47D290073B92B /* loading1.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = loading1.tiff; sourceTree = "<group>"; };
 		959EE7131BF47D290073B92B /* loading10.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = loading10.tiff; sourceTree = "<group>"; };
 		959EE7141BF47D290073B92B /* loading11.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = loading11.tiff; sourceTree = "<group>"; };
@@ -757,10 +753,8 @@
 				C2AC446D1BF08357006AB483 /* Classes */,
 				95493AC41BF045D2006C2323 /* Main.storyboard */,
 				95493ACA1BF045D2006C2323 /* Assets.xcassets */,
-				95493ACC1BF045D2006C2323 /* LaunchScreen.storyboard */,
 				95493ACF1BF045D2006C2323 /* Info.plist */,
 				95493AC71BF045D2006C2323 /* DriveTest.xcdatamodeld */,
-				959EE6C01BF4597E0073B92B /* Images.xcassets */,
 				95493ABB1BF045D2006C2323 /* Supporting Files */,
 			);
 			path = DriveTest;
@@ -1684,7 +1678,6 @@
 				C2F80F6B1BF585830006E789 /* XueYuanDPTVC.xib in Resources */,
 				C2F80FA01BF5A0170006E789 /* 23.png in Resources */,
 				959EE76D1BF47D2A0073B92B /* loading38.tiff in Resources */,
-				95493ACE1BF045D2006C2323 /* LaunchScreen.storyboard in Resources */,
 				95493BEA1BF1E9A1006C2323 /* ImageQuestionCell.xib in Resources */,
 				C2F80F951BF5A0170006E789 /* 13.png in Resources */,
 				79EC03101BF19027002C568F /* kemu2@2x.png in Resources */,
@@ -1804,7 +1797,6 @@
 				959EE7661BF47D2A0073B92B /* loading31.tiff in Resources */,
 				79EC030D1BF18014002C568F /* lianxi_numlist@2x.png in Resources */,
 				C2F80FB21BF5A0170006E789 /* 7.png in Resources */,
-				959EE6C11BF4597E0073B92B /* Images.xcassets in Resources */,
 				C2BAEAFC1BF71D050059E8A7 /* 考前准备.png in Resources */,
 				C2F80F931BF5A0170006E789 /* 11.png in Resources */,
 				C2F80FAA1BF5A0170006E789 /* 32.png in Resources */,
@@ -1960,14 +1952,6 @@
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		95493ACC1BF045D2006C2323 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				95493ACD1BF045D2006C2323 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -1988,7 +1972,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Yucheng Song (75693XATVN)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Yucheng Song (75693XATVN)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -2010,6 +1995,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "ac22bd88-f7fd-4cc0-a4ce-64345e881a21";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -2032,7 +2018,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Yucheng Song (75693XATVN)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Yucheng Song (75693XATVN)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -2047,6 +2034,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				PROVISIONING_PROFILE = "ac22bd88-f7fd-4cc0-a4ce-64345e881a21";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -2058,16 +2047,17 @@
 			baseConfigurationReference = 77E8A038CE30F753CA9DE4A8 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Yucheng Song (75693XATVN)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Yucheng Song (75693XATVN)";
 				GCC_PREFIX_HEADER = DriveTest/Classes/Helpers/FirstGroup.pch;
 				INFOPLIST_FILE = DriveTest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = TheFirstGroup.DriveTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.groupone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				PROVISIONING_PROFILE = "ac22bd88-f7fd-4cc0-a4ce-64345e881a21";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -2076,16 +2066,17 @@
 			baseConfigurationReference = A6A8BCEC75674F4586356377 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Yucheng Song (75693XATVN)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Yucheng Song (75693XATVN)";
 				GCC_PREFIX_HEADER = DriveTest/Classes/Helpers/FirstGroup.pch;
 				INFOPLIST_FILE = DriveTest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = TheFirstGroup.DriveTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.groupone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				PROVISIONING_PROFILE = "ac22bd88-f7fd-4cc0-a4ce-64345e881a21";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
